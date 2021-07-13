@@ -1,0 +1,5621 @@
+Error to find creator of 9, set CPU default
+begin an iteration 0
+call step in MicroSGD, mMicroStep = 1, mStep = 0
+don't need to use the micro-batch tech, call father's step directly
+SGD.cpp:onGetNextParameter: finish compute grad graph
+SGD.cpp:onGetNextParameter: finish prepare compute & start read-map
+current Op is 0th:128:Raster
+	inputs: []
+	outputs: [(0 1204224), ]
+	temporary: [(0 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 2.575000 ms
+current Op is 1th:128:Raster
+	inputs: [(0 1204224), ]
+	outputs: [(1 1605632), ]
+	temporary: [(1 1605632), ]
+	release: [(0 1204224), ]
+	computeIthOp, 579, cost time: 4.429000 ms
+current Op is 2th:128:Raster
+	inputs: [(1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), (1 1605632), ]
+	outputs: [(2 14751744), ]
+	temporary: [(2 14751744), ]
+	release: [(1 1605632), ]
+	computeIthOp, 579, cost time: 37.229000 ms
+current Op is 3th:128:Raster
+	inputs: []
+	outputs: [(3 56448), ]
+	temporary: [(3 56448), ]
+	release: []
+	computeIthOp, 579, cost time: 0.209000 ms
+current Op is 4th:39:MatMul
+	inputs: [(2 14751744), (3 56448), ]
+	outputs: [(4 9633792), ]
+	temporary: [(4 9633792), ]
+	release: [(3 56448), ]
+	computeIthOp, 579, cost time: 35.646000 ms
+current Op is 5th:128:Raster
+	inputs: [(4 9633792), ]
+	outputs: [(5 9633792), ]
+	temporary: [(5 9633792), ]
+	release: [(4 9633792), ]
+	computeIthOp, 579, cost time: 6.548000 ms
+current Op is 6th:47:Pooling
+	inputs: [(5 9633792), ]
+	outputs: [(6 2408448), ]
+	temporary: [(6 2408448), ]
+	release: []
+	computeIthOp, 579, cost time: 36.733002 ms
+current Op is 7th:128:Raster
+	inputs: [(6 2408448), (6 2408448), ]
+	outputs: [(7 2408448), ]
+	temporary: [(7 2408448), ]
+	release: []
+	computeIthOp, 579, cost time: 1.737000 ms
+current Op is 8th:128:Raster
+	inputs: []
+	outputs: [(8 6144), ]
+	temporary: [(8 6144), ]
+	release: []
+	computeIthOp, 579, cost time: 0.454000 ms
+current Op is 9th:39:MatMul
+	inputs: [(7 2408448), (8 6144), ]
+	outputs: [(9 401408), ]
+	temporary: [(9 401408), ]
+	release: [(8 6144), ]
+	computeIthOp, 579, cost time: 1.938000 ms
+current Op is 10th:128:Raster
+	inputs: [(9 401408), ]
+	outputs: [(10 401408), ]
+	temporary: [(10 401408), ]
+	release: [(9 401408), ]
+	computeIthOp, 579, cost time: 0.678000 ms
+current Op is 11th:128:Raster
+	inputs: [(10 401408), (10 401408), ]
+	outputs: [(11 401408), ]
+	temporary: [(11 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.629000 ms
+current Op is 12th:128:Raster
+	inputs: []
+	outputs: [(12 4096), ]
+	temporary: [(12 4096), ]
+	release: []
+	computeIthOp, 579, cost time: 0.405000 ms
+current Op is 13th:39:MatMul
+	inputs: [(11 401408), (12 4096), ]
+	outputs: [(13 1605632), ]
+	temporary: [(13 1605632), ]
+	release: [(12 4096), ]
+	computeIthOp, 579, cost time: 2.261000 ms
+current Op is 14th:128:Raster
+	inputs: [(10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), (10 401408), ]
+	outputs: [(14 3612672), ]
+	temporary: [(14 3612672), ]
+	release: [(10 401408), ]
+	computeIthOp, 579, cost time: 1.935000 ms
+current Op is 15th:128:Raster
+	inputs: []
+	outputs: [(15 36864), ]
+	temporary: [(15 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.433000 ms
+current Op is 16th:39:MatMul
+	inputs: [(14 3612672), (15 36864), ]
+	outputs: [(16 1605632), ]
+	temporary: [(16 1605632), ]
+	release: [(15 36864), ]
+	computeIthOp, 579, cost time: 4.836000 ms
+current Op is 17th:128:Raster
+	inputs: [(13 1605632), (16 1605632), ]
+	outputs: [(17 3211264), ]
+	temporary: [(17 3211264), ]
+	release: [(13 1605632), (16 1605632), ]
+	computeIthOp, 579, cost time: 1.919000 ms
+current Op is 18th:128:Raster
+	inputs: [(17 3211264), (17 3211264), ]
+	outputs: [(18 3211264), ]
+	temporary: [(18 3211264), ]
+	release: [(17 3211264), ]
+	computeIthOp, 579, cost time: 1.629000 ms
+current Op is 19th:128:Raster
+	inputs: []
+	outputs: [(19 8192), ]
+	temporary: [(19 8192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.430000 ms
+current Op is 20th:39:MatMul
+	inputs: [(18 3211264), (19 8192), ]
+	outputs: [(20 401408), ]
+	temporary: [(20 401408), ]
+	release: [(19 8192), ]
+	computeIthOp, 579, cost time: 2.676000 ms
+current Op is 21th:128:Raster
+	inputs: [(20 401408), ]
+	outputs: [(21 401408), ]
+	temporary: [(21 401408), ]
+	release: [(20 401408), ]
+	computeIthOp, 579, cost time: 0.691000 ms
+current Op is 22th:128:Raster
+	inputs: [(21 401408), (21 401408), ]
+	outputs: [(22 401408), ]
+	temporary: [(22 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.583000 ms
+current Op is 23th:128:Raster
+	inputs: []
+	outputs: [(23 4096), ]
+	temporary: [(23 4096), ]
+	release: []
+	computeIthOp, 579, cost time: 0.411000 ms
+current Op is 24th:39:MatMul
+	inputs: [(22 401408), (23 4096), ]
+	outputs: [(24 1605632), ]
+	temporary: [(24 1605632), ]
+	release: [(23 4096), ]
+	computeIthOp, 579, cost time: 2.287000 ms
+current Op is 25th:128:Raster
+	inputs: [(21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), (21 401408), ]
+	outputs: [(25 3612672), ]
+	temporary: [(25 3612672), ]
+	release: [(21 401408), ]
+	computeIthOp, 579, cost time: 2.095000 ms
+current Op is 26th:128:Raster
+	inputs: []
+	outputs: [(26 36864), ]
+	temporary: [(26 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.431000 ms
+current Op is 27th:39:MatMul
+	inputs: [(25 3612672), (26 36864), ]
+	outputs: [(27 1605632), ]
+	temporary: [(27 1605632), ]
+	release: [(26 36864), ]
+	computeIthOp, 579, cost time: 6.183000 ms
+current Op is 28th:128:Raster
+	inputs: [(24 1605632), (27 1605632), ]
+	outputs: [(28 3211264), ]
+	temporary: [(28 3211264), ]
+	release: [(24 1605632), (27 1605632), ]
+	computeIthOp, 579, cost time: 2.069000 ms
+current Op is 29th:128:Raster
+	inputs: [(28 3211264), (28 3211264), ]
+	outputs: [(29 3211264), ]
+	temporary: [(29 3211264), ]
+	release: [(28 3211264), ]
+	computeIthOp, 579, cost time: 1.414000 ms
+current Op is 30th:128:Raster
+	inputs: []
+	outputs: [(30 16384), ]
+	temporary: [(30 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.478000 ms
+current Op is 31th:39:MatMul
+	inputs: [(29 3211264), (30 16384), ]
+	outputs: [(31 802816), ]
+	temporary: [(31 802816), ]
+	release: [(30 16384), ]
+	computeIthOp, 579, cost time: 3.192000 ms
+current Op is 32th:128:Raster
+	inputs: [(31 802816), ]
+	outputs: [(32 802816), ]
+	temporary: [(32 802816), ]
+	release: [(31 802816), ]
+	computeIthOp, 579, cost time: 0.879000 ms
+current Op is 33th:128:Raster
+	inputs: [(32 802816), (32 802816), ]
+	outputs: [(33 802816), ]
+	temporary: [(33 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.667000 ms
+current Op is 34th:128:Raster
+	inputs: []
+	outputs: [(34 16384), ]
+	temporary: [(34 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.456000 ms
+current Op is 35th:39:MatMul
+	inputs: [(33 802816), (34 16384), ]
+	outputs: [(35 3211264), ]
+	temporary: [(35 3211264), ]
+	release: [(34 16384), ]
+	computeIthOp, 579, cost time: 4.531000 ms
+current Op is 36th:128:Raster
+	inputs: [(32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), (32 802816), ]
+	outputs: [(36 7225344), ]
+	temporary: [(36 7225344), ]
+	release: [(32 802816), ]
+	computeIthOp, 579, cost time: 4.976000 ms
+current Op is 37th:128:Raster
+	inputs: []
+	outputs: [(37 147456), ]
+	temporary: [(37 147456), ]
+	release: []
+	computeIthOp, 579, cost time: 0.457000 ms
+current Op is 38th:39:MatMul
+	inputs: [(36 7225344), (37 147456), ]
+	outputs: [(38 3211264), ]
+	temporary: [(38 3211264), ]
+	release: [(37 147456), ]
+	computeIthOp, 579, cost time: 17.875000 ms
+current Op is 39th:128:Raster
+	inputs: [(35 3211264), (38 3211264), ]
+	outputs: [(39 6422528), ]
+	temporary: [(39 6422528), ]
+	release: [(35 3211264), (38 3211264), ]
+	computeIthOp, 579, cost time: 4.463000 ms
+current Op is 40th:47:Pooling
+	inputs: [(39 6422528), ]
+	outputs: [(40 1605632), ]
+	temporary: [(40 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 24.849001 ms
+current Op is 41th:128:Raster
+	inputs: [(40 1605632), (40 1605632), ]
+	outputs: [(41 1605632), ]
+	temporary: [(41 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 1.020000 ms
+current Op is 42th:128:Raster
+	inputs: []
+	outputs: [(42 32768), ]
+	temporary: [(42 32768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.440000 ms
+current Op is 43th:39:MatMul
+	inputs: [(41 1605632), (42 32768), ]
+	outputs: [(43 200704), ]
+	temporary: [(43 200704), ]
+	release: [(42 32768), ]
+	computeIthOp, 579, cost time: 1.916000 ms
+current Op is 44th:128:Raster
+	inputs: [(43 200704), ]
+	outputs: [(44 200704), ]
+	temporary: [(44 200704), ]
+	release: [(43 200704), ]
+	computeIthOp, 579, cost time: 0.634000 ms
+current Op is 45th:128:Raster
+	inputs: [(44 200704), (44 200704), ]
+	outputs: [(45 200704), ]
+	temporary: [(45 200704), ]
+	release: []
+	computeIthOp, 579, cost time: 0.645000 ms
+current Op is 46th:128:Raster
+	inputs: []
+	outputs: [(46 16384), ]
+	temporary: [(46 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.415000 ms
+current Op is 47th:39:MatMul
+	inputs: [(45 200704), (46 16384), ]
+	outputs: [(47 802816), ]
+	temporary: [(47 802816), ]
+	release: [(46 16384), ]
+	computeIthOp, 579, cost time: 1.523000 ms
+current Op is 48th:128:Raster
+	inputs: [(44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), (44 200704), ]
+	outputs: [(48 1806336), ]
+	temporary: [(48 1806336), ]
+	release: [(44 200704), ]
+	computeIthOp, 579, cost time: 1.696000 ms
+current Op is 49th:128:Raster
+	inputs: []
+	outputs: [(49 147456), ]
+	temporary: [(49 147456), ]
+	release: []
+	computeIthOp, 579, cost time: 0.433000 ms
+current Op is 50th:39:MatMul
+	inputs: [(48 1806336), (49 147456), ]
+	outputs: [(50 802816), ]
+	temporary: [(50 802816), ]
+	release: [(49 147456), ]
+	computeIthOp, 579, cost time: 4.506000 ms
+current Op is 51th:128:Raster
+	inputs: [(47 802816), (50 802816), ]
+	outputs: [(51 1605632), ]
+	temporary: [(51 1605632), ]
+	release: [(47 802816), (50 802816), ]
+	computeIthOp, 579, cost time: 1.493000 ms
+current Op is 52th:128:Raster
+	inputs: [(51 1605632), (51 1605632), ]
+	outputs: [(52 1605632), ]
+	temporary: [(52 1605632), ]
+	release: [(51 1605632), ]
+	computeIthOp, 579, cost time: 1.034000 ms
+current Op is 53th:128:Raster
+	inputs: []
+	outputs: [(53 49152), ]
+	temporary: [(53 49152), ]
+	release: []
+	computeIthOp, 579, cost time: 0.436000 ms
+current Op is 54th:39:MatMul
+	inputs: [(52 1605632), (53 49152), ]
+	outputs: [(54 301056), ]
+	temporary: [(54 301056), ]
+	release: [(53 49152), ]
+	computeIthOp, 579, cost time: 1.972000 ms
+current Op is 55th:128:Raster
+	inputs: [(54 301056), ]
+	outputs: [(55 301056), ]
+	temporary: [(55 301056), ]
+	release: [(54 301056), ]
+	computeIthOp, 579, cost time: 0.629000 ms
+current Op is 56th:128:Raster
+	inputs: [(55 301056), (55 301056), ]
+	outputs: [(56 301056), ]
+	temporary: [(56 301056), ]
+	release: []
+	computeIthOp, 579, cost time: 0.566000 ms
+current Op is 57th:128:Raster
+	inputs: []
+	outputs: [(57 36864), ]
+	temporary: [(57 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.413000 ms
+current Op is 58th:39:MatMul
+	inputs: [(56 301056), (57 36864), ]
+	outputs: [(58 1204224), ]
+	temporary: [(58 1204224), ]
+	release: [(57 36864), ]
+	computeIthOp, 579, cost time: 2.113000 ms
+current Op is 59th:128:Raster
+	inputs: [(55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), (55 301056), ]
+	outputs: [(59 2709504), ]
+	temporary: [(59 2709504), ]
+	release: [(55 301056), ]
+	computeIthOp, 579, cost time: 1.984000 ms
+current Op is 60th:128:Raster
+	inputs: []
+	outputs: [(60 331776), ]
+	temporary: [(60 331776), ]
+	release: []
+	computeIthOp, 579, cost time: 0.458000 ms
+current Op is 61th:39:MatMul
+	inputs: [(59 2709504), (60 331776), ]
+	outputs: [(61 1204224), ]
+	temporary: [(61 1204224), ]
+	release: [(60 331776), ]
+	computeIthOp, 579, cost time: 7.117000 ms
+current Op is 62th:128:Raster
+	inputs: [(58 1204224), (61 1204224), ]
+	outputs: [(62 2408448), ]
+	temporary: [(62 2408448), ]
+	release: [(58 1204224), (61 1204224), ]
+	computeIthOp, 579, cost time: 1.642000 ms
+current Op is 63th:128:Raster
+	inputs: [(62 2408448), (62 2408448), ]
+	outputs: [(63 2408448), ]
+	temporary: [(63 2408448), ]
+	release: [(62 2408448), ]
+	computeIthOp, 579, cost time: 1.664000 ms
+current Op is 64th:128:Raster
+	inputs: []
+	outputs: [(64 73728), ]
+	temporary: [(64 73728), ]
+	release: []
+	computeIthOp, 579, cost time: 0.479000 ms
+current Op is 65th:39:MatMul
+	inputs: [(63 2408448), (64 73728), ]
+	outputs: [(65 301056), ]
+	temporary: [(65 301056), ]
+	release: [(64 73728), ]
+	computeIthOp, 579, cost time: 2.361000 ms
+current Op is 66th:128:Raster
+	inputs: [(65 301056), ]
+	outputs: [(66 301056), ]
+	temporary: [(66 301056), ]
+	release: [(65 301056), ]
+	computeIthOp, 579, cost time: 0.667000 ms
+current Op is 67th:128:Raster
+	inputs: [(66 301056), (66 301056), ]
+	outputs: [(67 301056), ]
+	temporary: [(67 301056), ]
+	release: []
+	computeIthOp, 579, cost time: 0.565000 ms
+current Op is 68th:128:Raster
+	inputs: []
+	outputs: [(68 36864), ]
+	temporary: [(68 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.404000 ms
+current Op is 69th:39:MatMul
+	inputs: [(67 301056), (68 36864), ]
+	outputs: [(69 1204224), ]
+	temporary: [(69 1204224), ]
+	release: [(68 36864), ]
+	computeIthOp, 579, cost time: 2.132000 ms
+current Op is 70th:128:Raster
+	inputs: [(66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), (66 301056), ]
+	outputs: [(70 2709504), ]
+	temporary: [(70 2709504), ]
+	release: [(66 301056), ]
+	computeIthOp, 579, cost time: 2.774000 ms
+current Op is 71th:128:Raster
+	inputs: []
+	outputs: [(71 331776), ]
+	temporary: [(71 331776), ]
+	release: []
+	computeIthOp, 579, cost time: 0.466000 ms
+current Op is 72th:39:MatMul
+	inputs: [(70 2709504), (71 331776), ]
+	outputs: [(72 1204224), ]
+	temporary: [(72 1204224), ]
+	release: [(71 331776), ]
+	computeIthOp, 579, cost time: 8.260000 ms
+current Op is 73th:128:Raster
+	inputs: [(69 1204224), (72 1204224), ]
+	outputs: [(73 2408448), ]
+	temporary: [(73 2408448), ]
+	release: [(69 1204224), (72 1204224), ]
+	computeIthOp, 579, cost time: 1.723000 ms
+current Op is 74th:128:Raster
+	inputs: [(73 2408448), (73 2408448), ]
+	outputs: [(74 2408448), ]
+	temporary: [(74 2408448), ]
+	release: [(73 2408448), ]
+	computeIthOp, 579, cost time: 1.371000 ms
+current Op is 75th:128:Raster
+	inputs: []
+	outputs: [(75 98304), ]
+	temporary: [(75 98304), ]
+	release: []
+	computeIthOp, 579, cost time: 0.447000 ms
+current Op is 76th:39:MatMul
+	inputs: [(74 2408448), (75 98304), ]
+	outputs: [(76 401408), ]
+	temporary: [(76 401408), ]
+	release: [(75 98304), ]
+	computeIthOp, 579, cost time: 2.786000 ms
+current Op is 77th:128:Raster
+	inputs: [(76 401408), ]
+	outputs: [(77 401408), ]
+	temporary: [(77 401408), ]
+	release: [(76 401408), ]
+	computeIthOp, 579, cost time: 0.691000 ms
+current Op is 78th:128:Raster
+	inputs: [(77 401408), (77 401408), ]
+	outputs: [(78 401408), ]
+	temporary: [(78 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.597000 ms
+current Op is 79th:128:Raster
+	inputs: []
+	outputs: [(79 65536), ]
+	temporary: [(79 65536), ]
+	release: []
+	computeIthOp, 579, cost time: 0.446000 ms
+current Op is 80th:39:MatMul
+	inputs: [(78 401408), (79 65536), ]
+	outputs: [(80 1605632), ]
+	temporary: [(80 1605632), ]
+	release: [(79 65536), ]
+	computeIthOp, 579, cost time: 2.837000 ms
+current Op is 81th:128:Raster
+	inputs: [(77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), (77 401408), ]
+	outputs: [(81 3612672), ]
+	temporary: [(81 3612672), ]
+	release: [(77 401408), ]
+	computeIthOp, 579, cost time: 3.629000 ms
+current Op is 82th:128:Raster
+	inputs: []
+	outputs: [(82 589824), ]
+	temporary: [(82 589824), ]
+	release: []
+	computeIthOp, 579, cost time: 0.501000 ms
+current Op is 83th:39:MatMul
+	inputs: [(81 3612672), (82 589824), ]
+	outputs: [(83 1605632), ]
+	temporary: [(83 1605632), ]
+	release: [(82 589824), ]
+	computeIthOp, 579, cost time: 13.793000 ms
+current Op is 84th:128:Raster
+	inputs: [(80 1605632), (83 1605632), ]
+	outputs: [(84 3211264), ]
+	temporary: [(84 3211264), ]
+	release: [(80 1605632), (83 1605632), ]
+	computeIthOp, 579, cost time: 2.623000 ms
+current Op is 85th:47:Pooling
+	inputs: [(84 3211264), ]
+	outputs: [(85 802816), ]
+	temporary: [(85 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 12.878000 ms
+current Op is 86th:128:Raster
+	inputs: [(85 802816), (85 802816), ]
+	outputs: [(86 802816), ]
+	temporary: [(86 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.863000 ms
+current Op is 87th:128:Raster
+	inputs: []
+	outputs: [(87 131072), ]
+	temporary: [(87 131072), ]
+	release: []
+	computeIthOp, 579, cost time: 0.486000 ms
+current Op is 88th:39:MatMul
+	inputs: [(86 802816), (87 131072), ]
+	outputs: [(88 100352), ]
+	temporary: [(88 100352), ]
+	release: [(87 131072), ]
+	computeIthOp, 579, cost time: 1.369000 ms
+current Op is 89th:128:Raster
+	inputs: [(88 100352), ]
+	outputs: [(89 100352), ]
+	temporary: [(89 100352), ]
+	release: [(88 100352), ]
+	computeIthOp, 579, cost time: 0.581000 ms
+current Op is 90th:128:Raster
+	inputs: [(89 100352), (89 100352), ]
+	outputs: [(90 100352), ]
+	temporary: [(90 100352), ]
+	release: []
+	computeIthOp, 579, cost time: 0.591000 ms
+current Op is 91th:128:Raster
+	inputs: []
+	outputs: [(91 65536), ]
+	temporary: [(91 65536), ]
+	release: []
+	computeIthOp, 579, cost time: 0.413000 ms
+current Op is 92th:39:MatMul
+	inputs: [(90 100352), (91 65536), ]
+	outputs: [(92 401408), ]
+	temporary: [(92 401408), ]
+	release: [(91 65536), ]
+	computeIthOp, 579, cost time: 1.263000 ms
+current Op is 93th:128:Raster
+	inputs: [(89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), (89 100352), ]
+	outputs: [(93 903168), ]
+	temporary: [(93 903168), ]
+	release: [(89 100352), ]
+	computeIthOp, 579, cost time: 1.573000 ms
+current Op is 94th:128:Raster
+	inputs: []
+	outputs: [(94 589824), ]
+	temporary: [(94 589824), ]
+	release: []
+	computeIthOp, 579, cost time: 0.478000 ms
+current Op is 95th:39:MatMul
+	inputs: [(93 903168), (94 589824), ]
+	outputs: [(95 401408), ]
+	temporary: [(95 401408), ]
+	release: [(94 589824), ]
+	computeIthOp, 579, cost time: 3.912000 ms
+current Op is 96th:128:Raster
+	inputs: [(92 401408), (95 401408), ]
+	outputs: [(96 802816), ]
+	temporary: [(96 802816), ]
+	release: [(92 401408), (95 401408), ]
+	computeIthOp, 579, cost time: 1.083000 ms
+current Op is 97th:128:Raster
+	inputs: [(96 802816), (96 802816), ]
+	outputs: [(97 200704), ]
+	temporary: [(97 200704), ]
+	release: [(96 802816), ]
+	computeIthOp, 579, cost time: 0.818000 ms
+current Op is 98th:128:Raster
+	inputs: []
+	outputs: [(98 20480), ]
+	temporary: [(98 20480), ]
+	release: []
+	computeIthOp, 579, cost time: 0.415000 ms
+current Op is 99th:39:MatMul
+	inputs: [(97 200704), (98 20480), ]
+	outputs: [(99 3920), ]
+	temporary: [(99 3920), ]
+	release: [(98 20480), ]
+	computeIthOp, 579, cost time: 0.874000 ms
+current Op is 100th:128:Raster
+	inputs: [(99 3920), ]
+	outputs: [(100 4704), ]
+	temporary: [(100 4704), ]
+	release: [(99 3920), ]
+	computeIthOp, 579, cost time: 0.549000 ms
+current Op is 101th:47:Pooling
+	inputs: [(100 4704), ]
+	outputs: [(101 96), ]
+	temporary: [(101 96), ]
+	release: [(100 4704), ]
+	computeIthOp, 579, cost time: 0.556000 ms
+current Op is 102th:101:UnaryOp
+	inputs: []
+	outputs: [(102 4), ]
+	temporary: [(102 4), ]
+	release: []
+	computeIthOp, 579, cost time: 0.401000 ms
+current Op is 103th:7:BinaryOp
+	inputs: [(102 4), ]
+	outputs: [(103 4), ]
+	temporary: [(103 4), ]
+	release: [(102 4), ]
+	computeIthOp, 579, cost time: 0.486000 ms
+current Op is 104th:128:Raster
+	inputs: []
+	outputs: [(104 8), ]
+	temporary: [(104 8), ]
+	release: []
+	computeIthOp, 579, cost time: 0.389000 ms
+current Op is 105th:128:Raster
+	inputs: [(103 4), ]
+	outputs: [(105 4), ]
+	temporary: [(105 4), ]
+	release: [(103 4), ]
+	computeIthOp, 579, cost time: 0.499000 ms
+current Op is 106th:7:BinaryOp
+	inputs: [(104 8), (105 4), ]
+	outputs: [(106 8), ]
+	temporary: [(106 8), ]
+	release: [(104 8), (105 4), ]
+	computeIthOp, 579, cost time: 0.614000 ms
+current Op is 107th:128:Raster
+	inputs: []
+	outputs: [(107 96), ]
+	temporary: [(107 96), ]
+	release: []
+	computeIthOp, 579, cost time: 0.392000 ms
+current Op is 108th:128:Raster
+	inputs: [(106 8), ]
+	outputs: [(108 32), ]
+	temporary: [(108 32), ]
+	release: [(106 8), ]
+	computeIthOp, 579, cost time: 0.490000 ms
+current Op is 109th:128:Raster
+	inputs: [(108 32), ]
+	outputs: [(109 96), ]
+	temporary: [(109 96), ]
+	release: [(108 32), ]
+	computeIthOp, 579, cost time: 0.548000 ms
+current Op is 110th:7:BinaryOp
+	inputs: [(107 96), (109 96), ]
+	outputs: [(110 96), ]
+	temporary: [(110 96), ]
+	release: [(107 96), (109 96), ]
+	computeIthOp, 579, cost time: 0.621000 ms
+current Op is 111th:128:Raster
+	inputs: []
+	outputs: [(111 8), ]
+	temporary: [(111 8), ]
+	release: []
+	computeIthOp, 579, cost time: 0.399000 ms
+current Op is 112th:7:BinaryOp
+	inputs: [(111 8), ]
+	outputs: [(112 8), ]
+	temporary: [(112 8), ]
+	release: [(111 8), ]
+	computeIthOp, 579, cost time: 0.479000 ms
+current Op is 113th:128:Raster
+	inputs: [(112 8), ]
+	outputs: [(113 8), ]
+	temporary: [(113 8), ]
+	release: [(112 8), ]
+	computeIthOp, 579, cost time: 0.492000 ms
+current Op is 114th:9:Cast
+	inputs: [(113 8), ]
+	outputs: [(114 8), ]
+	temporary: [(114 8), ]
+	release: [(113 8), ]
+	computeIthOp, 579, cost time: 0.478000 ms
+current Op is 115th:119:OneHot
+	inputs: [(114 8), ]
+	outputs: [(115 80), ]
+	temporary: [(115 80), ]
+	release: [(114 8), ]
+	computeIthOp, 579, cost time: 0.511000 ms
+current Op is 116th:128:Raster
+	inputs: [(115 80), ]
+	outputs: [(116 96), ]
+	temporary: [(116 96), ]
+	release: [(115 80), ]
+	computeIthOp, 579, cost time: 0.493000 ms
+current Op is 117th:7:BinaryOp
+	inputs: [(110 96), (116 96), ]
+	outputs: [(117 96), ]
+	temporary: [(117 96), ]
+	release: [(110 96), (116 96), ]
+	computeIthOp, 579, cost time: 0.670000 ms
+current Op is 118th:128:Raster
+	inputs: [(101 96), ]
+	outputs: [(118 96), ]
+	temporary: [(118 96), ]
+	release: [(101 96), ]
+	computeIthOp, 579, cost time: 0.510000 ms
+current Op is 119th:7:BinaryOp
+	inputs: [(117 96), (118 96), ]
+	outputs: [(119 96), ]
+	temporary: [(119 96), ]
+	release: [(117 96), (118 96), ]
+	computeIthOp, 579, cost time: 0.619000 ms
+current Op is 120th:128:Raster
+	inputs: [(119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), (119 96), ]
+	outputs: [(120 768320), ]
+	temporary: [(120 768320), ]
+	release: [(119 96), ]
+	computeIthOp, 579, cost time: 2.842000 ms
+current Op is 121th:68:Reduction
+	inputs: [(120 768320), ]
+	outputs: [(121 3920), ]
+	temporary: [(121 3920), ]
+	release: [(120 768320), ]
+	computeIthOp, 579, cost time: 0.587000 ms
+current Op is 122th:128:Raster
+	inputs: [(121 3920), ]
+	outputs: [(122 3920), ]
+	temporary: [(122 3920), ]
+	release: []
+	computeIthOp, 579, cost time: 0.450000 ms
+current Op is 123th:68:Reduction
+	inputs: [(122 3920), ]
+	outputs: [(123 1960), ]
+	temporary: [(123 1960), ]
+	release: [(122 3920), ]
+	computeIthOp, 579, cost time: 0.508000 ms
+current Op is 124th:128:Raster
+	inputs: [(123 1960), ]
+	outputs: [(124 1960), ]
+	temporary: [(124 1960), ]
+	release: [(123 1960), ]
+	computeIthOp, 579, cost time: 0.533000 ms
+current Op is 125th:68:Reduction
+	inputs: [(124 1960), ]
+	outputs: [(125 40), ]
+	temporary: [(125 40), ]
+	release: [(124 1960), ]
+	computeIthOp, 579, cost time: 0.491000 ms
+current Op is 126th:128:Raster
+	inputs: [(121 3920), ]
+	outputs: [(126 3920), ]
+	temporary: [(126 3920), ]
+	release: []
+	computeIthOp, 579, cost time: 0.444000 ms
+current Op is 127th:39:MatMul
+	inputs: [(97 200704), (126 3920), ]
+	outputs: [(127 20480), ]
+	temporary: [(127 20480), ]
+	release: [(97 200704), (126 3920), ]
+	computeIthOp, 579, cost time: 1.003000 ms
+current Op is 128th:128:Raster
+	inputs: []
+	outputs: [(128 20480), ]
+	temporary: [(128 20480), ]
+	release: []
+	computeIthOp, 579, cost time: 0.422000 ms
+current Op is 129th:128:Raster
+	inputs: [(121 3920), ]
+	outputs: [(129 3920), ]
+	temporary: [(129 3920), ]
+	release: [(121 3920), ]
+	computeIthOp, 579, cost time: 0.529000 ms
+current Op is 130th:39:MatMul
+	inputs: [(128 20480), (129 3920), ]
+	outputs: [(130 200704), ]
+	temporary: [(130 200704), ]
+	release: [(128 20480), (129 3920), ]
+	computeIthOp, 579, cost time: 0.896000 ms
+current Op is 131th:128:Raster
+	inputs: [(130 200704), (130 200704), ]
+	outputs: [(131 802816), ]
+	temporary: [(131 802816), ]
+	release: [(130 200704), ]
+	computeIthOp, 579, cost time: 0.773000 ms
+current Op is 132th:68:Reduction
+	inputs: [(131 802816), ]
+	outputs: [(132 802816), ]
+	temporary: [(132 802816), ]
+	release: [(131 802816), ]
+	computeIthOp, 579, cost time: 0.543000 ms
+current Op is 133th:128:Raster
+	inputs: [(132 802816), ]
+	outputs: [(133 401408), ]
+	temporary: [(133 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.487000 ms
+current Op is 134th:68:Reduction
+	inputs: [(133 401408), ]
+	outputs: [(134 200704), ]
+	temporary: [(134 200704), ]
+	release: [(133 401408), ]
+	computeIthOp, 579, cost time: 0.564000 ms
+current Op is 135th:128:Raster
+	inputs: [(134 200704), ]
+	outputs: [(135 200704), ]
+	temporary: [(135 200704), ]
+	release: [(134 200704), ]
+	computeIthOp, 579, cost time: 0.514000 ms
+current Op is 136th:68:Reduction
+	inputs: [(135 200704), ]
+	outputs: [(136 1024), ]
+	temporary: [(136 1024), ]
+	release: [(135 200704), ]
+	computeIthOp, 579, cost time: 0.617000 ms
+current Op is 137th:128:Raster
+	inputs: [(132 802816), ]
+	outputs: [(137 401408), ]
+	temporary: [(137 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.522000 ms
+current Op is 138th:39:MatMul
+	inputs: [(93 903168), (137 401408), ]
+	outputs: [(138 589824), ]
+	temporary: [(138 589824), ]
+	release: [(93 903168), (137 401408), ]
+	computeIthOp, 579, cost time: 4.752000 ms
+current Op is 139th:128:Raster
+	inputs: [(132 802816), ]
+	outputs: [(139 401408), ]
+	temporary: [(139 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.557000 ms
+current Op is 140th:68:Reduction
+	inputs: [(139 401408), ]
+	outputs: [(140 200704), ]
+	temporary: [(140 200704), ]
+	release: [(139 401408), ]
+	computeIthOp, 579, cost time: 0.606000 ms
+current Op is 141th:128:Raster
+	inputs: [(140 200704), ]
+	outputs: [(141 200704), ]
+	temporary: [(141 200704), ]
+	release: [(140 200704), ]
+	computeIthOp, 579, cost time: 0.525000 ms
+current Op is 142th:68:Reduction
+	inputs: [(141 200704), ]
+	outputs: [(142 1024), ]
+	temporary: [(142 1024), ]
+	release: [(141 200704), ]
+	computeIthOp, 579, cost time: 0.612000 ms
+current Op is 143th:128:Raster
+	inputs: [(132 802816), ]
+	outputs: [(143 401408), ]
+	temporary: [(143 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.525000 ms
+current Op is 144th:39:MatMul
+	inputs: [(90 100352), (143 401408), ]
+	outputs: [(144 65536), ]
+	temporary: [(144 65536), ]
+	release: [(90 100352), (143 401408), ]
+	computeIthOp, 579, cost time: 1.221000 ms
+current Op is 145th:128:Raster
+	inputs: []
+	outputs: [(145 589824), ]
+	temporary: [(145 589824), ]
+	release: []
+	computeIthOp, 579, cost time: 0.514000 ms
+current Op is 146th:128:Raster
+	inputs: [(132 802816), ]
+	outputs: [(146 401408), ]
+	temporary: [(146 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.488000 ms
+current Op is 147th:39:MatMul
+	inputs: [(145 589824), (146 401408), ]
+	outputs: [(147 903168), ]
+	temporary: [(147 903168), ]
+	release: [(145 589824), (146 401408), ]
+	computeIthOp, 579, cost time: 4.137000 ms
+current Op is 148th:128:Raster
+	inputs: [(147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), (147 903168), ]
+	outputs: [(148 903168), ]
+	temporary: [(148 903168), ]
+	release: [(147 903168), ]
+	computeIthOp, 579, cost time: 1.647000 ms
+current Op is 149th:68:Reduction
+	inputs: [(148 903168), ]
+	outputs: [(149 100352), ]
+	temporary: [(149 100352), ]
+	release: [(148 903168), ]
+	computeIthOp, 579, cost time: 0.561000 ms
+current Op is 150th:128:Raster
+	inputs: []
+	outputs: [(150 65536), ]
+	temporary: [(150 65536), ]
+	release: []
+	computeIthOp, 579, cost time: 0.491000 ms
+current Op is 151th:128:Raster
+	inputs: [(132 802816), ]
+	outputs: [(151 401408), ]
+	temporary: [(151 401408), ]
+	release: [(132 802816), ]
+	computeIthOp, 579, cost time: 0.551000 ms
+current Op is 152th:39:MatMul
+	inputs: [(150 65536), (151 401408), ]
+	outputs: [(152 100352), ]
+	temporary: [(152 100352), ]
+	release: [(150 65536), (151 401408), ]
+	computeIthOp, 579, cost time: 1.228000 ms
+current Op is 153th:128:Raster
+	inputs: [(152 100352), (152 100352), ]
+	outputs: [(153 100352), ]
+	temporary: [(153 100352), ]
+	release: [(152 100352), ]
+	computeIthOp, 579, cost time: 0.567000 ms
+current Op is 154th:68:Reduction
+	inputs: [(153 100352), ]
+	outputs: [(154 100352), ]
+	temporary: [(154 100352), ]
+	release: [(153 100352), ]
+	computeIthOp, 579, cost time: 0.511000 ms
+current Op is 155th:128:Raster
+	inputs: [(149 100352), ]
+	outputs: [(155 100352), ]
+	temporary: [(155 100352), ]
+	release: [(149 100352), ]
+	computeIthOp, 579, cost time: 0.592000 ms
+current Op is 156th:128:Raster
+	inputs: [(154 100352), ]
+	outputs: [(156 100352), ]
+	temporary: [(156 100352), ]
+	release: [(154 100352), ]
+	computeIthOp, 579, cost time: 0.550000 ms
+current Op is 157th:7:BinaryOp
+	inputs: [(155 100352), (156 100352), ]
+	outputs: [(157 100352), ]
+	temporary: [(157 100352), ]
+	release: [(155 100352), (156 100352), ]
+	computeIthOp, 579, cost time: 0.611000 ms
+current Op is 158th:128:Raster
+	inputs: [(157 100352), ]
+	outputs: [(158 100352), ]
+	temporary: [(158 100352), ]
+	release: []
+	computeIthOp, 579, cost time: 0.499000 ms
+current Op is 159th:68:Reduction
+	inputs: [(158 100352), ]
+	outputs: [(159 50176), ]
+	temporary: [(159 50176), ]
+	release: [(158 100352), ]
+	computeIthOp, 579, cost time: 0.502000 ms
+current Op is 160th:128:Raster
+	inputs: [(159 50176), ]
+	outputs: [(160 50176), ]
+	temporary: [(160 50176), ]
+	release: [(159 50176), ]
+	computeIthOp, 579, cost time: 0.539000 ms
+current Op is 161th:68:Reduction
+	inputs: [(160 50176), ]
+	outputs: [(161 256), ]
+	temporary: [(161 256), ]
+	release: [(160 50176), ]
+	computeIthOp, 579, cost time: 0.527000 ms
+current Op is 162th:128:Raster
+	inputs: [(157 100352), ]
+	outputs: [(162 100352), ]
+	temporary: [(162 100352), ]
+	release: []
+	computeIthOp, 579, cost time: 0.527000 ms
+current Op is 163th:39:MatMul
+	inputs: [(86 802816), (162 100352), ]
+	outputs: [(163 131072), ]
+	temporary: [(163 131072), ]
+	release: [(86 802816), (162 100352), ]
+	computeIthOp, 579, cost time: 2.271000 ms
+current Op is 164th:128:Raster
+	inputs: []
+	outputs: [(164 131072), ]
+	temporary: [(164 131072), ]
+	release: []
+	computeIthOp, 579, cost time: 0.478000 ms
+current Op is 165th:128:Raster
+	inputs: [(157 100352), ]
+	outputs: [(165 100352), ]
+	temporary: [(165 100352), ]
+	release: [(157 100352), ]
+	computeIthOp, 579, cost time: 0.588000 ms
+current Op is 166th:39:MatMul
+	inputs: [(164 131072), (165 100352), ]
+	outputs: [(166 802816), ]
+	temporary: [(166 802816), ]
+	release: [(164 131072), (165 100352), ]
+	computeIthOp, 579, cost time: 1.776000 ms
+current Op is 167th:128:Raster
+	inputs: [(166 802816), (166 802816), ]
+	outputs: [(167 802816), ]
+	temporary: [(167 802816), ]
+	release: [(166 802816), ]
+	computeIthOp, 579, cost time: 0.670000 ms
+current Op is 168th:68:Reduction
+	inputs: [(167 802816), ]
+	outputs: [(168 802816), ]
+	temporary: [(168 802816), ]
+	release: [(167 802816), ]
+	computeIthOp, 579, cost time: 0.576000 ms
+current Op is 169th:128:Raster
+	inputs: [(84 3211264), ]
+	outputs: [(169 802816), ]
+	temporary: [(169 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 1.701000 ms
+current Op is 170th:7:BinaryOp
+	inputs: [(169 802816), (85 802816), ]
+	outputs: [(170 802816), ]
+	temporary: [(170 802816), ]
+	release: [(169 802816), ]
+	computeIthOp, 579, cost time: 1.839000 ms
+current Op is 171th:9:Cast
+	inputs: [(170 802816), ]
+	outputs: [(171 802816), ]
+	temporary: [(171 802816), ]
+	release: [(170 802816), ]
+	computeIthOp, 579, cost time: 1.100000 ms
+current Op is 172th:128:Raster
+	inputs: [(168 802816), ]
+	outputs: [(172 802816), ]
+	temporary: [(172 802816), ]
+	release: [(168 802816), ]
+	computeIthOp, 579, cost time: 0.726000 ms
+current Op is 173th:7:BinaryOp
+	inputs: [(172 802816), (171 802816), ]
+	outputs: [(173 802816), ]
+	temporary: [(173 802816), ]
+	release: [(171 802816), ]
+	computeIthOp, 579, cost time: 0.707000 ms
+current Op is 174th:128:Raster
+	inputs: [(84 3211264), ]
+	outputs: [(174 802816), ]
+	temporary: [(174 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 2.122000 ms
+current Op is 175th:7:BinaryOp
+	inputs: [(174 802816), (85 802816), ]
+	outputs: [(175 802816), ]
+	temporary: [(175 802816), ]
+	release: [(174 802816), ]
+	computeIthOp, 579, cost time: 1.811000 ms
+current Op is 176th:9:Cast
+	inputs: [(175 802816), ]
+	outputs: [(176 802816), ]
+	temporary: [(176 802816), ]
+	release: [(175 802816), ]
+	computeIthOp, 579, cost time: 1.507000 ms
+current Op is 177th:7:BinaryOp
+	inputs: [(172 802816), (176 802816), ]
+	outputs: [(177 802816), ]
+	temporary: [(177 802816), ]
+	release: [(176 802816), ]
+	computeIthOp, 579, cost time: 0.725000 ms
+current Op is 178th:128:Raster
+	inputs: [(84 3211264), ]
+	outputs: [(178 802816), ]
+	temporary: [(178 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 1.738000 ms
+current Op is 179th:7:BinaryOp
+	inputs: [(178 802816), (85 802816), ]
+	outputs: [(179 802816), ]
+	temporary: [(179 802816), ]
+	release: [(178 802816), ]
+	computeIthOp, 579, cost time: 2.275000 ms
+current Op is 180th:9:Cast
+	inputs: [(179 802816), ]
+	outputs: [(180 802816), ]
+	temporary: [(180 802816), ]
+	release: [(179 802816), ]
+	computeIthOp, 579, cost time: 1.186000 ms
+current Op is 181th:7:BinaryOp
+	inputs: [(172 802816), (180 802816), ]
+	outputs: [(181 802816), ]
+	temporary: [(181 802816), ]
+	release: [(180 802816), ]
+	computeIthOp, 579, cost time: 0.700000 ms
+current Op is 182th:128:Raster
+	inputs: [(84 3211264), ]
+	outputs: [(182 802816), ]
+	temporary: [(182 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 2.093000 ms
+current Op is 183th:7:BinaryOp
+	inputs: [(182 802816), (85 802816), ]
+	outputs: [(183 802816), ]
+	temporary: [(183 802816), ]
+	release: [(182 802816), ]
+	computeIthOp, 579, cost time: 1.774000 ms
+current Op is 184th:9:Cast
+	inputs: [(183 802816), ]
+	outputs: [(184 802816), ]
+	temporary: [(184 802816), ]
+	release: [(183 802816), ]
+	computeIthOp, 579, cost time: 1.474000 ms
+current Op is 185th:7:BinaryOp
+	inputs: [(172 802816), (184 802816), ]
+	outputs: [(185 802816), ]
+	temporary: [(185 802816), ]
+	release: [(184 802816), ]
+	computeIthOp, 579, cost time: 0.648000 ms
+current Op is 186th:128:Raster
+	inputs: [(84 3211264), ]
+	outputs: [(186 802816), ]
+	temporary: [(186 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 1.681000 ms
+current Op is 187th:7:BinaryOp
+	inputs: [(186 802816), (85 802816), ]
+	outputs: [(187 802816), ]
+	temporary: [(187 802816), ]
+	release: [(186 802816), ]
+	computeIthOp, 579, cost time: 1.744000 ms
+current Op is 188th:9:Cast
+	inputs: [(187 802816), ]
+	outputs: [(188 802816), ]
+	temporary: [(188 802816), ]
+	release: [(187 802816), ]
+	computeIthOp, 579, cost time: 1.845000 ms
+current Op is 189th:7:BinaryOp
+	inputs: [(172 802816), (188 802816), ]
+	outputs: [(189 802816), ]
+	temporary: [(189 802816), ]
+	release: [(188 802816), ]
+	computeIthOp, 579, cost time: 0.699000 ms
+current Op is 190th:128:Raster
+	inputs: [(84 3211264), ]
+	outputs: [(190 802816), ]
+	temporary: [(190 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 2.153000 ms
+current Op is 191th:7:BinaryOp
+	inputs: [(190 802816), (85 802816), ]
+	outputs: [(191 802816), ]
+	temporary: [(191 802816), ]
+	release: [(190 802816), ]
+	computeIthOp, 579, cost time: 1.840000 ms
+current Op is 192th:9:Cast
+	inputs: [(191 802816), ]
+	outputs: [(192 802816), ]
+	temporary: [(192 802816), ]
+	release: [(191 802816), ]
+	computeIthOp, 579, cost time: 1.213000 ms
+current Op is 193th:7:BinaryOp
+	inputs: [(172 802816), (192 802816), ]
+	outputs: [(193 802816), ]
+	temporary: [(193 802816), ]
+	release: [(192 802816), ]
+	computeIthOp, 579, cost time: 0.642000 ms
+current Op is 194th:128:Raster
+	inputs: [(84 3211264), ]
+	outputs: [(194 802816), ]
+	temporary: [(194 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 1.628000 ms
+current Op is 195th:7:BinaryOp
+	inputs: [(194 802816), (85 802816), ]
+	outputs: [(195 802816), ]
+	temporary: [(195 802816), ]
+	release: [(194 802816), ]
+	computeIthOp, 579, cost time: 1.772000 ms
+current Op is 196th:9:Cast
+	inputs: [(195 802816), ]
+	outputs: [(196 802816), ]
+	temporary: [(196 802816), ]
+	release: [(195 802816), ]
+	computeIthOp, 579, cost time: 1.525000 ms
+current Op is 197th:7:BinaryOp
+	inputs: [(172 802816), (196 802816), ]
+	outputs: [(197 802816), ]
+	temporary: [(197 802816), ]
+	release: [(196 802816), ]
+	computeIthOp, 579, cost time: 0.662000 ms
+current Op is 198th:128:Raster
+	inputs: [(84 3211264), ]
+	outputs: [(198 802816), ]
+	temporary: [(198 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 1.654000 ms
+current Op is 199th:7:BinaryOp
+	inputs: [(198 802816), (85 802816), ]
+	outputs: [(199 802816), ]
+	temporary: [(199 802816), ]
+	release: [(198 802816), ]
+	computeIthOp, 579, cost time: 1.715000 ms
+current Op is 200th:9:Cast
+	inputs: [(199 802816), ]
+	outputs: [(200 802816), ]
+	temporary: [(200 802816), ]
+	release: [(199 802816), ]
+	computeIthOp, 579, cost time: 1.539000 ms
+current Op is 201th:7:BinaryOp
+	inputs: [(172 802816), (200 802816), ]
+	outputs: [(201 802816), ]
+	temporary: [(201 802816), ]
+	release: [(200 802816), ]
+	computeIthOp, 579, cost time: 0.659000 ms
+current Op is 202th:128:Raster
+	inputs: [(84 3211264), ]
+	outputs: [(202 802816), ]
+	temporary: [(202 802816), ]
+	release: [(84 3211264), ]
+	computeIthOp, 579, cost time: 1.671000 ms
+current Op is 203th:7:BinaryOp
+	inputs: [(202 802816), (85 802816), ]
+	outputs: [(203 802816), ]
+	temporary: [(203 802816), ]
+	release: [(202 802816), (85 802816), ]
+	computeIthOp, 579, cost time: 1.783000 ms
+current Op is 204th:9:Cast
+	inputs: [(203 802816), ]
+	outputs: [(204 802816), ]
+	temporary: [(204 802816), ]
+	release: [(203 802816), ]
+	computeIthOp, 579, cost time: 1.527000 ms
+current Op is 205th:7:BinaryOp
+	inputs: [(172 802816), (204 802816), ]
+	outputs: [(205 802816), ]
+	temporary: [(205 802816), ]
+	release: [(172 802816), (204 802816), ]
+	computeIthOp, 579, cost time: 0.745000 ms
+current Op is 206th:128:Raster
+	inputs: [(173 802816), ]
+	outputs: [(206 3211264), ]
+	temporary: [(206 3211264), ]
+	release: [(173 802816), ]
+	computeIthOp, 579, cost time: 2.312000 ms
+current Op is 207th:128:Raster
+	inputs: [(177 802816), ]
+	outputs: [(207 3211264), ]
+	temporary: [(207 3211264), ]
+	release: [(177 802816), ]
+	computeIthOp, 579, cost time: 1.910000 ms
+current Op is 208th:128:Raster
+	inputs: [(181 802816), ]
+	outputs: [(208 3211264), ]
+	temporary: [(208 3211264), ]
+	release: [(181 802816), ]
+	computeIthOp, 579, cost time: 3.343000 ms
+current Op is 209th:128:Raster
+	inputs: [(185 802816), ]
+	outputs: [(209 3211264), ]
+	temporary: [(209 3211264), ]
+	release: [(185 802816), ]
+	computeIthOp, 579, cost time: 3.136000 ms
+current Op is 210th:128:Raster
+	inputs: [(189 802816), ]
+	outputs: [(210 3211264), ]
+	temporary: [(210 3211264), ]
+	release: [(189 802816), ]
+	computeIthOp, 579, cost time: 2.835000 ms
+current Op is 211th:128:Raster
+	inputs: [(193 802816), ]
+	outputs: [(211 3211264), ]
+	temporary: [(211 3211264), ]
+	release: [(193 802816), ]
+	computeIthOp, 579, cost time: 3.390000 ms
+current Op is 212th:128:Raster
+	inputs: [(197 802816), ]
+	outputs: [(212 3211264), ]
+	temporary: [(212 3211264), ]
+	release: [(197 802816), ]
+	computeIthOp, 579, cost time: 3.467000 ms
+current Op is 213th:128:Raster
+	inputs: [(201 802816), ]
+	outputs: [(213 3211264), ]
+	temporary: [(213 3211264), ]
+	release: [(201 802816), ]
+	computeIthOp, 579, cost time: 3.344000 ms
+current Op is 214th:128:Raster
+	inputs: [(205 802816), ]
+	outputs: [(214 3211264), ]
+	temporary: [(214 3211264), ]
+	release: [(205 802816), ]
+	computeIthOp, 579, cost time: 2.883000 ms
+current Op is 215th:22:Eltwise
+	inputs: [(206 3211264), (207 3211264), (208 3211264), (209 3211264), (210 3211264), (211 3211264), (212 3211264), (213 3211264), (214 3211264), ]
+	outputs: [(215 3211264), ]
+	temporary: [(215 3211264), ]
+	release: [(206 3211264), (207 3211264), (208 3211264), (209 3211264), (210 3211264), (211 3211264), (212 3211264), (213 3211264), (214 3211264), ]
+	computeIthOp, 579, cost time: 5.378000 ms
+current Op is 216th:128:Raster
+	inputs: [(215 3211264), ]
+	outputs: [(216 1605632), ]
+	temporary: [(216 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 1.136000 ms
+current Op is 217th:68:Reduction
+	inputs: [(216 1605632), ]
+	outputs: [(217 802816), ]
+	temporary: [(217 802816), ]
+	release: [(216 1605632), ]
+	computeIthOp, 579, cost time: 0.724000 ms
+current Op is 218th:128:Raster
+	inputs: [(217 802816), ]
+	outputs: [(218 802816), ]
+	temporary: [(218 802816), ]
+	release: [(217 802816), ]
+	computeIthOp, 579, cost time: 0.621000 ms
+current Op is 219th:68:Reduction
+	inputs: [(218 802816), ]
+	outputs: [(219 1024), ]
+	temporary: [(219 1024), ]
+	release: [(218 802816), ]
+	computeIthOp, 579, cost time: 0.933000 ms
+current Op is 220th:128:Raster
+	inputs: [(215 3211264), ]
+	outputs: [(220 1605632), ]
+	temporary: [(220 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 1.107000 ms
+current Op is 221th:39:MatMul
+	inputs: [(81 3612672), (220 1605632), ]
+	outputs: [(221 589824), ]
+	temporary: [(221 589824), ]
+	release: [(81 3612672), (220 1605632), ]
+	computeIthOp, 579, cost time: 14.731001 ms
+current Op is 222th:128:Raster
+	inputs: [(215 3211264), ]
+	outputs: [(222 1605632), ]
+	temporary: [(222 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 1.307000 ms
+current Op is 223th:68:Reduction
+	inputs: [(222 1605632), ]
+	outputs: [(223 802816), ]
+	temporary: [(223 802816), ]
+	release: [(222 1605632), ]
+	computeIthOp, 579, cost time: 0.722000 ms
+current Op is 224th:128:Raster
+	inputs: [(223 802816), ]
+	outputs: [(224 802816), ]
+	temporary: [(224 802816), ]
+	release: [(223 802816), ]
+	computeIthOp, 579, cost time: 0.596000 ms
+current Op is 225th:68:Reduction
+	inputs: [(224 802816), ]
+	outputs: [(225 1024), ]
+	temporary: [(225 1024), ]
+	release: [(224 802816), ]
+	computeIthOp, 579, cost time: 0.948000 ms
+current Op is 226th:128:Raster
+	inputs: [(215 3211264), ]
+	outputs: [(226 1605632), ]
+	temporary: [(226 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 1.138000 ms
+current Op is 227th:39:MatMul
+	inputs: [(78 401408), (226 1605632), ]
+	outputs: [(227 65536), ]
+	temporary: [(227 65536), ]
+	release: [(78 401408), (226 1605632), ]
+	computeIthOp, 579, cost time: 2.917000 ms
+current Op is 228th:128:Raster
+	inputs: []
+	outputs: [(228 589824), ]
+	temporary: [(228 589824), ]
+	release: []
+	computeIthOp, 579, cost time: 0.594000 ms
+current Op is 229th:128:Raster
+	inputs: [(215 3211264), ]
+	outputs: [(229 1605632), ]
+	temporary: [(229 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 1.143000 ms
+current Op is 230th:39:MatMul
+	inputs: [(228 589824), (229 1605632), ]
+	outputs: [(230 3612672), ]
+	temporary: [(230 3612672), ]
+	release: [(228 589824), (229 1605632), ]
+	computeIthOp, 579, cost time: 11.976001 ms
+current Op is 231th:128:Raster
+	inputs: [(230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), (230 3612672), ]
+	outputs: [(231 3612672), ]
+	temporary: [(231 3612672), ]
+	release: [(230 3612672), ]
+	computeIthOp, 579, cost time: 2.456000 ms
+current Op is 232th:68:Reduction
+	inputs: [(231 3612672), ]
+	outputs: [(232 401408), ]
+	temporary: [(232 401408), ]
+	release: [(231 3612672), ]
+	computeIthOp, 579, cost time: 0.800000 ms
+current Op is 233th:128:Raster
+	inputs: []
+	outputs: [(233 65536), ]
+	temporary: [(233 65536), ]
+	release: []
+	computeIthOp, 579, cost time: 0.474000 ms
+current Op is 234th:128:Raster
+	inputs: [(215 3211264), ]
+	outputs: [(234 1605632), ]
+	temporary: [(234 1605632), ]
+	release: [(215 3211264), ]
+	computeIthOp, 579, cost time: 1.290000 ms
+current Op is 235th:39:MatMul
+	inputs: [(233 65536), (234 1605632), ]
+	outputs: [(235 401408), ]
+	temporary: [(235 401408), ]
+	release: [(233 65536), (234 1605632), ]
+	computeIthOp, 579, cost time: 3.436000 ms
+current Op is 236th:128:Raster
+	inputs: [(235 401408), (235 401408), ]
+	outputs: [(236 401408), ]
+	temporary: [(236 401408), ]
+	release: [(235 401408), ]
+	computeIthOp, 579, cost time: 0.683000 ms
+current Op is 237th:68:Reduction
+	inputs: [(236 401408), ]
+	outputs: [(237 401408), ]
+	temporary: [(237 401408), ]
+	release: [(236 401408), ]
+	computeIthOp, 579, cost time: 0.602000 ms
+current Op is 238th:128:Raster
+	inputs: [(232 401408), ]
+	outputs: [(238 401408), ]
+	temporary: [(238 401408), ]
+	release: [(232 401408), ]
+	computeIthOp, 579, cost time: 0.654000 ms
+current Op is 239th:128:Raster
+	inputs: [(237 401408), ]
+	outputs: [(239 401408), ]
+	temporary: [(239 401408), ]
+	release: [(237 401408), ]
+	computeIthOp, 579, cost time: 0.653000 ms
+current Op is 240th:7:BinaryOp
+	inputs: [(238 401408), (239 401408), ]
+	outputs: [(240 401408), ]
+	temporary: [(240 401408), ]
+	release: [(238 401408), (239 401408), ]
+	computeIthOp, 579, cost time: 0.663000 ms
+current Op is 241th:128:Raster
+	inputs: [(240 401408), ]
+	outputs: [(241 401408), ]
+	temporary: [(241 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.586000 ms
+current Op is 242th:68:Reduction
+	inputs: [(241 401408), ]
+	outputs: [(242 200704), ]
+	temporary: [(242 200704), ]
+	release: [(241 401408), ]
+	computeIthOp, 579, cost time: 0.591000 ms
+current Op is 243th:128:Raster
+	inputs: [(242 200704), ]
+	outputs: [(243 200704), ]
+	temporary: [(243 200704), ]
+	release: [(242 200704), ]
+	computeIthOp, 579, cost time: 0.590000 ms
+current Op is 244th:68:Reduction
+	inputs: [(243 200704), ]
+	outputs: [(244 256), ]
+	temporary: [(244 256), ]
+	release: [(243 200704), ]
+	computeIthOp, 579, cost time: 0.631000 ms
+current Op is 245th:128:Raster
+	inputs: [(240 401408), ]
+	outputs: [(245 401408), ]
+	temporary: [(245 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.600000 ms
+current Op is 246th:39:MatMul
+	inputs: [(74 2408448), (245 401408), ]
+	outputs: [(246 98304), ]
+	temporary: [(246 98304), ]
+	release: [(74 2408448), (245 401408), ]
+	computeIthOp, 579, cost time: 4.926000 ms
+current Op is 247th:128:Raster
+	inputs: []
+	outputs: [(247 98304), ]
+	temporary: [(247 98304), ]
+	release: []
+	computeIthOp, 579, cost time: 0.533000 ms
+current Op is 248th:128:Raster
+	inputs: [(240 401408), ]
+	outputs: [(248 401408), ]
+	temporary: [(248 401408), ]
+	release: [(240 401408), ]
+	computeIthOp, 579, cost time: 0.660000 ms
+current Op is 249th:39:MatMul
+	inputs: [(247 98304), (248 401408), ]
+	outputs: [(249 2408448), ]
+	temporary: [(249 2408448), ]
+	release: [(247 98304), (248 401408), ]
+	computeIthOp, 579, cost time: 4.651000 ms
+current Op is 250th:128:Raster
+	inputs: [(249 2408448), (249 2408448), ]
+	outputs: [(250 2408448), ]
+	temporary: [(250 2408448), ]
+	release: [(249 2408448), ]
+	computeIthOp, 579, cost time: 0.974000 ms
+current Op is 251th:68:Reduction
+	inputs: [(250 2408448), ]
+	outputs: [(251 2408448), ]
+	temporary: [(251 2408448), ]
+	release: [(250 2408448), ]
+	computeIthOp, 579, cost time: 0.719000 ms
+current Op is 252th:128:Raster
+	inputs: [(251 2408448), ]
+	outputs: [(252 1204224), ]
+	temporary: [(252 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 0.627000 ms
+current Op is 253th:68:Reduction
+	inputs: [(252 1204224), ]
+	outputs: [(253 602112), ]
+	temporary: [(253 602112), ]
+	release: [(252 1204224), ]
+	computeIthOp, 579, cost time: 0.628000 ms
+current Op is 254th:128:Raster
+	inputs: [(253 602112), ]
+	outputs: [(254 602112), ]
+	temporary: [(254 602112), ]
+	release: [(253 602112), ]
+	computeIthOp, 579, cost time: 0.569000 ms
+current Op is 255th:68:Reduction
+	inputs: [(254 602112), ]
+	outputs: [(255 768), ]
+	temporary: [(255 768), ]
+	release: [(254 602112), ]
+	computeIthOp, 579, cost time: 0.890000 ms
+current Op is 256th:128:Raster
+	inputs: [(251 2408448), ]
+	outputs: [(256 1204224), ]
+	temporary: [(256 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 0.557000 ms
+current Op is 257th:39:MatMul
+	inputs: [(70 2709504), (256 1204224), ]
+	outputs: [(257 331776), ]
+	temporary: [(257 331776), ]
+	release: [(70 2709504), (256 1204224), ]
+	computeIthOp, 579, cost time: 11.010000 ms
+current Op is 258th:128:Raster
+	inputs: [(251 2408448), ]
+	outputs: [(258 1204224), ]
+	temporary: [(258 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 0.660000 ms
+current Op is 259th:68:Reduction
+	inputs: [(258 1204224), ]
+	outputs: [(259 602112), ]
+	temporary: [(259 602112), ]
+	release: [(258 1204224), ]
+	computeIthOp, 579, cost time: 0.761000 ms
+current Op is 260th:128:Raster
+	inputs: [(259 602112), ]
+	outputs: [(260 602112), ]
+	temporary: [(260 602112), ]
+	release: [(259 602112), ]
+	computeIthOp, 579, cost time: 0.575000 ms
+current Op is 261th:68:Reduction
+	inputs: [(260 602112), ]
+	outputs: [(261 768), ]
+	temporary: [(261 768), ]
+	release: [(260 602112), ]
+	computeIthOp, 579, cost time: 0.846000 ms
+current Op is 262th:128:Raster
+	inputs: [(251 2408448), ]
+	outputs: [(262 1204224), ]
+	temporary: [(262 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 0.560000 ms
+current Op is 263th:39:MatMul
+	inputs: [(67 301056), (262 1204224), ]
+	outputs: [(263 36864), ]
+	temporary: [(263 36864), ]
+	release: [(67 301056), (262 1204224), ]
+	computeIthOp, 579, cost time: 1.826000 ms
+current Op is 264th:128:Raster
+	inputs: []
+	outputs: [(264 331776), ]
+	temporary: [(264 331776), ]
+	release: []
+	computeIthOp, 579, cost time: 0.467000 ms
+current Op is 265th:128:Raster
+	inputs: [(251 2408448), ]
+	outputs: [(265 1204224), ]
+	temporary: [(265 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 0.598000 ms
+current Op is 266th:39:MatMul
+	inputs: [(264 331776), (265 1204224), ]
+	outputs: [(266 2709504), ]
+	temporary: [(266 2709504), ]
+	release: [(264 331776), (265 1204224), ]
+	computeIthOp, 579, cost time: 8.388000 ms
+current Op is 267th:128:Raster
+	inputs: [(266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), (266 2709504), ]
+	outputs: [(267 2709504), ]
+	temporary: [(267 2709504), ]
+	release: [(266 2709504), ]
+	computeIthOp, 579, cost time: 2.060000 ms
+current Op is 268th:68:Reduction
+	inputs: [(267 2709504), ]
+	outputs: [(268 301056), ]
+	temporary: [(268 301056), ]
+	release: [(267 2709504), ]
+	computeIthOp, 579, cost time: 0.705000 ms
+current Op is 269th:128:Raster
+	inputs: []
+	outputs: [(269 36864), ]
+	temporary: [(269 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.461000 ms
+current Op is 270th:128:Raster
+	inputs: [(251 2408448), ]
+	outputs: [(270 1204224), ]
+	temporary: [(270 1204224), ]
+	release: [(251 2408448), ]
+	computeIthOp, 579, cost time: 0.626000 ms
+current Op is 271th:39:MatMul
+	inputs: [(269 36864), (270 1204224), ]
+	outputs: [(271 301056), ]
+	temporary: [(271 301056), ]
+	release: [(269 36864), (270 1204224), ]
+	computeIthOp, 579, cost time: 2.104000 ms
+current Op is 272th:128:Raster
+	inputs: [(271 301056), (271 301056), ]
+	outputs: [(272 301056), ]
+	temporary: [(272 301056), ]
+	release: [(271 301056), ]
+	computeIthOp, 579, cost time: 0.608000 ms
+current Op is 273th:68:Reduction
+	inputs: [(272 301056), ]
+	outputs: [(273 301056), ]
+	temporary: [(273 301056), ]
+	release: [(272 301056), ]
+	computeIthOp, 579, cost time: 0.525000 ms
+current Op is 274th:128:Raster
+	inputs: [(268 301056), ]
+	outputs: [(274 301056), ]
+	temporary: [(274 301056), ]
+	release: [(268 301056), ]
+	computeIthOp, 579, cost time: 0.651000 ms
+current Op is 275th:128:Raster
+	inputs: [(273 301056), ]
+	outputs: [(275 301056), ]
+	temporary: [(275 301056), ]
+	release: [(273 301056), ]
+	computeIthOp, 579, cost time: 0.569000 ms
+current Op is 276th:7:BinaryOp
+	inputs: [(274 301056), (275 301056), ]
+	outputs: [(276 301056), ]
+	temporary: [(276 301056), ]
+	release: [(274 301056), (275 301056), ]
+	computeIthOp, 579, cost time: 0.626000 ms
+current Op is 277th:128:Raster
+	inputs: [(276 301056), ]
+	outputs: [(277 301056), ]
+	temporary: [(277 301056), ]
+	release: []
+	computeIthOp, 579, cost time: 0.524000 ms
+current Op is 278th:68:Reduction
+	inputs: [(277 301056), ]
+	outputs: [(278 150528), ]
+	temporary: [(278 150528), ]
+	release: [(277 301056), ]
+	computeIthOp, 579, cost time: 0.525000 ms
+current Op is 279th:128:Raster
+	inputs: [(278 150528), ]
+	outputs: [(279 150528), ]
+	temporary: [(279 150528), ]
+	release: [(278 150528), ]
+	computeIthOp, 579, cost time: 0.576000 ms
+current Op is 280th:68:Reduction
+	inputs: [(279 150528), ]
+	outputs: [(280 192), ]
+	temporary: [(280 192), ]
+	release: [(279 150528), ]
+	computeIthOp, 579, cost time: 0.588000 ms
+current Op is 281th:128:Raster
+	inputs: [(276 301056), ]
+	outputs: [(281 301056), ]
+	temporary: [(281 301056), ]
+	release: []
+	computeIthOp, 579, cost time: 0.517000 ms
+current Op is 282th:39:MatMul
+	inputs: [(63 2408448), (281 301056), ]
+	outputs: [(282 73728), ]
+	temporary: [(282 73728), ]
+	release: [(63 2408448), (281 301056), ]
+	computeIthOp, 579, cost time: 4.374000 ms
+current Op is 283th:128:Raster
+	inputs: []
+	outputs: [(283 73728), ]
+	temporary: [(283 73728), ]
+	release: []
+	computeIthOp, 579, cost time: 0.493000 ms
+current Op is 284th:128:Raster
+	inputs: [(276 301056), ]
+	outputs: [(284 301056), ]
+	temporary: [(284 301056), ]
+	release: [(276 301056), ]
+	computeIthOp, 579, cost time: 0.668000 ms
+current Op is 285th:39:MatMul
+	inputs: [(283 73728), (284 301056), ]
+	outputs: [(285 2408448), ]
+	temporary: [(285 2408448), ]
+	release: [(283 73728), (284 301056), ]
+	computeIthOp, 579, cost time: 4.117000 ms
+current Op is 286th:128:Raster
+	inputs: [(285 2408448), (285 2408448), ]
+	outputs: [(286 2408448), ]
+	temporary: [(286 2408448), ]
+	release: [(285 2408448), ]
+	computeIthOp, 579, cost time: 1.189000 ms
+current Op is 287th:68:Reduction
+	inputs: [(286 2408448), ]
+	outputs: [(287 2408448), ]
+	temporary: [(287 2408448), ]
+	release: [(286 2408448), ]
+	computeIthOp, 579, cost time: 0.713000 ms
+current Op is 288th:128:Raster
+	inputs: [(287 2408448), ]
+	outputs: [(288 1204224), ]
+	temporary: [(288 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 0.577000 ms
+current Op is 289th:68:Reduction
+	inputs: [(288 1204224), ]
+	outputs: [(289 602112), ]
+	temporary: [(289 602112), ]
+	release: [(288 1204224), ]
+	computeIthOp, 579, cost time: 0.641000 ms
+current Op is 290th:128:Raster
+	inputs: [(289 602112), ]
+	outputs: [(290 602112), ]
+	temporary: [(290 602112), ]
+	release: [(289 602112), ]
+	computeIthOp, 579, cost time: 0.609000 ms
+current Op is 291th:68:Reduction
+	inputs: [(290 602112), ]
+	outputs: [(291 768), ]
+	temporary: [(291 768), ]
+	release: [(290 602112), ]
+	computeIthOp, 579, cost time: 0.874000 ms
+current Op is 292th:128:Raster
+	inputs: [(287 2408448), ]
+	outputs: [(292 1204224), ]
+	temporary: [(292 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 0.557000 ms
+current Op is 293th:39:MatMul
+	inputs: [(59 2709504), (292 1204224), ]
+	outputs: [(293 331776), ]
+	temporary: [(293 331776), ]
+	release: [(59 2709504), (292 1204224), ]
+	computeIthOp, 579, cost time: 10.962001 ms
+current Op is 294th:128:Raster
+	inputs: [(287 2408448), ]
+	outputs: [(294 1204224), ]
+	temporary: [(294 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 0.621000 ms
+current Op is 295th:68:Reduction
+	inputs: [(294 1204224), ]
+	outputs: [(295 602112), ]
+	temporary: [(295 602112), ]
+	release: [(294 1204224), ]
+	computeIthOp, 579, cost time: 0.725000 ms
+current Op is 296th:128:Raster
+	inputs: [(295 602112), ]
+	outputs: [(296 602112), ]
+	temporary: [(296 602112), ]
+	release: [(295 602112), ]
+	computeIthOp, 579, cost time: 0.553000 ms
+current Op is 297th:68:Reduction
+	inputs: [(296 602112), ]
+	outputs: [(297 768), ]
+	temporary: [(297 768), ]
+	release: [(296 602112), ]
+	computeIthOp, 579, cost time: 0.831000 ms
+current Op is 298th:128:Raster
+	inputs: [(287 2408448), ]
+	outputs: [(298 1204224), ]
+	temporary: [(298 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 0.602000 ms
+current Op is 299th:39:MatMul
+	inputs: [(56 301056), (298 1204224), ]
+	outputs: [(299 36864), ]
+	temporary: [(299 36864), ]
+	release: [(56 301056), (298 1204224), ]
+	computeIthOp, 579, cost time: 1.730000 ms
+current Op is 300th:128:Raster
+	inputs: []
+	outputs: [(300 331776), ]
+	temporary: [(300 331776), ]
+	release: []
+	computeIthOp, 579, cost time: 0.463000 ms
+current Op is 301th:128:Raster
+	inputs: [(287 2408448), ]
+	outputs: [(301 1204224), ]
+	temporary: [(301 1204224), ]
+	release: []
+	computeIthOp, 579, cost time: 0.627000 ms
+current Op is 302th:39:MatMul
+	inputs: [(300 331776), (301 1204224), ]
+	outputs: [(302 2709504), ]
+	temporary: [(302 2709504), ]
+	release: [(300 331776), (301 1204224), ]
+	computeIthOp, 579, cost time: 8.378000 ms
+current Op is 303th:128:Raster
+	inputs: [(302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), (302 2709504), ]
+	outputs: [(303 2709504), ]
+	temporary: [(303 2709504), ]
+	release: [(302 2709504), ]
+	computeIthOp, 579, cost time: 2.214000 ms
+current Op is 304th:68:Reduction
+	inputs: [(303 2709504), ]
+	outputs: [(304 301056), ]
+	temporary: [(304 301056), ]
+	release: [(303 2709504), ]
+	computeIthOp, 579, cost time: 0.773000 ms
+current Op is 305th:128:Raster
+	inputs: []
+	outputs: [(305 36864), ]
+	temporary: [(305 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.480000 ms
+current Op is 306th:128:Raster
+	inputs: [(287 2408448), ]
+	outputs: [(306 1204224), ]
+	temporary: [(306 1204224), ]
+	release: [(287 2408448), ]
+	computeIthOp, 579, cost time: 0.645000 ms
+current Op is 307th:39:MatMul
+	inputs: [(305 36864), (306 1204224), ]
+	outputs: [(307 301056), ]
+	temporary: [(307 301056), ]
+	release: [(305 36864), (306 1204224), ]
+	computeIthOp, 579, cost time: 2.114000 ms
+current Op is 308th:128:Raster
+	inputs: [(307 301056), (307 301056), ]
+	outputs: [(308 301056), ]
+	temporary: [(308 301056), ]
+	release: [(307 301056), ]
+	computeIthOp, 579, cost time: 0.606000 ms
+current Op is 309th:68:Reduction
+	inputs: [(308 301056), ]
+	outputs: [(309 301056), ]
+	temporary: [(309 301056), ]
+	release: [(308 301056), ]
+	computeIthOp, 579, cost time: 0.514000 ms
+current Op is 310th:128:Raster
+	inputs: [(304 301056), ]
+	outputs: [(310 301056), ]
+	temporary: [(310 301056), ]
+	release: [(304 301056), ]
+	computeIthOp, 579, cost time: 0.624000 ms
+current Op is 311th:128:Raster
+	inputs: [(309 301056), ]
+	outputs: [(311 301056), ]
+	temporary: [(311 301056), ]
+	release: [(309 301056), ]
+	computeIthOp, 579, cost time: 0.597000 ms
+current Op is 312th:7:BinaryOp
+	inputs: [(310 301056), (311 301056), ]
+	outputs: [(312 301056), ]
+	temporary: [(312 301056), ]
+	release: [(310 301056), (311 301056), ]
+	computeIthOp, 579, cost time: 0.629000 ms
+current Op is 313th:128:Raster
+	inputs: [(312 301056), ]
+	outputs: [(313 301056), ]
+	temporary: [(313 301056), ]
+	release: []
+	computeIthOp, 579, cost time: 0.535000 ms
+current Op is 314th:68:Reduction
+	inputs: [(313 301056), ]
+	outputs: [(314 150528), ]
+	temporary: [(314 150528), ]
+	release: [(313 301056), ]
+	computeIthOp, 579, cost time: 0.536000 ms
+current Op is 315th:128:Raster
+	inputs: [(314 150528), ]
+	outputs: [(315 150528), ]
+	temporary: [(315 150528), ]
+	release: [(314 150528), ]
+	computeIthOp, 579, cost time: 0.538000 ms
+current Op is 316th:68:Reduction
+	inputs: [(315 150528), ]
+	outputs: [(316 192), ]
+	temporary: [(316 192), ]
+	release: [(315 150528), ]
+	computeIthOp, 579, cost time: 0.591000 ms
+current Op is 317th:128:Raster
+	inputs: [(312 301056), ]
+	outputs: [(317 301056), ]
+	temporary: [(317 301056), ]
+	release: []
+	computeIthOp, 579, cost time: 0.587000 ms
+current Op is 318th:39:MatMul
+	inputs: [(52 1605632), (317 301056), ]
+	outputs: [(318 49152), ]
+	temporary: [(318 49152), ]
+	release: [(52 1605632), (317 301056), ]
+	computeIthOp, 579, cost time: 3.048000 ms
+current Op is 319th:128:Raster
+	inputs: []
+	outputs: [(319 49152), ]
+	temporary: [(319 49152), ]
+	release: []
+	computeIthOp, 579, cost time: 0.501000 ms
+current Op is 320th:128:Raster
+	inputs: [(312 301056), ]
+	outputs: [(320 301056), ]
+	temporary: [(320 301056), ]
+	release: [(312 301056), ]
+	computeIthOp, 579, cost time: 0.600000 ms
+current Op is 321th:39:MatMul
+	inputs: [(319 49152), (320 301056), ]
+	outputs: [(321 1605632), ]
+	temporary: [(321 1605632), ]
+	release: [(319 49152), (320 301056), ]
+	computeIthOp, 579, cost time: 3.188000 ms
+current Op is 322th:128:Raster
+	inputs: [(321 1605632), (321 1605632), ]
+	outputs: [(322 1605632), ]
+	temporary: [(322 1605632), ]
+	release: [(321 1605632), ]
+	computeIthOp, 579, cost time: 0.929000 ms
+current Op is 323th:68:Reduction
+	inputs: [(322 1605632), ]
+	outputs: [(323 1605632), ]
+	temporary: [(323 1605632), ]
+	release: [(322 1605632), ]
+	computeIthOp, 579, cost time: 0.637000 ms
+current Op is 324th:128:Raster
+	inputs: [(323 1605632), ]
+	outputs: [(324 802816), ]
+	temporary: [(324 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.589000 ms
+current Op is 325th:68:Reduction
+	inputs: [(324 802816), ]
+	outputs: [(325 401408), ]
+	temporary: [(325 401408), ]
+	release: [(324 802816), ]
+	computeIthOp, 579, cost time: 0.587000 ms
+current Op is 326th:128:Raster
+	inputs: [(325 401408), ]
+	outputs: [(326 401408), ]
+	temporary: [(326 401408), ]
+	release: [(325 401408), ]
+	computeIthOp, 579, cost time: 0.573000 ms
+current Op is 327th:68:Reduction
+	inputs: [(326 401408), ]
+	outputs: [(327 512), ]
+	temporary: [(327 512), ]
+	release: [(326 401408), ]
+	computeIthOp, 579, cost time: 0.708000 ms
+current Op is 328th:128:Raster
+	inputs: [(323 1605632), ]
+	outputs: [(328 802816), ]
+	temporary: [(328 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.519000 ms
+current Op is 329th:39:MatMul
+	inputs: [(48 1806336), (328 802816), ]
+	outputs: [(329 147456), ]
+	temporary: [(329 147456), ]
+	release: [(48 1806336), (328 802816), ]
+	computeIthOp, 579, cost time: 5.412000 ms
+current Op is 330th:128:Raster
+	inputs: [(323 1605632), ]
+	outputs: [(330 802816), ]
+	temporary: [(330 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.621000 ms
+current Op is 331th:68:Reduction
+	inputs: [(330 802816), ]
+	outputs: [(331 401408), ]
+	temporary: [(331 401408), ]
+	release: [(330 802816), ]
+	computeIthOp, 579, cost time: 0.609000 ms
+current Op is 332th:128:Raster
+	inputs: [(331 401408), ]
+	outputs: [(332 401408), ]
+	temporary: [(332 401408), ]
+	release: [(331 401408), ]
+	computeIthOp, 579, cost time: 0.590000 ms
+current Op is 333th:68:Reduction
+	inputs: [(332 401408), ]
+	outputs: [(333 512), ]
+	temporary: [(333 512), ]
+	release: [(332 401408), ]
+	computeIthOp, 579, cost time: 0.755000 ms
+current Op is 334th:128:Raster
+	inputs: [(323 1605632), ]
+	outputs: [(334 802816), ]
+	temporary: [(334 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.508000 ms
+current Op is 335th:39:MatMul
+	inputs: [(45 200704), (334 802816), ]
+	outputs: [(335 16384), ]
+	temporary: [(335 16384), ]
+	release: [(45 200704), (334 802816), ]
+	computeIthOp, 579, cost time: 1.336000 ms
+current Op is 336th:128:Raster
+	inputs: []
+	outputs: [(336 147456), ]
+	temporary: [(336 147456), ]
+	release: []
+	computeIthOp, 579, cost time: 0.427000 ms
+current Op is 337th:128:Raster
+	inputs: [(323 1605632), ]
+	outputs: [(337 802816), ]
+	temporary: [(337 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.536000 ms
+current Op is 338th:39:MatMul
+	inputs: [(336 147456), (337 802816), ]
+	outputs: [(338 1806336), ]
+	temporary: [(338 1806336), ]
+	release: [(336 147456), (337 802816), ]
+	computeIthOp, 579, cost time: 4.650000 ms
+current Op is 339th:128:Raster
+	inputs: [(338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), (338 1806336), ]
+	outputs: [(339 1806336), ]
+	temporary: [(339 1806336), ]
+	release: [(338 1806336), ]
+	computeIthOp, 579, cost time: 1.838000 ms
+current Op is 340th:68:Reduction
+	inputs: [(339 1806336), ]
+	outputs: [(340 200704), ]
+	temporary: [(340 200704), ]
+	release: [(339 1806336), ]
+	computeIthOp, 579, cost time: 0.649000 ms
+current Op is 341th:128:Raster
+	inputs: []
+	outputs: [(341 16384), ]
+	temporary: [(341 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.448000 ms
+current Op is 342th:128:Raster
+	inputs: [(323 1605632), ]
+	outputs: [(342 802816), ]
+	temporary: [(342 802816), ]
+	release: [(323 1605632), ]
+	computeIthOp, 579, cost time: 0.586000 ms
+current Op is 343th:39:MatMul
+	inputs: [(341 16384), (342 802816), ]
+	outputs: [(343 200704), ]
+	temporary: [(343 200704), ]
+	release: [(341 16384), (342 802816), ]
+	computeIthOp, 579, cost time: 1.564000 ms
+current Op is 344th:128:Raster
+	inputs: [(343 200704), (343 200704), ]
+	outputs: [(344 200704), ]
+	temporary: [(344 200704), ]
+	release: [(343 200704), ]
+	computeIthOp, 579, cost time: 0.594000 ms
+current Op is 345th:68:Reduction
+	inputs: [(344 200704), ]
+	outputs: [(345 200704), ]
+	temporary: [(345 200704), ]
+	release: [(344 200704), ]
+	computeIthOp, 579, cost time: 0.555000 ms
+current Op is 346th:128:Raster
+	inputs: [(340 200704), ]
+	outputs: [(346 200704), ]
+	temporary: [(346 200704), ]
+	release: [(340 200704), ]
+	computeIthOp, 579, cost time: 0.569000 ms
+current Op is 347th:128:Raster
+	inputs: [(345 200704), ]
+	outputs: [(347 200704), ]
+	temporary: [(347 200704), ]
+	release: [(345 200704), ]
+	computeIthOp, 579, cost time: 0.593000 ms
+current Op is 348th:7:BinaryOp
+	inputs: [(346 200704), (347 200704), ]
+	outputs: [(348 200704), ]
+	temporary: [(348 200704), ]
+	release: [(346 200704), (347 200704), ]
+	computeIthOp, 579, cost time: 0.621000 ms
+current Op is 349th:128:Raster
+	inputs: [(348 200704), ]
+	outputs: [(349 200704), ]
+	temporary: [(349 200704), ]
+	release: []
+	computeIthOp, 579, cost time: 0.504000 ms
+current Op is 350th:68:Reduction
+	inputs: [(349 200704), ]
+	outputs: [(350 100352), ]
+	temporary: [(350 100352), ]
+	release: [(349 200704), ]
+	computeIthOp, 579, cost time: 0.549000 ms
+current Op is 351th:128:Raster
+	inputs: [(350 100352), ]
+	outputs: [(351 100352), ]
+	temporary: [(351 100352), ]
+	release: [(350 100352), ]
+	computeIthOp, 579, cost time: 0.508000 ms
+current Op is 352th:68:Reduction
+	inputs: [(351 100352), ]
+	outputs: [(352 128), ]
+	temporary: [(352 128), ]
+	release: [(351 100352), ]
+	computeIthOp, 579, cost time: 0.595000 ms
+current Op is 353th:128:Raster
+	inputs: [(348 200704), ]
+	outputs: [(353 200704), ]
+	temporary: [(353 200704), ]
+	release: []
+	computeIthOp, 579, cost time: 0.552000 ms
+current Op is 354th:39:MatMul
+	inputs: [(41 1605632), (353 200704), ]
+	outputs: [(354 32768), ]
+	temporary: [(354 32768), ]
+	release: [(41 1605632), (353 200704), ]
+	computeIthOp, 579, cost time: 3.213000 ms
+current Op is 355th:128:Raster
+	inputs: []
+	outputs: [(355 32768), ]
+	temporary: [(355 32768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.488000 ms
+current Op is 356th:128:Raster
+	inputs: [(348 200704), ]
+	outputs: [(356 200704), ]
+	temporary: [(356 200704), ]
+	release: [(348 200704), ]
+	computeIthOp, 579, cost time: 0.646000 ms
+current Op is 357th:39:MatMul
+	inputs: [(355 32768), (356 200704), ]
+	outputs: [(357 1605632), ]
+	temporary: [(357 1605632), ]
+	release: [(355 32768), (356 200704), ]
+	computeIthOp, 579, cost time: 2.445000 ms
+current Op is 358th:128:Raster
+	inputs: [(357 1605632), (357 1605632), ]
+	outputs: [(358 1605632), ]
+	temporary: [(358 1605632), ]
+	release: [(357 1605632), ]
+	computeIthOp, 579, cost time: 0.831000 ms
+current Op is 359th:68:Reduction
+	inputs: [(358 1605632), ]
+	outputs: [(359 1605632), ]
+	temporary: [(359 1605632), ]
+	release: [(358 1605632), ]
+	computeIthOp, 579, cost time: 0.621000 ms
+current Op is 360th:128:Raster
+	inputs: [(39 6422528), ]
+	outputs: [(360 1605632), ]
+	temporary: [(360 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 3.939000 ms
+current Op is 361th:7:BinaryOp
+	inputs: [(360 1605632), (40 1605632), ]
+	outputs: [(361 1605632), ]
+	temporary: [(361 1605632), ]
+	release: [(360 1605632), ]
+	computeIthOp, 579, cost time: 2.947000 ms
+current Op is 362th:9:Cast
+	inputs: [(361 1605632), ]
+	outputs: [(362 1605632), ]
+	temporary: [(362 1605632), ]
+	release: [(361 1605632), ]
+	computeIthOp, 579, cost time: 3.069000 ms
+current Op is 363th:128:Raster
+	inputs: [(359 1605632), ]
+	outputs: [(363 1605632), ]
+	temporary: [(363 1605632), ]
+	release: [(359 1605632), ]
+	computeIthOp, 579, cost time: 1.092000 ms
+current Op is 364th:7:BinaryOp
+	inputs: [(363 1605632), (362 1605632), ]
+	outputs: [(364 1605632), ]
+	temporary: [(364 1605632), ]
+	release: [(362 1605632), ]
+	computeIthOp, 579, cost time: 0.818000 ms
+current Op is 365th:128:Raster
+	inputs: [(39 6422528), ]
+	outputs: [(365 1605632), ]
+	temporary: [(365 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 4.047000 ms
+current Op is 366th:7:BinaryOp
+	inputs: [(365 1605632), (40 1605632), ]
+	outputs: [(366 1605632), ]
+	temporary: [(366 1605632), ]
+	release: [(365 1605632), ]
+	computeIthOp, 579, cost time: 3.448000 ms
+current Op is 367th:9:Cast
+	inputs: [(366 1605632), ]
+	outputs: [(367 1605632), ]
+	temporary: [(367 1605632), ]
+	release: [(366 1605632), ]
+	computeIthOp, 579, cost time: 2.358000 ms
+current Op is 368th:7:BinaryOp
+	inputs: [(363 1605632), (367 1605632), ]
+	outputs: [(368 1605632), ]
+	temporary: [(368 1605632), ]
+	release: [(367 1605632), ]
+	computeIthOp, 579, cost time: 0.843000 ms
+current Op is 369th:128:Raster
+	inputs: [(39 6422528), ]
+	outputs: [(369 1605632), ]
+	temporary: [(369 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 3.901000 ms
+current Op is 370th:7:BinaryOp
+	inputs: [(369 1605632), (40 1605632), ]
+	outputs: [(370 1605632), ]
+	temporary: [(370 1605632), ]
+	release: [(369 1605632), ]
+	computeIthOp, 579, cost time: 2.949000 ms
+current Op is 371th:9:Cast
+	inputs: [(370 1605632), ]
+	outputs: [(371 1605632), ]
+	temporary: [(371 1605632), ]
+	release: [(370 1605632), ]
+	computeIthOp, 579, cost time: 2.615000 ms
+current Op is 372th:7:BinaryOp
+	inputs: [(363 1605632), (371 1605632), ]
+	outputs: [(372 1605632), ]
+	temporary: [(372 1605632), ]
+	release: [(371 1605632), ]
+	computeIthOp, 579, cost time: 0.837000 ms
+current Op is 373th:128:Raster
+	inputs: [(39 6422528), ]
+	outputs: [(373 1605632), ]
+	temporary: [(373 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 3.676000 ms
+current Op is 374th:7:BinaryOp
+	inputs: [(373 1605632), (40 1605632), ]
+	outputs: [(374 1605632), ]
+	temporary: [(374 1605632), ]
+	release: [(373 1605632), ]
+	computeIthOp, 579, cost time: 2.931000 ms
+current Op is 375th:9:Cast
+	inputs: [(374 1605632), ]
+	outputs: [(375 1605632), ]
+	temporary: [(375 1605632), ]
+	release: [(374 1605632), ]
+	computeIthOp, 579, cost time: 2.688000 ms
+current Op is 376th:7:BinaryOp
+	inputs: [(363 1605632), (375 1605632), ]
+	outputs: [(376 1605632), ]
+	temporary: [(376 1605632), ]
+	release: [(375 1605632), ]
+	computeIthOp, 579, cost time: 0.929000 ms
+current Op is 377th:128:Raster
+	inputs: [(39 6422528), ]
+	outputs: [(377 1605632), ]
+	temporary: [(377 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 3.717000 ms
+current Op is 378th:7:BinaryOp
+	inputs: [(377 1605632), (40 1605632), ]
+	outputs: [(378 1605632), ]
+	temporary: [(378 1605632), ]
+	release: [(377 1605632), ]
+	computeIthOp, 579, cost time: 3.423000 ms
+current Op is 379th:9:Cast
+	inputs: [(378 1605632), ]
+	outputs: [(379 1605632), ]
+	temporary: [(379 1605632), ]
+	release: [(378 1605632), ]
+	computeIthOp, 579, cost time: 2.544000 ms
+current Op is 380th:7:BinaryOp
+	inputs: [(363 1605632), (379 1605632), ]
+	outputs: [(380 1605632), ]
+	temporary: [(380 1605632), ]
+	release: [(379 1605632), ]
+	computeIthOp, 579, cost time: 0.782000 ms
+current Op is 381th:128:Raster
+	inputs: [(39 6422528), ]
+	outputs: [(381 1605632), ]
+	temporary: [(381 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 3.698000 ms
+current Op is 382th:7:BinaryOp
+	inputs: [(381 1605632), (40 1605632), ]
+	outputs: [(382 1605632), ]
+	temporary: [(382 1605632), ]
+	release: [(381 1605632), ]
+	computeIthOp, 579, cost time: 3.084000 ms
+current Op is 383th:9:Cast
+	inputs: [(382 1605632), ]
+	outputs: [(383 1605632), ]
+	temporary: [(383 1605632), ]
+	release: [(382 1605632), ]
+	computeIthOp, 579, cost time: 2.753000 ms
+current Op is 384th:7:BinaryOp
+	inputs: [(363 1605632), (383 1605632), ]
+	outputs: [(384 1605632), ]
+	temporary: [(384 1605632), ]
+	release: [(383 1605632), ]
+	computeIthOp, 579, cost time: 0.838000 ms
+current Op is 385th:128:Raster
+	inputs: [(39 6422528), ]
+	outputs: [(385 1605632), ]
+	temporary: [(385 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 3.888000 ms
+current Op is 386th:7:BinaryOp
+	inputs: [(385 1605632), (40 1605632), ]
+	outputs: [(386 1605632), ]
+	temporary: [(386 1605632), ]
+	release: [(385 1605632), ]
+	computeIthOp, 579, cost time: 3.118000 ms
+current Op is 387th:9:Cast
+	inputs: [(386 1605632), ]
+	outputs: [(387 1605632), ]
+	temporary: [(387 1605632), ]
+	release: [(386 1605632), ]
+	computeIthOp, 579, cost time: 2.993000 ms
+current Op is 388th:7:BinaryOp
+	inputs: [(363 1605632), (387 1605632), ]
+	outputs: [(388 1605632), ]
+	temporary: [(388 1605632), ]
+	release: [(387 1605632), ]
+	computeIthOp, 579, cost time: 0.891000 ms
+current Op is 389th:128:Raster
+	inputs: [(39 6422528), ]
+	outputs: [(389 1605632), ]
+	temporary: [(389 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 3.844000 ms
+current Op is 390th:7:BinaryOp
+	inputs: [(389 1605632), (40 1605632), ]
+	outputs: [(390 1605632), ]
+	temporary: [(390 1605632), ]
+	release: [(389 1605632), ]
+	computeIthOp, 579, cost time: 3.044000 ms
+current Op is 391th:9:Cast
+	inputs: [(390 1605632), ]
+	outputs: [(391 1605632), ]
+	temporary: [(391 1605632), ]
+	release: [(390 1605632), ]
+	computeIthOp, 579, cost time: 2.958000 ms
+current Op is 392th:7:BinaryOp
+	inputs: [(363 1605632), (391 1605632), ]
+	outputs: [(392 1605632), ]
+	temporary: [(392 1605632), ]
+	release: [(391 1605632), ]
+	computeIthOp, 579, cost time: 0.814000 ms
+current Op is 393th:128:Raster
+	inputs: [(39 6422528), ]
+	outputs: [(393 1605632), ]
+	temporary: [(393 1605632), ]
+	release: [(39 6422528), ]
+	computeIthOp, 579, cost time: 3.866000 ms
+current Op is 394th:7:BinaryOp
+	inputs: [(393 1605632), (40 1605632), ]
+	outputs: [(394 1605632), ]
+	temporary: [(394 1605632), ]
+	release: [(393 1605632), (40 1605632), ]
+	computeIthOp, 579, cost time: 3.403000 ms
+current Op is 395th:9:Cast
+	inputs: [(394 1605632), ]
+	outputs: [(395 1605632), ]
+	temporary: [(395 1605632), ]
+	release: [(394 1605632), ]
+	computeIthOp, 579, cost time: 2.876000 ms
+current Op is 396th:7:BinaryOp
+	inputs: [(363 1605632), (395 1605632), ]
+	outputs: [(396 1605632), ]
+	temporary: [(396 1605632), ]
+	release: [(363 1605632), (395 1605632), ]
+	computeIthOp, 579, cost time: 0.929000 ms
+current Op is 397th:128:Raster
+	inputs: [(364 1605632), ]
+	outputs: [(397 6422528), ]
+	temporary: [(397 6422528), ]
+	release: [(364 1605632), ]
+	computeIthOp, 579, cost time: 3.526000 ms
+current Op is 398th:128:Raster
+	inputs: [(368 1605632), ]
+	outputs: [(398 6422528), ]
+	temporary: [(398 6422528), ]
+	release: [(368 1605632), ]
+	computeIthOp, 579, cost time: 3.631000 ms
+current Op is 399th:128:Raster
+	inputs: [(372 1605632), ]
+	outputs: [(399 6422528), ]
+	temporary: [(399 6422528), ]
+	release: [(372 1605632), ]
+	computeIthOp, 579, cost time: 5.550000 ms
+current Op is 400th:128:Raster
+	inputs: [(376 1605632), ]
+	outputs: [(400 6422528), ]
+	temporary: [(400 6422528), ]
+	release: [(376 1605632), ]
+	computeIthOp, 579, cost time: 5.823000 ms
+current Op is 401th:128:Raster
+	inputs: [(380 1605632), ]
+	outputs: [(401 6422528), ]
+	temporary: [(401 6422528), ]
+	release: [(380 1605632), ]
+	computeIthOp, 579, cost time: 5.997000 ms
+current Op is 402th:128:Raster
+	inputs: [(384 1605632), ]
+	outputs: [(402 6422528), ]
+	temporary: [(402 6422528), ]
+	release: [(384 1605632), ]
+	computeIthOp, 579, cost time: 5.833000 ms
+current Op is 403th:128:Raster
+	inputs: [(388 1605632), ]
+	outputs: [(403 6422528), ]
+	temporary: [(403 6422528), ]
+	release: [(388 1605632), ]
+	computeIthOp, 579, cost time: 5.498000 ms
+current Op is 404th:128:Raster
+	inputs: [(392 1605632), ]
+	outputs: [(404 6422528), ]
+	temporary: [(404 6422528), ]
+	release: [(392 1605632), ]
+	computeIthOp, 579, cost time: 5.557000 ms
+current Op is 405th:128:Raster
+	inputs: [(396 1605632), ]
+	outputs: [(405 6422528), ]
+	temporary: [(405 6422528), ]
+	release: [(396 1605632), ]
+	computeIthOp, 579, cost time: 5.507000 ms
+current Op is 406th:22:Eltwise
+	inputs: [(397 6422528), (398 6422528), (399 6422528), (400 6422528), (401 6422528), (402 6422528), (403 6422528), (404 6422528), (405 6422528), ]
+	outputs: [(406 6422528), ]
+	temporary: [(406 6422528), ]
+	release: [(397 6422528), (398 6422528), (399 6422528), (400 6422528), (401 6422528), (402 6422528), (403 6422528), (404 6422528), (405 6422528), ]
+	computeIthOp, 579, cost time: 10.547001 ms
+current Op is 407th:128:Raster
+	inputs: [(406 6422528), ]
+	outputs: [(407 3211264), ]
+	temporary: [(407 3211264), ]
+	release: []
+	computeIthOp, 579, cost time: 1.847000 ms
+current Op is 408th:68:Reduction
+	inputs: [(407 3211264), ]
+	outputs: [(408 1605632), ]
+	temporary: [(408 1605632), ]
+	release: [(407 3211264), ]
+	computeIthOp, 579, cost time: 1.088000 ms
+current Op is 409th:128:Raster
+	inputs: [(408 1605632), ]
+	outputs: [(409 1605632), ]
+	temporary: [(409 1605632), ]
+	release: [(408 1605632), ]
+	computeIthOp, 579, cost time: 0.702000 ms
+current Op is 410th:68:Reduction
+	inputs: [(409 1605632), ]
+	outputs: [(410 512), ]
+	temporary: [(410 512), ]
+	release: [(409 1605632), ]
+	computeIthOp, 579, cost time: 1.404000 ms
+current Op is 411th:128:Raster
+	inputs: [(406 6422528), ]
+	outputs: [(411 3211264), ]
+	temporary: [(411 3211264), ]
+	release: []
+	computeIthOp, 579, cost time: 1.824000 ms
+current Op is 412th:39:MatMul
+	inputs: [(36 7225344), (411 3211264), ]
+	outputs: [(412 147456), ]
+	temporary: [(412 147456), ]
+	release: [(36 7225344), (411 3211264), ]
+	computeIthOp, 579, cost time: 17.877001 ms
+current Op is 413th:128:Raster
+	inputs: [(406 6422528), ]
+	outputs: [(413 3211264), ]
+	temporary: [(413 3211264), ]
+	release: []
+	computeIthOp, 579, cost time: 1.952000 ms
+current Op is 414th:68:Reduction
+	inputs: [(413 3211264), ]
+	outputs: [(414 1605632), ]
+	temporary: [(414 1605632), ]
+	release: [(413 3211264), ]
+	computeIthOp, 579, cost time: 0.960000 ms
+current Op is 415th:128:Raster
+	inputs: [(414 1605632), ]
+	outputs: [(415 1605632), ]
+	temporary: [(415 1605632), ]
+	release: [(414 1605632), ]
+	computeIthOp, 579, cost time: 0.680000 ms
+current Op is 416th:68:Reduction
+	inputs: [(415 1605632), ]
+	outputs: [(416 512), ]
+	temporary: [(416 512), ]
+	release: [(415 1605632), ]
+	computeIthOp, 579, cost time: 1.362000 ms
+current Op is 417th:128:Raster
+	inputs: [(406 6422528), ]
+	outputs: [(417 3211264), ]
+	temporary: [(417 3211264), ]
+	release: []
+	computeIthOp, 579, cost time: 1.736000 ms
+current Op is 418th:39:MatMul
+	inputs: [(33 802816), (417 3211264), ]
+	outputs: [(418 16384), ]
+	temporary: [(418 16384), ]
+	release: [(33 802816), (417 3211264), ]
+	computeIthOp, 579, cost time: 3.083000 ms
+current Op is 419th:128:Raster
+	inputs: []
+	outputs: [(419 147456), ]
+	temporary: [(419 147456), ]
+	release: []
+	computeIthOp, 579, cost time: 0.466000 ms
+current Op is 420th:128:Raster
+	inputs: [(406 6422528), ]
+	outputs: [(420 3211264), ]
+	temporary: [(420 3211264), ]
+	release: []
+	computeIthOp, 579, cost time: 1.682000 ms
+current Op is 421th:39:MatMul
+	inputs: [(419 147456), (420 3211264), ]
+	outputs: [(421 7225344), ]
+	temporary: [(421 7225344), ]
+	release: [(419 147456), (420 3211264), ]
+	computeIthOp, 579, cost time: 15.349001 ms
+current Op is 422th:128:Raster
+	inputs: [(421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), (421 7225344), ]
+	outputs: [(422 7225344), ]
+	temporary: [(422 7225344), ]
+	release: [(421 7225344), ]
+	computeIthOp, 579, cost time: 2.868000 ms
+current Op is 423th:68:Reduction
+	inputs: [(422 7225344), ]
+	outputs: [(423 802816), ]
+	temporary: [(423 802816), ]
+	release: [(422 7225344), ]
+	computeIthOp, 579, cost time: 1.105000 ms
+current Op is 424th:128:Raster
+	inputs: []
+	outputs: [(424 16384), ]
+	temporary: [(424 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.461000 ms
+current Op is 425th:128:Raster
+	inputs: [(406 6422528), ]
+	outputs: [(425 3211264), ]
+	temporary: [(425 3211264), ]
+	release: [(406 6422528), ]
+	computeIthOp, 579, cost time: 1.873000 ms
+current Op is 426th:39:MatMul
+	inputs: [(424 16384), (425 3211264), ]
+	outputs: [(426 802816), ]
+	temporary: [(426 802816), ]
+	release: [(424 16384), (425 3211264), ]
+	computeIthOp, 579, cost time: 4.537000 ms
+current Op is 427th:128:Raster
+	inputs: [(426 802816), (426 802816), ]
+	outputs: [(427 802816), ]
+	temporary: [(427 802816), ]
+	release: [(426 802816), ]
+	computeIthOp, 579, cost time: 0.757000 ms
+current Op is 428th:68:Reduction
+	inputs: [(427 802816), ]
+	outputs: [(428 802816), ]
+	temporary: [(428 802816), ]
+	release: [(427 802816), ]
+	computeIthOp, 579, cost time: 0.673000 ms
+current Op is 429th:128:Raster
+	inputs: [(423 802816), ]
+	outputs: [(429 802816), ]
+	temporary: [(429 802816), ]
+	release: [(423 802816), ]
+	computeIthOp, 579, cost time: 0.682000 ms
+current Op is 430th:128:Raster
+	inputs: [(428 802816), ]
+	outputs: [(430 802816), ]
+	temporary: [(430 802816), ]
+	release: [(428 802816), ]
+	computeIthOp, 579, cost time: 0.664000 ms
+current Op is 431th:7:BinaryOp
+	inputs: [(429 802816), (430 802816), ]
+	outputs: [(431 802816), ]
+	temporary: [(431 802816), ]
+	release: [(429 802816), (430 802816), ]
+	computeIthOp, 579, cost time: 0.696000 ms
+current Op is 432th:128:Raster
+	inputs: [(431 802816), ]
+	outputs: [(432 802816), ]
+	temporary: [(432 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.648000 ms
+current Op is 433th:68:Reduction
+	inputs: [(432 802816), ]
+	outputs: [(433 401408), ]
+	temporary: [(433 401408), ]
+	release: [(432 802816), ]
+	computeIthOp, 579, cost time: 0.583000 ms
+current Op is 434th:128:Raster
+	inputs: [(433 401408), ]
+	outputs: [(434 401408), ]
+	temporary: [(434 401408), ]
+	release: [(433 401408), ]
+	computeIthOp, 579, cost time: 0.548000 ms
+current Op is 435th:68:Reduction
+	inputs: [(434 401408), ]
+	outputs: [(435 128), ]
+	temporary: [(435 128), ]
+	release: [(434 401408), ]
+	computeIthOp, 579, cost time: 0.753000 ms
+current Op is 436th:128:Raster
+	inputs: [(431 802816), ]
+	outputs: [(436 802816), ]
+	temporary: [(436 802816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.603000 ms
+current Op is 437th:39:MatMul
+	inputs: [(29 3211264), (436 802816), ]
+	outputs: [(437 16384), ]
+	temporary: [(437 16384), ]
+	release: [(29 3211264), (436 802816), ]
+	computeIthOp, 579, cost time: 5.666000 ms
+current Op is 438th:128:Raster
+	inputs: []
+	outputs: [(438 16384), ]
+	temporary: [(438 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.449000 ms
+current Op is 439th:128:Raster
+	inputs: [(431 802816), ]
+	outputs: [(439 802816), ]
+	temporary: [(439 802816), ]
+	release: [(431 802816), ]
+	computeIthOp, 579, cost time: 0.736000 ms
+current Op is 440th:39:MatMul
+	inputs: [(438 16384), (439 802816), ]
+	outputs: [(440 3211264), ]
+	temporary: [(440 3211264), ]
+	release: [(438 16384), (439 802816), ]
+	computeIthOp, 579, cost time: 4.311000 ms
+current Op is 441th:128:Raster
+	inputs: [(440 3211264), (440 3211264), ]
+	outputs: [(441 3211264), ]
+	temporary: [(441 3211264), ]
+	release: [(440 3211264), ]
+	computeIthOp, 579, cost time: 0.941000 ms
+current Op is 442th:68:Reduction
+	inputs: [(441 3211264), ]
+	outputs: [(442 3211264), ]
+	temporary: [(442 3211264), ]
+	release: [(441 3211264), ]
+	computeIthOp, 579, cost time: 0.846000 ms
+current Op is 443th:128:Raster
+	inputs: [(442 3211264), ]
+	outputs: [(443 1605632), ]
+	temporary: [(443 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 0.648000 ms
+current Op is 444th:68:Reduction
+	inputs: [(443 1605632), ]
+	outputs: [(444 802816), ]
+	temporary: [(444 802816), ]
+	release: [(443 1605632), ]
+	computeIthOp, 579, cost time: 0.707000 ms
+current Op is 445th:128:Raster
+	inputs: [(444 802816), ]
+	outputs: [(445 802816), ]
+	temporary: [(445 802816), ]
+	release: [(444 802816), ]
+	computeIthOp, 579, cost time: 0.660000 ms
+current Op is 446th:68:Reduction
+	inputs: [(445 802816), ]
+	outputs: [(446 256), ]
+	temporary: [(446 256), ]
+	release: [(445 802816), ]
+	computeIthOp, 579, cost time: 0.928000 ms
+current Op is 447th:128:Raster
+	inputs: [(442 3211264), ]
+	outputs: [(447 1605632), ]
+	temporary: [(447 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 0.645000 ms
+current Op is 448th:39:MatMul
+	inputs: [(25 3612672), (447 1605632), ]
+	outputs: [(448 36864), ]
+	temporary: [(448 36864), ]
+	release: [(25 3612672), (447 1605632), ]
+	computeIthOp, 579, cost time: 6.923000 ms
+current Op is 449th:128:Raster
+	inputs: [(442 3211264), ]
+	outputs: [(449 1605632), ]
+	temporary: [(449 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 0.654000 ms
+current Op is 450th:68:Reduction
+	inputs: [(449 1605632), ]
+	outputs: [(450 802816), ]
+	temporary: [(450 802816), ]
+	release: [(449 1605632), ]
+	computeIthOp, 579, cost time: 0.722000 ms
+current Op is 451th:128:Raster
+	inputs: [(450 802816), ]
+	outputs: [(451 802816), ]
+	temporary: [(451 802816), ]
+	release: [(450 802816), ]
+	computeIthOp, 579, cost time: 0.571000 ms
+current Op is 452th:68:Reduction
+	inputs: [(451 802816), ]
+	outputs: [(452 256), ]
+	temporary: [(452 256), ]
+	release: [(451 802816), ]
+	computeIthOp, 579, cost time: 0.932000 ms
+current Op is 453th:128:Raster
+	inputs: [(442 3211264), ]
+	outputs: [(453 1605632), ]
+	temporary: [(453 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 0.615000 ms
+current Op is 454th:39:MatMul
+	inputs: [(22 401408), (453 1605632), ]
+	outputs: [(454 4096), ]
+	temporary: [(454 4096), ]
+	release: [(22 401408), (453 1605632), ]
+	computeIthOp, 579, cost time: 1.707000 ms
+current Op is 455th:128:Raster
+	inputs: []
+	outputs: [(455 36864), ]
+	temporary: [(455 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.431000 ms
+current Op is 456th:128:Raster
+	inputs: [(442 3211264), ]
+	outputs: [(456 1605632), ]
+	temporary: [(456 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 0.606000 ms
+current Op is 457th:39:MatMul
+	inputs: [(455 36864), (456 1605632), ]
+	outputs: [(457 3612672), ]
+	temporary: [(457 3612672), ]
+	release: [(455 36864), (456 1605632), ]
+	computeIthOp, 579, cost time: 6.919000 ms
+current Op is 458th:128:Raster
+	inputs: [(457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), (457 3612672), ]
+	outputs: [(458 3612672), ]
+	temporary: [(458 3612672), ]
+	release: [(457 3612672), ]
+	computeIthOp, 579, cost time: 2.270000 ms
+current Op is 459th:68:Reduction
+	inputs: [(458 3612672), ]
+	outputs: [(459 401408), ]
+	temporary: [(459 401408), ]
+	release: [(458 3612672), ]
+	computeIthOp, 579, cost time: 0.828000 ms
+current Op is 460th:128:Raster
+	inputs: []
+	outputs: [(460 4096), ]
+	temporary: [(460 4096), ]
+	release: []
+	computeIthOp, 579, cost time: 0.431000 ms
+current Op is 461th:128:Raster
+	inputs: [(442 3211264), ]
+	outputs: [(461 1605632), ]
+	temporary: [(461 1605632), ]
+	release: [(442 3211264), ]
+	computeIthOp, 579, cost time: 0.753000 ms
+current Op is 462th:39:MatMul
+	inputs: [(460 4096), (461 1605632), ]
+	outputs: [(462 401408), ]
+	temporary: [(462 401408), ]
+	release: [(460 4096), (461 1605632), ]
+	computeIthOp, 579, cost time: 2.467000 ms
+current Op is 463th:128:Raster
+	inputs: [(462 401408), (462 401408), ]
+	outputs: [(463 401408), ]
+	temporary: [(463 401408), ]
+	release: [(462 401408), ]
+	computeIthOp, 579, cost time: 0.683000 ms
+current Op is 464th:68:Reduction
+	inputs: [(463 401408), ]
+	outputs: [(464 401408), ]
+	temporary: [(464 401408), ]
+	release: [(463 401408), ]
+	computeIthOp, 579, cost time: 0.596000 ms
+current Op is 465th:128:Raster
+	inputs: [(459 401408), ]
+	outputs: [(465 401408), ]
+	temporary: [(465 401408), ]
+	release: [(459 401408), ]
+	computeIthOp, 579, cost time: 0.607000 ms
+current Op is 466th:128:Raster
+	inputs: [(464 401408), ]
+	outputs: [(466 401408), ]
+	temporary: [(466 401408), ]
+	release: [(464 401408), ]
+	computeIthOp, 579, cost time: 0.600000 ms
+current Op is 467th:7:BinaryOp
+	inputs: [(465 401408), (466 401408), ]
+	outputs: [(467 401408), ]
+	temporary: [(467 401408), ]
+	release: [(465 401408), (466 401408), ]
+	computeIthOp, 579, cost time: 0.645000 ms
+current Op is 468th:128:Raster
+	inputs: [(467 401408), ]
+	outputs: [(468 401408), ]
+	temporary: [(468 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.645000 ms
+current Op is 469th:68:Reduction
+	inputs: [(468 401408), ]
+	outputs: [(469 200704), ]
+	temporary: [(469 200704), ]
+	release: [(468 401408), ]
+	computeIthOp, 579, cost time: 0.543000 ms
+current Op is 470th:128:Raster
+	inputs: [(469 200704), ]
+	outputs: [(470 200704), ]
+	temporary: [(470 200704), ]
+	release: [(469 200704), ]
+	computeIthOp, 579, cost time: 0.544000 ms
+current Op is 471th:68:Reduction
+	inputs: [(470 200704), ]
+	outputs: [(471 64), ]
+	temporary: [(471 64), ]
+	release: [(470 200704), ]
+	computeIthOp, 579, cost time: 0.621000 ms
+current Op is 472th:128:Raster
+	inputs: [(467 401408), ]
+	outputs: [(472 401408), ]
+	temporary: [(472 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.593000 ms
+current Op is 473th:39:MatMul
+	inputs: [(18 3211264), (472 401408), ]
+	outputs: [(473 8192), ]
+	temporary: [(473 8192), ]
+	release: [(18 3211264), (472 401408), ]
+	computeIthOp, 579, cost time: 5.647000 ms
+current Op is 474th:128:Raster
+	inputs: []
+	outputs: [(474 8192), ]
+	temporary: [(474 8192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.459000 ms
+current Op is 475th:128:Raster
+	inputs: [(467 401408), ]
+	outputs: [(475 401408), ]
+	temporary: [(475 401408), ]
+	release: [(467 401408), ]
+	computeIthOp, 579, cost time: 0.645000 ms
+current Op is 476th:39:MatMul
+	inputs: [(474 8192), (475 401408), ]
+	outputs: [(476 3211264), ]
+	temporary: [(476 3211264), ]
+	release: [(474 8192), (475 401408), ]
+	computeIthOp, 579, cost time: 4.331000 ms
+current Op is 477th:128:Raster
+	inputs: [(476 3211264), (476 3211264), ]
+	outputs: [(477 3211264), ]
+	temporary: [(477 3211264), ]
+	release: [(476 3211264), ]
+	computeIthOp, 579, cost time: 1.092000 ms
+current Op is 478th:68:Reduction
+	inputs: [(477 3211264), ]
+	outputs: [(478 3211264), ]
+	temporary: [(478 3211264), ]
+	release: [(477 3211264), ]
+	computeIthOp, 579, cost time: 0.832000 ms
+current Op is 479th:128:Raster
+	inputs: [(478 3211264), ]
+	outputs: [(479 1605632), ]
+	temporary: [(479 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 0.669000 ms
+current Op is 480th:68:Reduction
+	inputs: [(479 1605632), ]
+	outputs: [(480 802816), ]
+	temporary: [(480 802816), ]
+	release: [(479 1605632), ]
+	computeIthOp, 579, cost time: 0.685000 ms
+current Op is 481th:128:Raster
+	inputs: [(480 802816), ]
+	outputs: [(481 802816), ]
+	temporary: [(481 802816), ]
+	release: [(480 802816), ]
+	computeIthOp, 579, cost time: 0.580000 ms
+current Op is 482th:68:Reduction
+	inputs: [(481 802816), ]
+	outputs: [(482 256), ]
+	temporary: [(482 256), ]
+	release: [(481 802816), ]
+	computeIthOp, 579, cost time: 0.946000 ms
+current Op is 483th:128:Raster
+	inputs: [(478 3211264), ]
+	outputs: [(483 1605632), ]
+	temporary: [(483 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 0.624000 ms
+current Op is 484th:39:MatMul
+	inputs: [(14 3612672), (483 1605632), ]
+	outputs: [(484 36864), ]
+	temporary: [(484 36864), ]
+	release: [(14 3612672), (483 1605632), ]
+	computeIthOp, 579, cost time: 7.124001 ms
+current Op is 485th:128:Raster
+	inputs: [(478 3211264), ]
+	outputs: [(485 1605632), ]
+	temporary: [(485 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 0.669000 ms
+current Op is 486th:68:Reduction
+	inputs: [(485 1605632), ]
+	outputs: [(486 802816), ]
+	temporary: [(486 802816), ]
+	release: [(485 1605632), ]
+	computeIthOp, 579, cost time: 0.740000 ms
+current Op is 487th:128:Raster
+	inputs: [(486 802816), ]
+	outputs: [(487 802816), ]
+	temporary: [(487 802816), ]
+	release: [(486 802816), ]
+	computeIthOp, 579, cost time: 0.568000 ms
+current Op is 488th:68:Reduction
+	inputs: [(487 802816), ]
+	outputs: [(488 256), ]
+	temporary: [(488 256), ]
+	release: [(487 802816), ]
+	computeIthOp, 579, cost time: 0.930000 ms
+current Op is 489th:128:Raster
+	inputs: [(478 3211264), ]
+	outputs: [(489 1605632), ]
+	temporary: [(489 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 0.664000 ms
+current Op is 490th:39:MatMul
+	inputs: [(11 401408), (489 1605632), ]
+	outputs: [(490 4096), ]
+	temporary: [(490 4096), ]
+	release: [(11 401408), (489 1605632), ]
+	computeIthOp, 579, cost time: 1.644000 ms
+current Op is 491th:128:Raster
+	inputs: []
+	outputs: [(491 36864), ]
+	temporary: [(491 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.433000 ms
+current Op is 492th:128:Raster
+	inputs: [(478 3211264), ]
+	outputs: [(492 1605632), ]
+	temporary: [(492 1605632), ]
+	release: []
+	computeIthOp, 579, cost time: 0.631000 ms
+current Op is 493th:39:MatMul
+	inputs: [(491 36864), (492 1605632), ]
+	outputs: [(493 3612672), ]
+	temporary: [(493 3612672), ]
+	release: [(491 36864), (492 1605632), ]
+	computeIthOp, 579, cost time: 6.736001 ms
+current Op is 494th:128:Raster
+	inputs: [(493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), (493 3612672), ]
+	outputs: [(494 3612672), ]
+	temporary: [(494 3612672), ]
+	release: [(493 3612672), ]
+	computeIthOp, 579, cost time: 2.089000 ms
+current Op is 495th:68:Reduction
+	inputs: [(494 3612672), ]
+	outputs: [(495 401408), ]
+	temporary: [(495 401408), ]
+	release: [(494 3612672), ]
+	computeIthOp, 579, cost time: 0.786000 ms
+current Op is 496th:128:Raster
+	inputs: []
+	outputs: [(496 4096), ]
+	temporary: [(496 4096), ]
+	release: []
+	computeIthOp, 579, cost time: 0.430000 ms
+current Op is 497th:128:Raster
+	inputs: [(478 3211264), ]
+	outputs: [(497 1605632), ]
+	temporary: [(497 1605632), ]
+	release: [(478 3211264), ]
+	computeIthOp, 579, cost time: 0.666000 ms
+current Op is 498th:39:MatMul
+	inputs: [(496 4096), (497 1605632), ]
+	outputs: [(498 401408), ]
+	temporary: [(498 401408), ]
+	release: [(496 4096), (497 1605632), ]
+	computeIthOp, 579, cost time: 2.381000 ms
+current Op is 499th:128:Raster
+	inputs: [(498 401408), (498 401408), ]
+	outputs: [(499 401408), ]
+	temporary: [(499 401408), ]
+	release: [(498 401408), ]
+	computeIthOp, 579, cost time: 0.602000 ms
+current Op is 500th:68:Reduction
+	inputs: [(499 401408), ]
+	outputs: [(500 401408), ]
+	temporary: [(500 401408), ]
+	release: [(499 401408), ]
+	computeIthOp, 579, cost time: 0.527000 ms
+current Op is 501th:128:Raster
+	inputs: [(495 401408), ]
+	outputs: [(501 401408), ]
+	temporary: [(501 401408), ]
+	release: [(495 401408), ]
+	computeIthOp, 579, cost time: 0.671000 ms
+current Op is 502th:128:Raster
+	inputs: [(500 401408), ]
+	outputs: [(502 401408), ]
+	temporary: [(502 401408), ]
+	release: [(500 401408), ]
+	computeIthOp, 579, cost time: 0.591000 ms
+current Op is 503th:7:BinaryOp
+	inputs: [(501 401408), (502 401408), ]
+	outputs: [(503 401408), ]
+	temporary: [(503 401408), ]
+	release: [(501 401408), (502 401408), ]
+	computeIthOp, 579, cost time: 0.633000 ms
+current Op is 504th:128:Raster
+	inputs: [(503 401408), ]
+	outputs: [(504 401408), ]
+	temporary: [(504 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.535000 ms
+current Op is 505th:68:Reduction
+	inputs: [(504 401408), ]
+	outputs: [(505 200704), ]
+	temporary: [(505 200704), ]
+	release: [(504 401408), ]
+	computeIthOp, 579, cost time: 0.537000 ms
+current Op is 506th:128:Raster
+	inputs: [(505 200704), ]
+	outputs: [(506 200704), ]
+	temporary: [(506 200704), ]
+	release: [(505 200704), ]
+	computeIthOp, 579, cost time: 0.573000 ms
+current Op is 507th:68:Reduction
+	inputs: [(506 200704), ]
+	outputs: [(507 64), ]
+	temporary: [(507 64), ]
+	release: [(506 200704), ]
+	computeIthOp, 579, cost time: 0.613000 ms
+current Op is 508th:128:Raster
+	inputs: [(503 401408), ]
+	outputs: [(508 401408), ]
+	temporary: [(508 401408), ]
+	release: []
+	computeIthOp, 579, cost time: 0.536000 ms
+current Op is 509th:39:MatMul
+	inputs: [(7 2408448), (508 401408), ]
+	outputs: [(509 6144), ]
+	temporary: [(509 6144), ]
+	release: [(7 2408448), (508 401408), ]
+	computeIthOp, 579, cost time: 4.205000 ms
+current Op is 510th:128:Raster
+	inputs: []
+	outputs: [(510 6144), ]
+	temporary: [(510 6144), ]
+	release: []
+	computeIthOp, 579, cost time: 0.435000 ms
+current Op is 511th:128:Raster
+	inputs: [(503 401408), ]
+	outputs: [(511 401408), ]
+	temporary: [(511 401408), ]
+	release: [(503 401408), ]
+	computeIthOp, 579, cost time: 0.879000 ms
+current Op is 512th:39:MatMul
+	inputs: [(510 6144), (511 401408), ]
+	outputs: [(512 2408448), ]
+	temporary: [(512 2408448), ]
+	release: [(510 6144), (511 401408), ]
+	computeIthOp, 579, cost time: 3.160000 ms
+current Op is 513th:128:Raster
+	inputs: [(512 2408448), (512 2408448), ]
+	outputs: [(513 2408448), ]
+	temporary: [(513 2408448), ]
+	release: [(512 2408448), ]
+	computeIthOp, 579, cost time: 0.861000 ms
+current Op is 514th:68:Reduction
+	inputs: [(513 2408448), ]
+	outputs: [(514 2408448), ]
+	temporary: [(514 2408448), ]
+	release: [(513 2408448), ]
+	computeIthOp, 579, cost time: 0.793000 ms
+current Op is 515th:128:Raster
+	inputs: [(5 9633792), ]
+	outputs: [(515 2408448), ]
+	temporary: [(515 2408448), ]
+	release: []
+	computeIthOp, 579, cost time: 3.909000 ms
+current Op is 516th:7:BinaryOp
+	inputs: [(515 2408448), (6 2408448), ]
+	outputs: [(516 2408448), ]
+	temporary: [(516 2408448), ]
+	release: [(515 2408448), ]
+	computeIthOp, 579, cost time: 4.275000 ms
+current Op is 517th:9:Cast
+	inputs: [(516 2408448), ]
+	outputs: [(517 2408448), ]
+	temporary: [(517 2408448), ]
+	release: [(516 2408448), ]
+	computeIthOp, 579, cost time: 3.931000 ms
+current Op is 518th:128:Raster
+	inputs: [(514 2408448), ]
+	outputs: [(518 2408448), ]
+	temporary: [(518 2408448), ]
+	release: [(514 2408448), ]
+	computeIthOp, 579, cost time: 1.199000 ms
+current Op is 519th:7:BinaryOp
+	inputs: [(518 2408448), (517 2408448), ]
+	outputs: [(519 2408448), ]
+	temporary: [(519 2408448), ]
+	release: [(517 2408448), ]
+	computeIthOp, 579, cost time: 0.917000 ms
+current Op is 520th:128:Raster
+	inputs: [(5 9633792), ]
+	outputs: [(520 2408448), ]
+	temporary: [(520 2408448), ]
+	release: []
+	computeIthOp, 579, cost time: 4.367000 ms
+current Op is 521th:7:BinaryOp
+	inputs: [(520 2408448), (6 2408448), ]
+	outputs: [(521 2408448), ]
+	temporary: [(521 2408448), ]
+	release: [(520 2408448), ]
+	computeIthOp, 579, cost time: 4.761000 ms
+current Op is 522th:9:Cast
+	inputs: [(521 2408448), ]
+	outputs: [(522 2408448), ]
+	temporary: [(522 2408448), ]
+	release: [(521 2408448), ]
+	computeIthOp, 579, cost time: 3.856000 ms
+current Op is 523th:7:BinaryOp
+	inputs: [(518 2408448), (522 2408448), ]
+	outputs: [(523 2408448), ]
+	temporary: [(523 2408448), ]
+	release: [(522 2408448), ]
+	computeIthOp, 579, cost time: 1.148000 ms
+current Op is 524th:128:Raster
+	inputs: [(5 9633792), ]
+	outputs: [(524 2408448), ]
+	temporary: [(524 2408448), ]
+	release: []
+	computeIthOp, 579, cost time: 4.511000 ms
+current Op is 525th:7:BinaryOp
+	inputs: [(524 2408448), (6 2408448), ]
+	outputs: [(525 2408448), ]
+	temporary: [(525 2408448), ]
+	release: [(524 2408448), ]
+	computeIthOp, 579, cost time: 4.578000 ms
+current Op is 526th:9:Cast
+	inputs: [(525 2408448), ]
+	outputs: [(526 2408448), ]
+	temporary: [(526 2408448), ]
+	release: [(525 2408448), ]
+	computeIthOp, 579, cost time: 3.533000 ms
+current Op is 527th:7:BinaryOp
+	inputs: [(518 2408448), (526 2408448), ]
+	outputs: [(527 2408448), ]
+	temporary: [(527 2408448), ]
+	release: [(526 2408448), ]
+	computeIthOp, 579, cost time: 1.009000 ms
+current Op is 528th:128:Raster
+	inputs: [(5 9633792), ]
+	outputs: [(528 2408448), ]
+	temporary: [(528 2408448), ]
+	release: []
+	computeIthOp, 579, cost time: 4.505000 ms
+current Op is 529th:7:BinaryOp
+	inputs: [(528 2408448), (6 2408448), ]
+	outputs: [(529 2408448), ]
+	temporary: [(529 2408448), ]
+	release: [(528 2408448), ]
+	computeIthOp, 579, cost time: 4.675000 ms
+current Op is 530th:9:Cast
+	inputs: [(529 2408448), ]
+	outputs: [(530 2408448), ]
+	temporary: [(530 2408448), ]
+	release: [(529 2408448), ]
+	computeIthOp, 579, cost time: 3.670000 ms
+current Op is 531th:7:BinaryOp
+	inputs: [(518 2408448), (530 2408448), ]
+	outputs: [(531 2408448), ]
+	temporary: [(531 2408448), ]
+	release: [(530 2408448), ]
+	computeIthOp, 579, cost time: 1.012000 ms
+current Op is 532th:128:Raster
+	inputs: [(5 9633792), ]
+	outputs: [(532 2408448), ]
+	temporary: [(532 2408448), ]
+	release: []
+	computeIthOp, 579, cost time: 4.406000 ms
+current Op is 533th:7:BinaryOp
+	inputs: [(532 2408448), (6 2408448), ]
+	outputs: [(533 2408448), ]
+	temporary: [(533 2408448), ]
+	release: [(532 2408448), ]
+	computeIthOp, 579, cost time: 4.672000 ms
+current Op is 534th:9:Cast
+	inputs: [(533 2408448), ]
+	outputs: [(534 2408448), ]
+	temporary: [(534 2408448), ]
+	release: [(533 2408448), ]
+	computeIthOp, 579, cost time: 4.006000 ms
+current Op is 535th:7:BinaryOp
+	inputs: [(518 2408448), (534 2408448), ]
+	outputs: [(535 2408448), ]
+	temporary: [(535 2408448), ]
+	release: [(534 2408448), ]
+	computeIthOp, 579, cost time: 1.079000 ms
+current Op is 536th:128:Raster
+	inputs: [(5 9633792), ]
+	outputs: [(536 2408448), ]
+	temporary: [(536 2408448), ]
+	release: []
+	computeIthOp, 579, cost time: 4.378000 ms
+current Op is 537th:7:BinaryOp
+	inputs: [(536 2408448), (6 2408448), ]
+	outputs: [(537 2408448), ]
+	temporary: [(537 2408448), ]
+	release: [(536 2408448), ]
+	computeIthOp, 579, cost time: 4.569000 ms
+current Op is 538th:9:Cast
+	inputs: [(537 2408448), ]
+	outputs: [(538 2408448), ]
+	temporary: [(538 2408448), ]
+	release: [(537 2408448), ]
+	computeIthOp, 579, cost time: 3.618000 ms
+current Op is 539th:7:BinaryOp
+	inputs: [(518 2408448), (538 2408448), ]
+	outputs: [(539 2408448), ]
+	temporary: [(539 2408448), ]
+	release: [(538 2408448), ]
+	computeIthOp, 579, cost time: 1.021000 ms
+current Op is 540th:128:Raster
+	inputs: [(5 9633792), ]
+	outputs: [(540 2408448), ]
+	temporary: [(540 2408448), ]
+	release: []
+	computeIthOp, 579, cost time: 4.437000 ms
+current Op is 541th:7:BinaryOp
+	inputs: [(540 2408448), (6 2408448), ]
+	outputs: [(541 2408448), ]
+	temporary: [(541 2408448), ]
+	release: [(540 2408448), ]
+	computeIthOp, 579, cost time: 4.718000 ms
+current Op is 542th:9:Cast
+	inputs: [(541 2408448), ]
+	outputs: [(542 2408448), ]
+	temporary: [(542 2408448), ]
+	release: [(541 2408448), ]
+	computeIthOp, 579, cost time: 4.043000 ms
+current Op is 543th:7:BinaryOp
+	inputs: [(518 2408448), (542 2408448), ]
+	outputs: [(543 2408448), ]
+	temporary: [(543 2408448), ]
+	release: [(542 2408448), ]
+	computeIthOp, 579, cost time: 1.143000 ms
+current Op is 544th:128:Raster
+	inputs: [(5 9633792), ]
+	outputs: [(544 2408448), ]
+	temporary: [(544 2408448), ]
+	release: []
+	computeIthOp, 579, cost time: 4.483000 ms
+current Op is 545th:7:BinaryOp
+	inputs: [(544 2408448), (6 2408448), ]
+	outputs: [(545 2408448), ]
+	temporary: [(545 2408448), ]
+	release: [(544 2408448), ]
+	computeIthOp, 579, cost time: 4.552000 ms
+current Op is 546th:9:Cast
+	inputs: [(545 2408448), ]
+	outputs: [(546 2408448), ]
+	temporary: [(546 2408448), ]
+	release: [(545 2408448), ]
+	computeIthOp, 579, cost time: 3.908000 ms
+current Op is 547th:7:BinaryOp
+	inputs: [(518 2408448), (546 2408448), ]
+	outputs: [(547 2408448), ]
+	temporary: [(547 2408448), ]
+	release: [(546 2408448), ]
+	computeIthOp, 579, cost time: 1.024000 ms
+current Op is 548th:128:Raster
+	inputs: [(5 9633792), ]
+	outputs: [(548 2408448), ]
+	temporary: [(548 2408448), ]
+	release: [(5 9633792), ]
+	computeIthOp, 579, cost time: 4.339000 ms
+current Op is 549th:7:BinaryOp
+	inputs: [(548 2408448), (6 2408448), ]
+	outputs: [(549 2408448), ]
+	temporary: [(549 2408448), ]
+	release: [(548 2408448), (6 2408448), ]
+	computeIthOp, 579, cost time: 4.712000 ms
+current Op is 550th:9:Cast
+	inputs: [(549 2408448), ]
+	outputs: [(550 2408448), ]
+	temporary: [(550 2408448), ]
+	release: [(549 2408448), ]
+	computeIthOp, 579, cost time: 3.844000 ms
+current Op is 551th:7:BinaryOp
+	inputs: [(518 2408448), (550 2408448), ]
+	outputs: [(551 2408448), ]
+	temporary: [(551 2408448), ]
+	release: [(518 2408448), (550 2408448), ]
+	computeIthOp, 579, cost time: 1.126000 ms
+current Op is 552th:128:Raster
+	inputs: [(519 2408448), ]
+	outputs: [(552 9633792), ]
+	temporary: [(552 9633792), ]
+	release: [(519 2408448), ]
+	computeIthOp, 579, cost time: 4.843000 ms
+current Op is 553th:128:Raster
+	inputs: [(523 2408448), ]
+	outputs: [(553 9633792), ]
+	temporary: [(553 9633792), ]
+	release: [(523 2408448), ]
+	computeIthOp, 579, cost time: 4.717000 ms
+current Op is 554th:128:Raster
+	inputs: [(527 2408448), ]
+	outputs: [(554 9633792), ]
+	temporary: [(554 9633792), ]
+	release: [(527 2408448), ]
+	computeIthOp, 579, cost time: 4.405000 ms
+current Op is 555th:128:Raster
+	inputs: [(531 2408448), ]
+	outputs: [(555 9633792), ]
+	temporary: [(555 9633792), ]
+	release: [(531 2408448), ]
+	computeIthOp, 579, cost time: 7.930000 ms
+current Op is 556th:128:Raster
+	inputs: [(535 2408448), ]
+	outputs: [(556 9633792), ]
+	temporary: [(556 9633792), ]
+	release: [(535 2408448), ]
+	computeIthOp, 579, cost time: 8.189000 ms
+current Op is 557th:128:Raster
+	inputs: [(539 2408448), ]
+	outputs: [(557 9633792), ]
+	temporary: [(557 9633792), ]
+	release: [(539 2408448), ]
+	computeIthOp, 579, cost time: 7.571001 ms
+current Op is 558th:128:Raster
+	inputs: [(543 2408448), ]
+	outputs: [(558 9633792), ]
+	temporary: [(558 9633792), ]
+	release: [(543 2408448), ]
+	computeIthOp, 579, cost time: 7.629000 ms
+current Op is 559th:128:Raster
+	inputs: [(547 2408448), ]
+	outputs: [(559 9633792), ]
+	temporary: [(559 9633792), ]
+	release: [(547 2408448), ]
+	computeIthOp, 579, cost time: 7.958000 ms
+current Op is 560th:128:Raster
+	inputs: [(551 2408448), ]
+	outputs: [(560 9633792), ]
+	temporary: [(560 9633792), ]
+	release: [(551 2408448), ]
+	computeIthOp, 579, cost time: 8.793000 ms
+current Op is 561th:22:Eltwise
+	inputs: [(552 9633792), (553 9633792), (554 9633792), (555 9633792), (556 9633792), (557 9633792), (558 9633792), (559 9633792), (560 9633792), ]
+	outputs: [(561 9633792), ]
+	temporary: [(561 9633792), ]
+	release: [(552 9633792), (553 9633792), (554 9633792), (555 9633792), (556 9633792), (557 9633792), (558 9633792), (559 9633792), (560 9633792), ]
+	computeIthOp, 579, cost time: 16.012001 ms
+current Op is 562th:128:Raster
+	inputs: [(561 9633792), ]
+	outputs: [(562 9633792), ]
+	temporary: [(562 9633792), ]
+	release: []
+	computeIthOp, 579, cost time: 3.248000 ms
+current Op is 563th:68:Reduction
+	inputs: [(562 9633792), ]
+	outputs: [(563 4816896), ]
+	temporary: [(563 4816896), ]
+	release: [(562 9633792), ]
+	computeIthOp, 579, cost time: 1.928000 ms
+current Op is 564th:128:Raster
+	inputs: [(563 4816896), ]
+	outputs: [(564 4816896), ]
+	temporary: [(564 4816896), ]
+	release: [(563 4816896), ]
+	computeIthOp, 579, cost time: 1.112000 ms
+current Op is 565th:68:Reduction
+	inputs: [(564 4816896), ]
+	outputs: [(565 384), ]
+	temporary: [(565 384), ]
+	release: [(564 4816896), ]
+	computeIthOp, 579, cost time: 3.430000 ms
+current Op is 566th:128:Raster
+	inputs: [(561 9633792), ]
+	outputs: [(566 9633792), ]
+	temporary: [(566 9633792), ]
+	release: [(561 9633792), ]
+	computeIthOp, 579, cost time: 2.923000 ms
+current Op is 567th:39:MatMul
+	inputs: [(2 14751744), (566 9633792), ]
+	outputs: [(567 56448), ]
+	temporary: [(567 56448), ]
+	release: [(2 14751744), (566 9633792), ]
+	computeIthOp, 579, cost time: 41.579002 ms
+current Op is 568th:128:Raster
+	inputs: [(125 40), ]
+	outputs: [(568 40), ]
+	temporary: []
+	release: [(125 40), ]
+	computeIthOp, 579, cost time: 0.523000 ms
+current Op is 569th:128:Raster
+	inputs: [(127 20480), ]
+	outputs: [(569 20480), ]
+	temporary: []
+	release: [(127 20480), ]
+	computeIthOp, 579, cost time: 0.522000 ms
+current Op is 570th:128:Raster
+	inputs: [(136 1024), ]
+	outputs: [(570 1024), ]
+	temporary: []
+	release: [(136 1024), ]
+	computeIthOp, 579, cost time: 0.501000 ms
+current Op is 571th:128:Raster
+	inputs: [(138 589824), ]
+	outputs: [(571 589824), ]
+	temporary: []
+	release: [(138 589824), ]
+	computeIthOp, 579, cost time: 0.752000 ms
+current Op is 572th:128:Raster
+	inputs: [(142 1024), ]
+	outputs: [(572 1024), ]
+	temporary: []
+	release: [(142 1024), ]
+	computeIthOp, 579, cost time: 0.456000 ms
+current Op is 573th:128:Raster
+	inputs: [(144 65536), ]
+	outputs: [(573 65536), ]
+	temporary: []
+	release: [(144 65536), ]
+	computeIthOp, 579, cost time: 0.494000 ms
+current Op is 574th:128:Raster
+	inputs: [(161 256), ]
+	outputs: [(574 256), ]
+	temporary: []
+	release: [(161 256), ]
+	computeIthOp, 579, cost time: 0.458000 ms
+current Op is 575th:128:Raster
+	inputs: [(163 131072), ]
+	outputs: [(575 131072), ]
+	temporary: []
+	release: [(163 131072), ]
+	computeIthOp, 579, cost time: 0.541000 ms
+current Op is 576th:128:Raster
+	inputs: [(219 1024), ]
+	outputs: [(576 1024), ]
+	temporary: []
+	release: [(219 1024), ]
+	computeIthOp, 579, cost time: 0.456000 ms
+current Op is 577th:128:Raster
+	inputs: [(221 589824), ]
+	outputs: [(577 589824), ]
+	temporary: []
+	release: [(221 589824), ]
+	computeIthOp, 579, cost time: 0.765000 ms
+current Op is 578th:128:Raster
+	inputs: [(225 1024), ]
+	outputs: [(578 1024), ]
+	temporary: []
+	release: [(225 1024), ]
+	computeIthOp, 579, cost time: 0.457000 ms
+current Op is 579th:128:Raster
+	inputs: [(227 65536), ]
+	outputs: [(579 65536), ]
+	temporary: []
+	release: [(227 65536), ]
+	computeIthOp, 579, cost time: 0.483000 ms
+current Op is 580th:128:Raster
+	inputs: [(244 256), ]
+	outputs: [(580 256), ]
+	temporary: []
+	release: [(244 256), ]
+	computeIthOp, 579, cost time: 0.490000 ms
+current Op is 581th:128:Raster
+	inputs: [(246 98304), ]
+	outputs: [(581 98304), ]
+	temporary: []
+	release: [(246 98304), ]
+	computeIthOp, 579, cost time: 0.492000 ms
+current Op is 582th:128:Raster
+	inputs: [(255 768), ]
+	outputs: [(582 768), ]
+	temporary: []
+	release: [(255 768), ]
+	computeIthOp, 579, cost time: 0.449000 ms
+current Op is 583th:128:Raster
+	inputs: [(257 331776), ]
+	outputs: [(583 331776), ]
+	temporary: []
+	release: [(257 331776), ]
+	computeIthOp, 579, cost time: 0.602000 ms
+current Op is 584th:128:Raster
+	inputs: [(261 768), ]
+	outputs: [(584 768), ]
+	temporary: []
+	release: [(261 768), ]
+	computeIthOp, 579, cost time: 0.473000 ms
+current Op is 585th:128:Raster
+	inputs: [(263 36864), ]
+	outputs: [(585 36864), ]
+	temporary: []
+	release: [(263 36864), ]
+	computeIthOp, 579, cost time: 0.482000 ms
+current Op is 586th:128:Raster
+	inputs: [(280 192), ]
+	outputs: [(586 192), ]
+	temporary: []
+	release: [(280 192), ]
+	computeIthOp, 579, cost time: 0.498000 ms
+current Op is 587th:128:Raster
+	inputs: [(282 73728), ]
+	outputs: [(587 73728), ]
+	temporary: []
+	release: [(282 73728), ]
+	computeIthOp, 579, cost time: 0.483000 ms
+current Op is 588th:128:Raster
+	inputs: [(291 768), ]
+	outputs: [(588 768), ]
+	temporary: []
+	release: [(291 768), ]
+	computeIthOp, 579, cost time: 0.453000 ms
+current Op is 589th:128:Raster
+	inputs: [(293 331776), ]
+	outputs: [(589 331776), ]
+	temporary: []
+	release: [(293 331776), ]
+	computeIthOp, 579, cost time: 0.615000 ms
+current Op is 590th:128:Raster
+	inputs: [(297 768), ]
+	outputs: [(590 768), ]
+	temporary: []
+	release: [(297 768), ]
+	computeIthOp, 579, cost time: 0.452000 ms
+current Op is 591th:128:Raster
+	inputs: [(299 36864), ]
+	outputs: [(591 36864), ]
+	temporary: []
+	release: [(299 36864), ]
+	computeIthOp, 579, cost time: 0.469000 ms
+current Op is 592th:128:Raster
+	inputs: [(316 192), ]
+	outputs: [(592 192), ]
+	temporary: []
+	release: [(316 192), ]
+	computeIthOp, 579, cost time: 0.470000 ms
+current Op is 593th:128:Raster
+	inputs: [(318 49152), ]
+	outputs: [(593 49152), ]
+	temporary: []
+	release: [(318 49152), ]
+	computeIthOp, 579, cost time: 0.492000 ms
+current Op is 594th:128:Raster
+	inputs: [(327 512), ]
+	outputs: [(594 512), ]
+	temporary: []
+	release: [(327 512), ]
+	computeIthOp, 579, cost time: 0.464000 ms
+current Op is 595th:128:Raster
+	inputs: [(329 147456), ]
+	outputs: [(595 147456), ]
+	temporary: []
+	release: [(329 147456), ]
+	computeIthOp, 579, cost time: 0.515000 ms
+current Op is 596th:128:Raster
+	inputs: [(333 512), ]
+	outputs: [(596 512), ]
+	temporary: []
+	release: [(333 512), ]
+	computeIthOp, 579, cost time: 0.449000 ms
+current Op is 597th:128:Raster
+	inputs: [(335 16384), ]
+	outputs: [(597 16384), ]
+	temporary: []
+	release: [(335 16384), ]
+	computeIthOp, 579, cost time: 0.460000 ms
+current Op is 598th:128:Raster
+	inputs: [(352 128), ]
+	outputs: [(598 128), ]
+	temporary: []
+	release: [(352 128), ]
+	computeIthOp, 579, cost time: 0.454000 ms
+current Op is 599th:128:Raster
+	inputs: [(354 32768), ]
+	outputs: [(599 32768), ]
+	temporary: []
+	release: [(354 32768), ]
+	computeIthOp, 579, cost time: 0.502000 ms
+current Op is 600th:128:Raster
+	inputs: [(410 512), ]
+	outputs: [(600 512), ]
+	temporary: []
+	release: [(410 512), ]
+	computeIthOp, 579, cost time: 0.451000 ms
+current Op is 601th:128:Raster
+	inputs: [(412 147456), ]
+	outputs: [(601 147456), ]
+	temporary: []
+	release: [(412 147456), ]
+	computeIthOp, 579, cost time: 0.515000 ms
+current Op is 602th:128:Raster
+	inputs: [(416 512), ]
+	outputs: [(602 512), ]
+	temporary: []
+	release: [(416 512), ]
+	computeIthOp, 579, cost time: 0.451000 ms
+current Op is 603th:128:Raster
+	inputs: [(418 16384), ]
+	outputs: [(603 16384), ]
+	temporary: []
+	release: [(418 16384), ]
+	computeIthOp, 579, cost time: 0.502000 ms
+current Op is 604th:128:Raster
+	inputs: [(435 128), ]
+	outputs: [(604 128), ]
+	temporary: []
+	release: [(435 128), ]
+	computeIthOp, 579, cost time: 0.451000 ms
+current Op is 605th:128:Raster
+	inputs: [(437 16384), ]
+	outputs: [(605 16384), ]
+	temporary: []
+	release: [(437 16384), ]
+	computeIthOp, 579, cost time: 0.455000 ms
+current Op is 606th:128:Raster
+	inputs: [(446 256), ]
+	outputs: [(606 256), ]
+	temporary: []
+	release: [(446 256), ]
+	computeIthOp, 579, cost time: 0.475000 ms
+current Op is 607th:128:Raster
+	inputs: [(448 36864), ]
+	outputs: [(607 36864), ]
+	temporary: []
+	release: [(448 36864), ]
+	computeIthOp, 579, cost time: 0.482000 ms
+current Op is 608th:128:Raster
+	inputs: [(452 256), ]
+	outputs: [(608 256), ]
+	temporary: []
+	release: [(452 256), ]
+	computeIthOp, 579, cost time: 0.443000 ms
+current Op is 609th:128:Raster
+	inputs: [(454 4096), ]
+	outputs: [(609 4096), ]
+	temporary: []
+	release: [(454 4096), ]
+	computeIthOp, 579, cost time: 0.463000 ms
+current Op is 610th:128:Raster
+	inputs: [(471 64), ]
+	outputs: [(610 64), ]
+	temporary: []
+	release: [(471 64), ]
+	computeIthOp, 579, cost time: 0.445000 ms
+current Op is 611th:128:Raster
+	inputs: [(473 8192), ]
+	outputs: [(611 8192), ]
+	temporary: []
+	release: [(473 8192), ]
+	computeIthOp, 579, cost time: 0.457000 ms
+current Op is 612th:128:Raster
+	inputs: [(482 256), ]
+	outputs: [(612 256), ]
+	temporary: []
+	release: [(482 256), ]
+	computeIthOp, 579, cost time: 0.477000 ms
+current Op is 613th:128:Raster
+	inputs: [(484 36864), ]
+	outputs: [(613 36864), ]
+	temporary: []
+	release: [(484 36864), ]
+	computeIthOp, 579, cost time: 0.467000 ms
+current Op is 614th:128:Raster
+	inputs: [(488 256), ]
+	outputs: [(614 256), ]
+	temporary: []
+	release: [(488 256), ]
+	computeIthOp, 579, cost time: 0.442000 ms
+current Op is 615th:128:Raster
+	inputs: [(490 4096), ]
+	outputs: [(615 4096), ]
+	temporary: []
+	release: [(490 4096), ]
+	computeIthOp, 579, cost time: 0.468000 ms
+current Op is 616th:128:Raster
+	inputs: [(507 64), ]
+	outputs: [(616 64), ]
+	temporary: []
+	release: [(507 64), ]
+	computeIthOp, 579, cost time: 0.447000 ms
+current Op is 617th:128:Raster
+	inputs: [(509 6144), ]
+	outputs: [(617 6144), ]
+	temporary: []
+	release: [(509 6144), ]
+	computeIthOp, 579, cost time: 0.459000 ms
+current Op is 618th:128:Raster
+	inputs: [(565 384), ]
+	outputs: [(618 384), ]
+	temporary: []
+	release: [(565 384), ]
+	computeIthOp, 579, cost time: 0.509000 ms
+current Op is 619th:128:Raster
+	inputs: [(567 56448), ]
+	outputs: [(619 56448), ]
+	temporary: []
+	release: [(567 56448), ]
+	computeIthOp, 579, cost time: 0.504000 ms
+SGD.cpp:onGetNextParameter: finish read-map & start replace
+SGD.cpp:onGetNextParameter: finish replace & start compute update value
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 73728), ]
+	temporary: [(0 73728), ]
+	release: []
+	computeIthOp, 579, cost time: 0.805000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 73728), ]
+	outputs: [(1 73728), ]
+	temporary: []
+	release: [(0 73728), ]
+	computeIthOp, 579, cost time: 0.530000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 73728), ]
+	temporary: [(0 73728), ]
+	release: []
+	computeIthOp, 579, cost time: 0.536000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 73728), ]
+	temporary: [(1 73728), ]
+	release: []
+	computeIthOp, 579, cost time: 0.321000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 73728), (1 73728), ]
+	outputs: [(2 73728), ]
+	temporary: []
+	release: [(0 73728), (1 73728), ]
+	computeIthOp, 579, cost time: 0.445000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 192), ]
+	temporary: [(0 192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.553000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 192), ]
+	outputs: [(1 192), ]
+	temporary: []
+	release: [(0 192), ]
+	computeIthOp, 579, cost time: 0.361000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 192), ]
+	temporary: [(0 192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.578000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 192), ]
+	temporary: [(1 192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.317000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 192), (1 192), ]
+	outputs: [(2 192), ]
+	temporary: []
+	release: [(0 192), (1 192), ]
+	computeIthOp, 579, cost time: 0.438000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: [(0 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.603000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 36864), ]
+	outputs: [(1 36864), ]
+	temporary: []
+	release: [(0 36864), ]
+	computeIthOp, 579, cost time: 0.551000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: [(0 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.345000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 36864), ]
+	temporary: [(1 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.325000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 36864), (1 36864), ]
+	outputs: [(2 36864), ]
+	temporary: []
+	release: [(0 36864), (1 36864), ]
+	computeIthOp, 579, cost time: 0.741000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: [(0 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.517000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 768), ]
+	outputs: [(1 768), ]
+	temporary: []
+	release: [(0 768), ]
+	computeIthOp, 579, cost time: 0.358000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: [(0 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.573000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 768), ]
+	temporary: [(1 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.894000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 768), (1 768), ]
+	outputs: [(2 768), ]
+	temporary: []
+	release: [(0 768), (1 768), ]
+	computeIthOp, 579, cost time: 0.550000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 331776), ]
+	temporary: [(0 331776), ]
+	release: []
+	computeIthOp, 579, cost time: 0.392000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 331776), ]
+	outputs: [(1 331776), ]
+	temporary: []
+	release: [(0 331776), ]
+	computeIthOp, 579, cost time: 0.678000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 331776), ]
+	temporary: [(0 331776), ]
+	release: []
+	computeIthOp, 579, cost time: 0.366000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 331776), ]
+	temporary: [(1 331776), ]
+	release: []
+	computeIthOp, 579, cost time: 0.345000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 331776), (1 331776), ]
+	outputs: [(2 331776), ]
+	temporary: []
+	release: [(0 331776), (1 331776), ]
+	computeIthOp, 579, cost time: 0.477000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: [(0 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.564000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 768), ]
+	outputs: [(1 768), ]
+	temporary: []
+	release: [(0 768), ]
+	computeIthOp, 579, cost time: 0.367000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: [(0 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.563000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 768), ]
+	temporary: [(1 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.314000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 768), (1 768), ]
+	outputs: [(2 768), ]
+	temporary: []
+	release: [(0 768), (1 768), ]
+	computeIthOp, 579, cost time: 0.435000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 98304), ]
+	temporary: [(0 98304), ]
+	release: []
+	computeIthOp, 579, cost time: 0.555000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 98304), ]
+	outputs: [(1 98304), ]
+	temporary: []
+	release: [(0 98304), ]
+	computeIthOp, 579, cost time: 0.383000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 98304), ]
+	temporary: [(0 98304), ]
+	release: []
+	computeIthOp, 579, cost time: 0.326000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 98304), ]
+	temporary: [(1 98304), ]
+	release: []
+	computeIthOp, 579, cost time: 0.323000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 98304), (1 98304), ]
+	outputs: [(2 98304), ]
+	temporary: []
+	release: [(0 98304), (1 98304), ]
+	computeIthOp, 579, cost time: 0.599000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.329000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 256), ]
+	outputs: [(1 256), ]
+	temporary: []
+	release: [(0 256), ]
+	computeIthOp, 579, cost time: 0.365000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.323000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 256), ]
+	temporary: [(1 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.313000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 256), (1 256), ]
+	outputs: [(2 256), ]
+	temporary: []
+	release: [(0 256), (1 256), ]
+	computeIthOp, 579, cost time: 0.438000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 65536), ]
+	temporary: [(0 65536), ]
+	release: []
+	computeIthOp, 579, cost time: 0.604000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 65536), ]
+	outputs: [(1 65536), ]
+	temporary: []
+	release: [(0 65536), ]
+	computeIthOp, 579, cost time: 0.381000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 65536), ]
+	temporary: [(0 65536), ]
+	release: []
+	computeIthOp, 579, cost time: 0.588000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 65536), ]
+	temporary: [(1 65536), ]
+	release: []
+	computeIthOp, 579, cost time: 0.320000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 65536), (1 65536), ]
+	outputs: [(2 65536), ]
+	temporary: []
+	release: [(0 65536), (1 65536), ]
+	computeIthOp, 579, cost time: 0.443000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: [(0 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.619000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 1024), ]
+	outputs: [(1 1024), ]
+	temporary: []
+	release: [(0 1024), ]
+	computeIthOp, 579, cost time: 0.367000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: [(0 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.321000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 1024), ]
+	temporary: [(1 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.397000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 1024), (1 1024), ]
+	outputs: [(2 1024), ]
+	temporary: []
+	release: [(0 1024), (1 1024), ]
+	computeIthOp, 579, cost time: 0.230000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 589824), ]
+	temporary: [(0 589824), ]
+	release: []
+	computeIthOp, 579, cost time: 0.579000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 589824), ]
+	outputs: [(1 589824), ]
+	temporary: []
+	release: [(0 589824), ]
+	computeIthOp, 579, cost time: 0.490000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 589824), ]
+	temporary: [(0 589824), ]
+	release: []
+	computeIthOp, 579, cost time: 0.569000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 589824), ]
+	temporary: [(1 589824), ]
+	release: []
+	computeIthOp, 579, cost time: 0.379000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 589824), (1 589824), ]
+	outputs: [(2 589824), ]
+	temporary: []
+	release: [(0 589824), (1 589824), ]
+	computeIthOp, 579, cost time: 0.520000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: [(0 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.584000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 1024), ]
+	outputs: [(1 1024), ]
+	temporary: []
+	release: [(0 1024), ]
+	computeIthOp, 579, cost time: 0.358000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: [(0 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.338000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 1024), ]
+	temporary: [(1 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.322000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 1024), (1 1024), ]
+	outputs: [(2 1024), ]
+	temporary: []
+	release: [(0 1024), (1 1024), ]
+	computeIthOp, 579, cost time: 0.440000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 131072), ]
+	temporary: [(0 131072), ]
+	release: []
+	computeIthOp, 579, cost time: 0.356000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 131072), ]
+	outputs: [(1 131072), ]
+	temporary: []
+	release: [(0 131072), ]
+	computeIthOp, 579, cost time: 0.374000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 131072), ]
+	temporary: [(0 131072), ]
+	release: []
+	computeIthOp, 579, cost time: 0.331000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 131072), ]
+	temporary: [(1 131072), ]
+	release: []
+	computeIthOp, 579, cost time: 0.328000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 131072), (1 131072), ]
+	outputs: [(2 131072), ]
+	temporary: []
+	release: [(0 131072), (1 131072), ]
+	computeIthOp, 579, cost time: 0.456000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.656000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 256), ]
+	outputs: [(1 256), ]
+	temporary: []
+	release: [(0 256), ]
+	computeIthOp, 579, cost time: 0.435000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.532000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 256), ]
+	temporary: [(1 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.317000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 256), (1 256), ]
+	outputs: [(2 256), ]
+	temporary: []
+	release: [(0 256), (1 256), ]
+	computeIthOp, 579, cost time: 0.376000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 65536), ]
+	temporary: [(0 65536), ]
+	release: []
+	computeIthOp, 579, cost time: 0.583000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 65536), ]
+	outputs: [(1 65536), ]
+	temporary: []
+	release: [(0 65536), ]
+	computeIthOp, 579, cost time: 0.366000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 65536), ]
+	temporary: [(0 65536), ]
+	release: []
+	computeIthOp, 579, cost time: 0.323000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 65536), ]
+	temporary: [(1 65536), ]
+	release: []
+	computeIthOp, 579, cost time: 0.322000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 65536), (1 65536), ]
+	outputs: [(2 65536), ]
+	temporary: []
+	release: [(0 65536), (1 65536), ]
+	computeIthOp, 579, cost time: 0.467000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: [(0 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.178000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 1024), ]
+	outputs: [(1 1024), ]
+	temporary: []
+	release: [(0 1024), ]
+	computeIthOp, 579, cost time: 0.122000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: [(0 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.468000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 1024), ]
+	temporary: [(1 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.409000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 1024), (1 1024), ]
+	outputs: [(2 1024), ]
+	temporary: []
+	release: [(0 1024), (1 1024), ]
+	computeIthOp, 579, cost time: 0.468000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 589824), ]
+	temporary: [(0 589824), ]
+	release: []
+	computeIthOp, 579, cost time: 0.648000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 589824), ]
+	outputs: [(1 589824), ]
+	temporary: []
+	release: [(0 589824), ]
+	computeIthOp, 579, cost time: 0.400000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 589824), ]
+	temporary: [(0 589824), ]
+	release: []
+	computeIthOp, 579, cost time: 0.609000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 589824), ]
+	temporary: [(1 589824), ]
+	release: []
+	computeIthOp, 579, cost time: 0.413000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 589824), (1 589824), ]
+	outputs: [(2 589824), ]
+	temporary: []
+	release: [(0 589824), (1 589824), ]
+	computeIthOp, 579, cost time: 0.538000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: [(0 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.348000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 1024), ]
+	outputs: [(1 1024), ]
+	temporary: []
+	release: [(0 1024), ]
+	computeIthOp, 579, cost time: 0.389000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: [(0 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.323000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 1024), ]
+	temporary: [(1 1024), ]
+	release: []
+	computeIthOp, 579, cost time: 0.315000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 1024), (1 1024), ]
+	outputs: [(2 1024), ]
+	temporary: []
+	release: [(0 1024), (1 1024), ]
+	computeIthOp, 579, cost time: 0.434000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 18816), ]
+	temporary: [(0 18816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.635000 ms
+current Op is 1th:128:Raster
+	inputs: [(0 18816), ]
+	outputs: [(1 56448), ]
+	temporary: [(1 56448), ]
+	release: [(0 18816), ]
+	computeIthOp, 579, cost time: 0.427000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(1 56448), ]
+	outputs: [(2 56448), ]
+	temporary: []
+	release: [(1 56448), ]
+	computeIthOp, 579, cost time: 0.365000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 56448), ]
+	temporary: [(0 56448), ]
+	release: []
+	computeIthOp, 579, cost time: 0.349000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 18816), ]
+	temporary: [(1 18816), ]
+	release: []
+	computeIthOp, 579, cost time: 0.321000 ms
+current Op is 2th:128:Raster
+	inputs: [(1 18816), ]
+	outputs: [(2 56448), ]
+	temporary: [(2 56448), ]
+	release: [(1 18816), ]
+	computeIthOp, 579, cost time: 0.418000 ms
+current Op is 3th:7:BinaryOp
+	inputs: [(0 56448), (2 56448), ]
+	outputs: [(3 56448), ]
+	temporary: []
+	release: [(0 56448), (2 56448), ]
+	computeIthOp, 579, cost time: 0.489000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 384), ]
+	temporary: [(0 384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.664000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 384), ]
+	outputs: [(1 384), ]
+	temporary: []
+	release: [(0 384), ]
+	computeIthOp, 579, cost time: 0.219000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 384), ]
+	temporary: [(0 384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.566000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 384), ]
+	temporary: [(1 384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.401000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 384), (1 384), ]
+	outputs: [(2 384), ]
+	temporary: []
+	release: [(0 384), (1 384), ]
+	computeIthOp, 579, cost time: 0.557000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 20480), ]
+	temporary: [(0 20480), ]
+	release: []
+	computeIthOp, 579, cost time: 0.565000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 20480), ]
+	outputs: [(1 20480), ]
+	temporary: []
+	release: [(0 20480), ]
+	computeIthOp, 579, cost time: 0.253000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 20480), ]
+	temporary: [(0 20480), ]
+	release: []
+	computeIthOp, 579, cost time: 1.446000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 20480), ]
+	temporary: [(1 20480), ]
+	release: []
+	computeIthOp, 579, cost time: 0.326000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 20480), (1 20480), ]
+	outputs: [(2 20480), ]
+	temporary: []
+	release: [(0 20480), (1 20480), ]
+	computeIthOp, 579, cost time: 0.344000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 40), ]
+	temporary: [(0 40), ]
+	release: []
+	computeIthOp, 579, cost time: 0.477000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 40), ]
+	outputs: [(1 40), ]
+	temporary: []
+	release: [(0 40), ]
+	computeIthOp, 579, cost time: 0.317000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 40), ]
+	temporary: [(0 40), ]
+	release: []
+	computeIthOp, 579, cost time: 0.428000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 40), ]
+	temporary: [(1 40), ]
+	release: []
+	computeIthOp, 579, cost time: 0.240000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 40), (1 40), ]
+	outputs: [(2 40), ]
+	temporary: []
+	release: [(0 40), (1 40), ]
+	computeIthOp, 579, cost time: 0.176000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 6144), ]
+	temporary: [(0 6144), ]
+	release: []
+	computeIthOp, 579, cost time: 0.475000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 6144), ]
+	outputs: [(1 6144), ]
+	temporary: []
+	release: [(0 6144), ]
+	computeIthOp, 579, cost time: 0.492000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 6144), ]
+	temporary: [(0 6144), ]
+	release: []
+	computeIthOp, 579, cost time: 0.516000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 6144), ]
+	temporary: [(1 6144), ]
+	release: []
+	computeIthOp, 579, cost time: 0.518000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 6144), (1 6144), ]
+	outputs: [(2 6144), ]
+	temporary: []
+	release: [(0 6144), (1 6144), ]
+	computeIthOp, 579, cost time: 0.515000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 64), ]
+	temporary: [(0 64), ]
+	release: []
+	computeIthOp, 579, cost time: 1.356000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 64), ]
+	outputs: [(1 64), ]
+	temporary: []
+	release: [(0 64), ]
+	computeIthOp, 579, cost time: 0.687000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 64), ]
+	temporary: [(0 64), ]
+	release: []
+	computeIthOp, 579, cost time: 1.423000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 64), ]
+	temporary: [(1 64), ]
+	release: []
+	computeIthOp, 579, cost time: 0.516000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 64), (1 64), ]
+	outputs: [(2 64), ]
+	temporary: []
+	release: [(0 64), (1 64), ]
+	computeIthOp, 579, cost time: 0.875000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 4096), ]
+	temporary: [(0 4096), ]
+	release: []
+	computeIthOp, 579, cost time: 0.708000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 4096), ]
+	outputs: [(1 4096), ]
+	temporary: []
+	release: [(0 4096), ]
+	computeIthOp, 579, cost time: 0.559000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 4096), ]
+	temporary: [(0 4096), ]
+	release: []
+	computeIthOp, 579, cost time: 0.654000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 4096), ]
+	temporary: [(1 4096), ]
+	release: []
+	computeIthOp, 579, cost time: 0.427000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 4096), (1 4096), ]
+	outputs: [(2 4096), ]
+	temporary: []
+	release: [(0 4096), (1 4096), ]
+	computeIthOp, 579, cost time: 0.586000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.412000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 256), ]
+	outputs: [(1 256), ]
+	temporary: []
+	release: [(0 256), ]
+	computeIthOp, 579, cost time: 0.369000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.375000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 256), ]
+	temporary: [(1 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.294000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 256), (1 256), ]
+	outputs: [(2 256), ]
+	temporary: []
+	release: [(0 256), (1 256), ]
+	computeIthOp, 579, cost time: 0.774000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: [(0 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.569000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 36864), ]
+	outputs: [(1 36864), ]
+	temporary: []
+	release: [(0 36864), ]
+	computeIthOp, 579, cost time: 0.473000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: [(0 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.603000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 36864), ]
+	temporary: [(1 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.413000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 36864), (1 36864), ]
+	outputs: [(2 36864), ]
+	temporary: []
+	release: [(0 36864), (1 36864), ]
+	computeIthOp, 579, cost time: 0.601000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.413000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 256), ]
+	outputs: [(1 256), ]
+	temporary: []
+	release: [(0 256), ]
+	computeIthOp, 579, cost time: 0.491000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.601000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 256), ]
+	temporary: [(1 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.425000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 256), (1 256), ]
+	outputs: [(2 256), ]
+	temporary: []
+	release: [(0 256), (1 256), ]
+	computeIthOp, 579, cost time: 0.600000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 8192), ]
+	temporary: [(0 8192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.694000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 8192), ]
+	outputs: [(1 8192), ]
+	temporary: []
+	release: [(0 8192), ]
+	computeIthOp, 579, cost time: 0.472000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 8192), ]
+	temporary: [(0 8192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.414000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 8192), ]
+	temporary: [(1 8192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.458000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 8192), (1 8192), ]
+	outputs: [(2 8192), ]
+	temporary: []
+	release: [(0 8192), (1 8192), ]
+	computeIthOp, 579, cost time: 0.563000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 64), ]
+	temporary: [(0 64), ]
+	release: []
+	computeIthOp, 579, cost time: 0.412000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 64), ]
+	outputs: [(1 64), ]
+	temporary: []
+	release: [(0 64), ]
+	computeIthOp, 579, cost time: 0.462000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 64), ]
+	temporary: [(0 64), ]
+	release: []
+	computeIthOp, 579, cost time: 0.603000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 64), ]
+	temporary: [(1 64), ]
+	release: []
+	computeIthOp, 579, cost time: 0.405000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 64), (1 64), ]
+	outputs: [(2 64), ]
+	temporary: []
+	release: [(0 64), (1 64), ]
+	computeIthOp, 579, cost time: 0.586000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 4096), ]
+	temporary: [(0 4096), ]
+	release: []
+	computeIthOp, 579, cost time: 0.423000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 4096), ]
+	outputs: [(1 4096), ]
+	temporary: []
+	release: [(0 4096), ]
+	computeIthOp, 579, cost time: 0.477000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 4096), ]
+	temporary: [(0 4096), ]
+	release: []
+	computeIthOp, 579, cost time: 0.410000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 4096), ]
+	temporary: [(1 4096), ]
+	release: []
+	computeIthOp, 579, cost time: 0.439000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 4096), (1 4096), ]
+	outputs: [(2 4096), ]
+	temporary: []
+	release: [(0 4096), (1 4096), ]
+	computeIthOp, 579, cost time: 0.559000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.404000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 256), ]
+	outputs: [(1 256), ]
+	temporary: []
+	release: [(0 256), ]
+	computeIthOp, 579, cost time: 0.459000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.434000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 256), ]
+	temporary: [(1 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.405000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 256), (1 256), ]
+	outputs: [(2 256), ]
+	temporary: []
+	release: [(0 256), (1 256), ]
+	computeIthOp, 579, cost time: 0.584000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: [(0 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.437000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 36864), ]
+	outputs: [(1 36864), ]
+	temporary: []
+	release: [(0 36864), ]
+	computeIthOp, 579, cost time: 0.460000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: [(0 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.440000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 36864), ]
+	temporary: [(1 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.403000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 36864), (1 36864), ]
+	outputs: [(2 36864), ]
+	temporary: []
+	release: [(0 36864), (1 36864), ]
+	computeIthOp, 579, cost time: 0.593000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.468000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 256), ]
+	outputs: [(1 256), ]
+	temporary: []
+	release: [(0 256), ]
+	computeIthOp, 579, cost time: 0.847000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: [(0 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.351000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 256), ]
+	temporary: [(1 256), ]
+	release: []
+	computeIthOp, 579, cost time: 0.314000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 256), (1 256), ]
+	outputs: [(2 256), ]
+	temporary: []
+	release: [(0 256), (1 256), ]
+	computeIthOp, 579, cost time: 0.437000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 16384), ]
+	temporary: [(0 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.322000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 16384), ]
+	outputs: [(1 16384), ]
+	temporary: []
+	release: [(0 16384), ]
+	computeIthOp, 579, cost time: 0.362000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 16384), ]
+	temporary: [(0 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.321000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 16384), ]
+	temporary: [(1 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.320000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 16384), (1 16384), ]
+	outputs: [(2 16384), ]
+	temporary: []
+	release: [(0 16384), (1 16384), ]
+	computeIthOp, 579, cost time: 0.464000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 128), ]
+	temporary: [(0 128), ]
+	release: []
+	computeIthOp, 579, cost time: 0.321000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 128), ]
+	outputs: [(1 128), ]
+	temporary: []
+	release: [(0 128), ]
+	computeIthOp, 579, cost time: 0.385000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 128), ]
+	temporary: [(0 128), ]
+	release: []
+	computeIthOp, 579, cost time: 0.318000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 128), ]
+	temporary: [(1 128), ]
+	release: []
+	computeIthOp, 579, cost time: 0.316000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 128), (1 128), ]
+	outputs: [(2 128), ]
+	temporary: []
+	release: [(0 128), (1 128), ]
+	computeIthOp, 579, cost time: 0.459000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 16384), ]
+	temporary: [(0 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.323000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 16384), ]
+	outputs: [(1 16384), ]
+	temporary: []
+	release: [(0 16384), ]
+	computeIthOp, 579, cost time: 0.381000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 16384), ]
+	temporary: [(0 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.323000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 16384), ]
+	temporary: [(1 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.408000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 16384), (1 16384), ]
+	outputs: [(2 16384), ]
+	temporary: []
+	release: [(0 16384), (1 16384), ]
+	computeIthOp, 579, cost time: 0.199000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: [(0 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.545000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 512), ]
+	outputs: [(1 512), ]
+	temporary: []
+	release: [(0 512), ]
+	computeIthOp, 579, cost time: 0.362000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: [(0 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.331000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 512), ]
+	temporary: [(1 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.315000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 512), (1 512), ]
+	outputs: [(2 512), ]
+	temporary: []
+	release: [(0 512), (1 512), ]
+	computeIthOp, 579, cost time: 0.432000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 147456), ]
+	temporary: [(0 147456), ]
+	release: []
+	computeIthOp, 579, cost time: 0.330000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 147456), ]
+	outputs: [(1 147456), ]
+	temporary: []
+	release: [(0 147456), ]
+	computeIthOp, 579, cost time: 0.382000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 147456), ]
+	temporary: [(0 147456), ]
+	release: []
+	computeIthOp, 579, cost time: 0.360000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 147456), ]
+	temporary: [(1 147456), ]
+	release: []
+	computeIthOp, 579, cost time: 0.327000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 147456), (1 147456), ]
+	outputs: [(2 147456), ]
+	temporary: []
+	release: [(0 147456), (1 147456), ]
+	computeIthOp, 579, cost time: 0.622000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: [(0 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.577000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 512), ]
+	outputs: [(1 512), ]
+	temporary: []
+	release: [(0 512), ]
+	computeIthOp, 579, cost time: 0.431000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: [(0 512), ]
+	release: []
+	computeIthOp, 579, cost time: 1.224000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 512), ]
+	temporary: [(1 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.427000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 512), (1 512), ]
+	outputs: [(2 512), ]
+	temporary: []
+	release: [(0 512), (1 512), ]
+	computeIthOp, 579, cost time: 0.613000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 32768), ]
+	temporary: [(0 32768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.549000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 32768), ]
+	outputs: [(1 32768), ]
+	temporary: []
+	release: [(0 32768), ]
+	computeIthOp, 579, cost time: 0.458000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 32768), ]
+	temporary: [(0 32768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.422000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 32768), ]
+	temporary: [(1 32768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.435000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 32768), (1 32768), ]
+	outputs: [(2 32768), ]
+	temporary: []
+	release: [(0 32768), (1 32768), ]
+	computeIthOp, 579, cost time: 0.214000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 128), ]
+	temporary: [(0 128), ]
+	release: []
+	computeIthOp, 579, cost time: 0.133000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 128), ]
+	outputs: [(1 128), ]
+	temporary: []
+	release: [(0 128), ]
+	computeIthOp, 579, cost time: 0.116000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 128), ]
+	temporary: [(0 128), ]
+	release: []
+	computeIthOp, 579, cost time: 0.459000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 128), ]
+	temporary: [(1 128), ]
+	release: []
+	computeIthOp, 579, cost time: 0.454000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 128), (1 128), ]
+	outputs: [(2 128), ]
+	temporary: []
+	release: [(0 128), (1 128), ]
+	computeIthOp, 579, cost time: 0.504000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 16384), ]
+	temporary: [(0 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.141000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 16384), ]
+	outputs: [(1 16384), ]
+	temporary: []
+	release: [(0 16384), ]
+	computeIthOp, 579, cost time: 0.760000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 16384), ]
+	temporary: [(0 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.558000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 16384), ]
+	temporary: [(1 16384), ]
+	release: []
+	computeIthOp, 579, cost time: 0.276000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 16384), (1 16384), ]
+	outputs: [(2 16384), ]
+	temporary: []
+	release: [(0 16384), (1 16384), ]
+	computeIthOp, 579, cost time: 0.296000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: [(0 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.348000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 512), ]
+	outputs: [(1 512), ]
+	temporary: []
+	release: [(0 512), ]
+	computeIthOp, 579, cost time: 0.385000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: [(0 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.612000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 512), ]
+	temporary: [(1 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.340000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 512), (1 512), ]
+	outputs: [(2 512), ]
+	temporary: []
+	release: [(0 512), (1 512), ]
+	computeIthOp, 579, cost time: 0.455000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 147456), ]
+	temporary: [(0 147456), ]
+	release: []
+	computeIthOp, 579, cost time: 0.616000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 147456), ]
+	outputs: [(1 147456), ]
+	temporary: []
+	release: [(0 147456), ]
+	computeIthOp, 579, cost time: 0.384000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 147456), ]
+	temporary: [(0 147456), ]
+	release: []
+	computeIthOp, 579, cost time: 0.611000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 147456), ]
+	temporary: [(1 147456), ]
+	release: []
+	computeIthOp, 579, cost time: 0.250000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 147456), (1 147456), ]
+	outputs: [(2 147456), ]
+	temporary: []
+	release: [(0 147456), (1 147456), ]
+	computeIthOp, 579, cost time: 0.298000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: [(0 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.580000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 512), ]
+	outputs: [(1 512), ]
+	temporary: []
+	release: [(0 512), ]
+	computeIthOp, 579, cost time: 0.465000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: [(0 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.455000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 512), ]
+	temporary: [(1 512), ]
+	release: []
+	computeIthOp, 579, cost time: 0.406000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 512), (1 512), ]
+	outputs: [(2 512), ]
+	temporary: []
+	release: [(0 512), (1 512), ]
+	computeIthOp, 579, cost time: 0.595000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 49152), ]
+	temporary: [(0 49152), ]
+	release: []
+	computeIthOp, 579, cost time: 0.627000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 49152), ]
+	outputs: [(1 49152), ]
+	temporary: []
+	release: [(0 49152), ]
+	computeIthOp, 579, cost time: 0.472000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 49152), ]
+	temporary: [(0 49152), ]
+	release: []
+	computeIthOp, 579, cost time: 0.451000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 49152), ]
+	temporary: [(1 49152), ]
+	release: []
+	computeIthOp, 579, cost time: 0.415000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 49152), (1 49152), ]
+	outputs: [(2 49152), ]
+	temporary: []
+	release: [(0 49152), (1 49152), ]
+	computeIthOp, 579, cost time: 0.608000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 192), ]
+	temporary: [(0 192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.449000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 192), ]
+	outputs: [(1 192), ]
+	temporary: []
+	release: [(0 192), ]
+	computeIthOp, 579, cost time: 0.462000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 192), ]
+	temporary: [(0 192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.610000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 192), ]
+	temporary: [(1 192), ]
+	release: []
+	computeIthOp, 579, cost time: 0.404000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 192), (1 192), ]
+	outputs: [(2 192), ]
+	temporary: []
+	release: [(0 192), (1 192), ]
+	computeIthOp, 579, cost time: 0.609000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: [(0 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.427000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 36864), ]
+	outputs: [(1 36864), ]
+	temporary: []
+	release: [(0 36864), ]
+	computeIthOp, 579, cost time: 0.489000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: [(0 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.432000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 36864), ]
+	temporary: [(1 36864), ]
+	release: []
+	computeIthOp, 579, cost time: 0.406000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 36864), (1 36864), ]
+	outputs: [(2 36864), ]
+	temporary: []
+	release: [(0 36864), (1 36864), ]
+	computeIthOp, 579, cost time: 0.593000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: [(0 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.405000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 768), ]
+	outputs: [(1 768), ]
+	temporary: []
+	release: [(0 768), ]
+	computeIthOp, 579, cost time: 0.491000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: [(0 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.408000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 768), ]
+	temporary: [(1 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.426000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 768), (1 768), ]
+	outputs: [(2 768), ]
+	temporary: []
+	release: [(0 768), (1 768), ]
+	computeIthOp, 579, cost time: 0.555000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 331776), ]
+	temporary: [(0 331776), ]
+	release: []
+	computeIthOp, 579, cost time: 0.441000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 331776), ]
+	outputs: [(1 331776), ]
+	temporary: []
+	release: [(0 331776), ]
+	computeIthOp, 579, cost time: 0.541000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 331776), ]
+	temporary: [(0 331776), ]
+	release: []
+	computeIthOp, 579, cost time: 0.768000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 331776), ]
+	temporary: [(1 331776), ]
+	release: []
+	computeIthOp, 579, cost time: 0.840000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 331776), (1 331776), ]
+	outputs: [(2 331776), ]
+	temporary: []
+	release: [(0 331776), (1 331776), ]
+	computeIthOp, 579, cost time: 0.504000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: [(0 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.439000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 768), ]
+	outputs: [(1 768), ]
+	temporary: []
+	release: [(0 768), ]
+	computeIthOp, 579, cost time: 0.251000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: [(0 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.274000 ms
+current Op is 1th:7:BinaryOp
+	inputs: []
+	outputs: [(1 768), ]
+	temporary: [(1 768), ]
+	release: []
+	computeIthOp, 579, cost time: 0.099000 ms
+current Op is 2th:7:BinaryOp
+	inputs: [(0 768), (1 768), ]
+	outputs: [(2 768), ]
+	temporary: []
+	release: [(0 768), (1 768), ]
+	computeIthOp, 579, cost time: 0.179000 ms
+SGD.cpp: finish func onGetNextParameter
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 73728), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.275000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 192), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.444000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.515000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.293000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 331776), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.474000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.308000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 98304), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.336000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.514000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 65536), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.612000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.324000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 589824), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.718000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.319000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 131072), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.352000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.585000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 65536), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.564000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.589000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 589824), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.659000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 1024), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.314000 ms
+current Op is 0th:128:Raster
+	inputs: []
+	outputs: [(0 56448), ]
+	temporary: [(0 56448), ]
+	release: []
+	computeIthOp, 579, cost time: 0.345000 ms
+current Op is 1th:7:BinaryOp
+	inputs: [(0 56448), ]
+	outputs: [(1 56448), ]
+	temporary: []
+	release: [(0 56448), ]
+	computeIthOp, 579, cost time: 0.375000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 384), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.657000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 20480), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.666000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 40), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.544000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 6144), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.668000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 64), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.492000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 4096), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.442000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 1.140000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 1.269000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.185000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 8192), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 1.113000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 64), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.574000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 4096), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.476000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 1.202000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.451000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 256), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.571000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 16384), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.451000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 128), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.436000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 16384), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.543000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.590000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 147456), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.613000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.602000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 32768), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.578000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 128), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.392000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 16384), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.370000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.394000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 147456), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.590000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 512), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.576000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 49152), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.649000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 192), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.364000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 36864), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.408000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.364000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 331776), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.682000 ms
+current Op is 0th:7:BinaryOp
+	inputs: []
+	outputs: [(0 768), ]
+	temporary: []
+	release: []
+	computeIthOp, 579, cost time: 0.575000 ms
+train, 137, cost time: 1664.176025 ms
+train, 125, cost time: 1792.272095 ms
