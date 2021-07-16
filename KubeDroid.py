@@ -171,6 +171,7 @@ class HeuristicAllocator:
 
     def heuristic_alloc(self):
         heuristic = defaultdict(list)  # 用来贪心决策的临时变量，heuristic[op]表示在第op个生命周期，即[op-1, op)区间，当中分配的地址段包含哪些，升序排列 + 方便二分查找
+
         # list中的元素是若干个[a, b)的区间
 
         def overlap(s1, t1, s2, t2):  # [s1, t1) & [s2, t2) 是否重叠
@@ -392,14 +393,51 @@ def simulate_recompute():
     print(allocator.tot_size)
 
 
+def oracle(profiler):
+    cur, peak = 0, 0
+    for i in range(len(profiler.tensor_info)):
+        # if i > 217:
+        #     break
+        for t in profiler.tensor_info[i]['outputs']:
+            cur += profiler.tensor_size[t]
+            peak = max(cur, peak)
+        for a, t in profiler.resize_info[i]:
+            if a == 'alloc':
+                cur += profiler.tensor_size[t]
+                peak = max(cur, peak)
+            else:
+                cur -= profiler.tensor_size[t]
+        for t in profiler.tensor_info[i]['release']:
+            cur -= profiler.tensor_size[t]
+    print(cur, peak)
+    return peak
+
+
+def baseline(profiler):
+    buffer_allocator = BufferAllocator()
+    for i in range(len(profiler.tensor_info)):
+        for t in profiler.tensor_info[i]['outputs']:
+            buffer_allocator.alloc(t, profiler.tensor_size[t])
+        for a, t in profiler.resize_info[i]:
+            if a == 'alloc':
+                buffer_allocator.alloc(t, profiler.tensor_size[t])
+            else:
+                buffer_allocator.free(t)
+        for t in profiler.tensor_info[i]['release']:
+            buffer_allocator.free(t)
+    print(buffer_allocator.tot_size)
+    return buffer_allocator.tot_size
+
+
 if __name__ == '__main__':
     for model in ['Squeezenet', 'Googlenet', 'MobilenetV1', 'MobilenetV2']:
         for batch in range(2, 17):
             print(model, batch)
             profiler = Profiler(model, batch)
-            heuristic_allocator = HeuristicAllocator(profiler)
+            b = baseline(profiler)
+            o = oracle(profiler)
+            print(b, o)
+            # heuristic_allocator = HeuristicAllocator(profiler)
             # heuristic_allocator.dump_heuristic_info()
-            heuristic_allocator.heuristic_alloc()
+            # heuristic_allocator.heuristic_alloc()
             input()
-
-
