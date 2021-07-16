@@ -223,6 +223,11 @@ class HeuristicAllocator:
             assert par in self.heuristic_address and t not in self.heuristic_address
             self.heuristic_address[t] = self.heuristic_address[par]
 
+        # verify correctness
+        for op in heuristic:
+            for i in range(len(heuristic[op]) - 1):
+                assert heuristic[op][i][1] <= heuristic[op][i + 1][0]
+
         max_address = max([self.heuristic_address[t] + BufferAllocator.aligned_size(self.profiler.tensor_size[t]) for t in self.heuristic_address])
         print(max_address)
         with open(f'address/{self.profiler.model}_{self.profiler.batch}.address.json', 'w') as f:
