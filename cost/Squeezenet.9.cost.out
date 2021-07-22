@@ -1,0 +1,1881 @@
+Error to find creator of 9, set CPU default
+begin an iteration 0
+call step in MicroSGD, mMicroStep = 1, mStep = 0
+don't need to use the micro-batch tech, call father's step directly
+SGD.cpp:onGetNextParameter: finish compute grad graph
+SGD.cpp:onGetNextParameter: finish prepare compute & start read-map
+current Op is 0th:128:Raster
+	computeIthOp, 577, cost time: 2.977000 ms
+current Op is 1th:128:Raster
+	computeIthOp, 577, cost time: 6.477000 ms
+current Op is 2th:128:Raster
+	computeIthOp, 577, cost time: 61.884003 ms
+current Op is 3th:128:Raster
+	computeIthOp, 577, cost time: 0.239000 ms
+current Op is 4th:39:MatMul
+	computeIthOp, 577, cost time: 138.311005 ms
+current Op is 5th:128:Raster
+	computeIthOp, 577, cost time: 23.026001 ms
+current Op is 6th:47:Pooling
+	computeIthOp, 577, cost time: 156.579010 ms
+current Op is 7th:128:Raster
+	computeIthOp, 577, cost time: 3.264000 ms
+current Op is 8th:128:Raster
+	computeIthOp, 577, cost time: 0.129000 ms
+current Op is 9th:39:MatMul
+	computeIthOp, 577, cost time: 4.757000 ms
+current Op is 10th:128:Raster
+	computeIthOp, 577, cost time: 0.773000 ms
+current Op is 11th:128:Raster
+	computeIthOp, 577, cost time: 0.598000 ms
+current Op is 12th:128:Raster
+	computeIthOp, 577, cost time: 0.382000 ms
+current Op is 13th:39:MatMul
+	computeIthOp, 577, cost time: 7.214000 ms
+current Op is 14th:128:Raster
+	computeIthOp, 577, cost time: 3.319000 ms
+current Op is 15th:128:Raster
+	computeIthOp, 577, cost time: 0.109000 ms
+current Op is 16th:39:MatMul
+	computeIthOp, 577, cost time: 18.519001 ms
+current Op is 17th:128:Raster
+	computeIthOp, 577, cost time: 6.062000 ms
+current Op is 18th:128:Raster
+	computeIthOp, 577, cost time: 3.686000 ms
+current Op is 19th:128:Raster
+	computeIthOp, 577, cost time: 0.106000 ms
+current Op is 20th:39:MatMul
+	computeIthOp, 577, cost time: 7.691000 ms
+current Op is 21th:128:Raster
+	computeIthOp, 577, cost time: 1.552000 ms
+current Op is 22th:128:Raster
+	computeIthOp, 577, cost time: 0.661000 ms
+current Op is 23th:128:Raster
+	computeIthOp, 577, cost time: 0.111000 ms
+current Op is 24th:39:MatMul
+	computeIthOp, 577, cost time: 6.820000 ms
+current Op is 25th:128:Raster
+	computeIthOp, 577, cost time: 2.985000 ms
+current Op is 26th:128:Raster
+	computeIthOp, 577, cost time: 0.121000 ms
+current Op is 27th:39:MatMul
+	computeIthOp, 577, cost time: 23.208000 ms
+current Op is 28th:128:Raster
+	computeIthOp, 577, cost time: 5.647000 ms
+current Op is 29th:128:Raster
+	computeIthOp, 577, cost time: 3.767000 ms
+current Op is 30th:128:Raster
+	computeIthOp, 577, cost time: 0.120000 ms
+current Op is 31th:39:MatMul
+	computeIthOp, 577, cost time: 10.815001 ms
+current Op is 32th:128:Raster
+	computeIthOp, 577, cost time: 1.909000 ms
+current Op is 33th:128:Raster
+	computeIthOp, 577, cost time: 1.010000 ms
+current Op is 34th:128:Raster
+	computeIthOp, 577, cost time: 0.124000 ms
+current Op is 35th:39:MatMul
+	computeIthOp, 577, cost time: 14.748001 ms
+current Op is 36th:128:Raster
+	computeIthOp, 577, cost time: 15.664001 ms
+current Op is 37th:128:Raster
+	computeIthOp, 577, cost time: 0.187000 ms
+current Op is 38th:39:MatMul
+	computeIthOp, 577, cost time: 74.120003 ms
+current Op is 39th:128:Raster
+	computeIthOp, 577, cost time: 16.278000 ms
+current Op is 40th:47:Pooling
+	computeIthOp, 577, cost time: 106.061005 ms
+current Op is 41th:128:Raster
+	computeIthOp, 577, cost time: 10.486000 ms
+current Op is 42th:128:Raster
+	computeIthOp, 577, cost time: 0.130000 ms
+current Op is 43th:39:MatMul
+	computeIthOp, 577, cost time: 4.597000 ms
+current Op is 44th:128:Raster
+	computeIthOp, 577, cost time: 0.905000 ms
+current Op is 45th:128:Raster
+	computeIthOp, 577, cost time: 0.308000 ms
+current Op is 46th:128:Raster
+	computeIthOp, 577, cost time: 0.102000 ms
+current Op is 47th:39:MatMul
+	computeIthOp, 577, cost time: 4.019000 ms
+current Op is 48th:128:Raster
+	computeIthOp, 577, cost time: 1.689000 ms
+current Op is 49th:128:Raster
+	computeIthOp, 577, cost time: 0.146000 ms
+current Op is 50th:39:MatMul
+	computeIthOp, 577, cost time: 14.636001 ms
+current Op is 51th:128:Raster
+	computeIthOp, 577, cost time: 3.193000 ms
+current Op is 52th:128:Raster
+	computeIthOp, 577, cost time: 2.322000 ms
+current Op is 53th:128:Raster
+	computeIthOp, 577, cost time: 0.546000 ms
+current Op is 54th:39:MatMul
+	computeIthOp, 577, cost time: 5.755000 ms
+current Op is 55th:128:Raster
+	computeIthOp, 577, cost time: 1.026000 ms
+current Op is 56th:128:Raster
+	computeIthOp, 577, cost time: 0.408000 ms
+current Op is 57th:128:Raster
+	computeIthOp, 577, cost time: 0.171000 ms
+current Op is 58th:39:MatMul
+	computeIthOp, 577, cost time: 6.627000 ms
+current Op is 59th:128:Raster
+	computeIthOp, 577, cost time: 2.545000 ms
+current Op is 60th:128:Raster
+	computeIthOp, 577, cost time: 0.162000 ms
+current Op is 61th:39:MatMul
+	computeIthOp, 577, cost time: 30.495001 ms
+current Op is 62th:128:Raster
+	computeIthOp, 577, cost time: 4.333000 ms
+current Op is 63th:128:Raster
+	computeIthOp, 577, cost time: 5.142000 ms
+current Op is 64th:128:Raster
+	computeIthOp, 577, cost time: 0.126000 ms
+current Op is 65th:39:MatMul
+	computeIthOp, 577, cost time: 7.633000 ms
+current Op is 66th:128:Raster
+	computeIthOp, 577, cost time: 0.637000 ms
+current Op is 67th:128:Raster
+	computeIthOp, 577, cost time: 0.597000 ms
+current Op is 68th:128:Raster
+	computeIthOp, 577, cost time: 0.116000 ms
+current Op is 69th:39:MatMul
+	computeIthOp, 577, cost time: 6.549000 ms
+current Op is 70th:128:Raster
+	computeIthOp, 577, cost time: 5.933000 ms
+current Op is 71th:128:Raster
+	computeIthOp, 577, cost time: 0.172000 ms
+current Op is 72th:39:MatMul
+	computeIthOp, 577, cost time: 34.976002 ms
+current Op is 73th:128:Raster
+	computeIthOp, 577, cost time: 3.899000 ms
+current Op is 74th:128:Raster
+	computeIthOp, 577, cost time: 3.393000 ms
+current Op is 75th:128:Raster
+	computeIthOp, 577, cost time: 0.128000 ms
+current Op is 76th:39:MatMul
+	computeIthOp, 577, cost time: 9.198001 ms
+current Op is 77th:128:Raster
+	computeIthOp, 577, cost time: 0.989000 ms
+current Op is 78th:128:Raster
+	computeIthOp, 577, cost time: 0.740000 ms
+current Op is 79th:128:Raster
+	computeIthOp, 577, cost time: 0.180000 ms
+current Op is 80th:39:MatMul
+	computeIthOp, 577, cost time: 9.873000 ms
+current Op is 81th:128:Raster
+	computeIthOp, 577, cost time: 7.996000 ms
+current Op is 82th:128:Raster
+	computeIthOp, 577, cost time: 0.227000 ms
+current Op is 83th:39:MatMul
+	computeIthOp, 577, cost time: 54.588001 ms
+current Op is 84th:128:Raster
+	computeIthOp, 577, cost time: 8.238000 ms
+current Op is 85th:47:Pooling
+	computeIthOp, 577, cost time: 53.540001 ms
+current Op is 86th:128:Raster
+	computeIthOp, 577, cost time: 1.412000 ms
+current Op is 87th:128:Raster
+	computeIthOp, 577, cost time: 0.174000 ms
+current Op is 88th:39:MatMul
+	computeIthOp, 577, cost time: 4.015000 ms
+current Op is 89th:128:Raster
+	computeIthOp, 577, cost time: 0.339000 ms
+current Op is 90th:128:Raster
+	computeIthOp, 577, cost time: 0.216000 ms
+current Op is 91th:128:Raster
+	computeIthOp, 577, cost time: 0.093000 ms
+current Op is 92th:39:MatMul
+	computeIthOp, 577, cost time: 2.577000 ms
+current Op is 93th:128:Raster
+	computeIthOp, 577, cost time: 1.141000 ms
+current Op is 94th:128:Raster
+	computeIthOp, 577, cost time: 0.185000 ms
+current Op is 95th:39:MatMul
+	computeIthOp, 577, cost time: 12.971001 ms
+current Op is 96th:128:Raster
+	computeIthOp, 577, cost time: 1.622000 ms
+current Op is 97th:128:Raster
+	computeIthOp, 577, cost time: 1.820000 ms
+current Op is 98th:128:Raster
+	computeIthOp, 577, cost time: 0.116000 ms
+current Op is 99th:39:MatMul
+	computeIthOp, 577, cost time: 0.664000 ms
+current Op is 100th:128:Raster
+	computeIthOp, 577, cost time: 0.143000 ms
+current Op is 101th:47:Pooling
+	computeIthOp, 577, cost time: 0.131000 ms
+current Op is 102th:101:UnaryOp
+	computeIthOp, 577, cost time: 0.088000 ms
+current Op is 103th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.074000 ms
+current Op is 104th:128:Raster
+	computeIthOp, 577, cost time: 0.074000 ms
+current Op is 105th:128:Raster
+	computeIthOp, 577, cost time: 0.088000 ms
+current Op is 106th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.087000 ms
+current Op is 107th:128:Raster
+	computeIthOp, 577, cost time: 0.085000 ms
+current Op is 108th:128:Raster
+	computeIthOp, 577, cost time: 0.087000 ms
+current Op is 109th:128:Raster
+	computeIthOp, 577, cost time: 0.136000 ms
+current Op is 110th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 111th:128:Raster
+	computeIthOp, 577, cost time: 0.090000 ms
+current Op is 112th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.070000 ms
+current Op is 113th:128:Raster
+	computeIthOp, 577, cost time: 0.082000 ms
+current Op is 114th:9:Cast
+	computeIthOp, 577, cost time: 0.088000 ms
+current Op is 115th:119:OneHot
+	computeIthOp, 577, cost time: 0.077000 ms
+current Op is 116th:128:Raster
+	computeIthOp, 577, cost time: 0.089000 ms
+current Op is 117th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.091000 ms
+current Op is 118th:128:Raster
+	computeIthOp, 577, cost time: 0.089000 ms
+current Op is 119th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.087000 ms
+current Op is 120th:128:Raster
+	computeIthOp, 577, cost time: 0.350000 ms
+current Op is 121th:68:Reduction
+	computeIthOp, 577, cost time: 9.163000 ms
+current Op is 122th:128:Raster
+	computeIthOp, 577, cost time: 0.161000 ms
+current Op is 123th:68:Reduction
+	computeIthOp, 577, cost time: 0.115000 ms
+current Op is 124th:128:Raster
+	computeIthOp, 577, cost time: 0.088000 ms
+current Op is 125th:68:Reduction
+	computeIthOp, 577, cost time: 0.085000 ms
+current Op is 126th:128:Raster
+	computeIthOp, 577, cost time: 0.087000 ms
+current Op is 127th:39:MatMul
+	computeIthOp, 577, cost time: 1.209000 ms
+current Op is 128th:128:Raster
+	computeIthOp, 577, cost time: 0.107000 ms
+current Op is 129th:128:Raster
+	computeIthOp, 577, cost time: 0.092000 ms
+current Op is 130th:39:MatMul
+	computeIthOp, 577, cost time: 0.918000 ms
+current Op is 131th:128:Raster
+	computeIthOp, 577, cost time: 1.240000 ms
+current Op is 132th:68:Reduction
+	computeIthOp, 577, cost time: 0.470000 ms
+current Op is 133th:128:Raster
+	computeIthOp, 577, cost time: 0.303000 ms
+current Op is 134th:68:Reduction
+	computeIthOp, 577, cost time: 0.246000 ms
+current Op is 135th:128:Raster
+	computeIthOp, 577, cost time: 0.117000 ms
+current Op is 136th:68:Reduction
+	computeIthOp, 577, cost time: 0.201000 ms
+current Op is 137th:128:Raster
+	computeIthOp, 577, cost time: 0.466000 ms
+current Op is 138th:39:MatMul
+	computeIthOp, 577, cost time: 12.814001 ms
+current Op is 139th:128:Raster
+	computeIthOp, 577, cost time: 0.746000 ms
+current Op is 140th:68:Reduction
+	computeIthOp, 577, cost time: 0.272000 ms
+current Op is 141th:128:Raster
+	computeIthOp, 577, cost time: 0.130000 ms
+current Op is 142th:68:Reduction
+	computeIthOp, 577, cost time: 0.215000 ms
+current Op is 143th:128:Raster
+	computeIthOp, 577, cost time: 0.416000 ms
+current Op is 144th:39:MatMul
+	computeIthOp, 577, cost time: 2.062000 ms
+current Op is 145th:128:Raster
+	computeIthOp, 577, cost time: 0.168000 ms
+current Op is 146th:128:Raster
+	computeIthOp, 577, cost time: 0.536000 ms
+current Op is 147th:39:MatMul
+	computeIthOp, 577, cost time: 13.756001 ms
+current Op is 148th:128:Raster
+	computeIthOp, 577, cost time: 1.145000 ms
+current Op is 149th:68:Reduction
+	computeIthOp, 577, cost time: 0.472000 ms
+current Op is 150th:128:Raster
+	computeIthOp, 577, cost time: 0.151000 ms
+current Op is 151th:128:Raster
+	computeIthOp, 577, cost time: 0.512000 ms
+current Op is 152th:39:MatMul
+	computeIthOp, 577, cost time: 3.547000 ms
+current Op is 153th:128:Raster
+	computeIthOp, 577, cost time: 0.259000 ms
+current Op is 154th:68:Reduction
+	computeIthOp, 577, cost time: 0.111000 ms
+current Op is 155th:128:Raster
+	computeIthOp, 577, cost time: 0.197000 ms
+current Op is 156th:128:Raster
+	computeIthOp, 577, cost time: 0.174000 ms
+current Op is 157th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.149000 ms
+current Op is 158th:128:Raster
+	computeIthOp, 577, cost time: 0.187000 ms
+current Op is 159th:68:Reduction
+	computeIthOp, 577, cost time: 0.114000 ms
+current Op is 160th:128:Raster
+	computeIthOp, 577, cost time: 0.096000 ms
+current Op is 161th:68:Reduction
+	computeIthOp, 577, cost time: 0.176000 ms
+current Op is 162th:128:Raster
+	computeIthOp, 577, cost time: 0.195000 ms
+current Op is 163th:39:MatMul
+	computeIthOp, 577, cost time: 6.511000 ms
+current Op is 164th:128:Raster
+	computeIthOp, 577, cost time: 0.218000 ms
+current Op is 165th:128:Raster
+	computeIthOp, 577, cost time: 0.262000 ms
+current Op is 166th:39:MatMul
+	computeIthOp, 577, cost time: 4.945000 ms
+current Op is 167th:128:Raster
+	computeIthOp, 577, cost time: 1.097000 ms
+current Op is 168th:68:Reduction
+	computeIthOp, 577, cost time: 0.470000 ms
+current Op is 169th:128:Raster
+	computeIthOp, 577, cost time: 5.596000 ms
+current Op is 170th:7:BinaryOp
+	computeIthOp, 577, cost time: 5.785000 ms
+current Op is 171th:9:Cast
+	computeIthOp, 577, cost time: 4.723000 ms
+current Op is 172th:128:Raster
+	computeIthOp, 577, cost time: 1.015000 ms
+current Op is 173th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.580000 ms
+current Op is 174th:128:Raster
+	computeIthOp, 577, cost time: 5.538000 ms
+current Op is 175th:7:BinaryOp
+	computeIthOp, 577, cost time: 5.806000 ms
+current Op is 176th:9:Cast
+	computeIthOp, 577, cost time: 4.319000 ms
+current Op is 177th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.674000 ms
+current Op is 178th:128:Raster
+	computeIthOp, 577, cost time: 5.345000 ms
+current Op is 179th:7:BinaryOp
+	computeIthOp, 577, cost time: 5.488000 ms
+current Op is 180th:9:Cast
+	computeIthOp, 577, cost time: 4.613000 ms
+current Op is 181th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.056000 ms
+current Op is 182th:128:Raster
+	computeIthOp, 577, cost time: 5.365000 ms
+current Op is 183th:7:BinaryOp
+	computeIthOp, 577, cost time: 6.214000 ms
+current Op is 184th:9:Cast
+	computeIthOp, 577, cost time: 4.154000 ms
+current Op is 185th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.614000 ms
+current Op is 186th:128:Raster
+	computeIthOp, 577, cost time: 5.442000 ms
+current Op is 187th:7:BinaryOp
+	computeIthOp, 577, cost time: 5.805000 ms
+current Op is 188th:9:Cast
+	computeIthOp, 577, cost time: 4.646000 ms
+current Op is 189th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.637000 ms
+current Op is 190th:128:Raster
+	computeIthOp, 577, cost time: 5.378000 ms
+current Op is 191th:7:BinaryOp
+	computeIthOp, 577, cost time: 6.295000 ms
+current Op is 192th:9:Cast
+	computeIthOp, 577, cost time: 4.574000 ms
+current Op is 193th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.651000 ms
+current Op is 194th:128:Raster
+	computeIthOp, 577, cost time: 5.199000 ms
+current Op is 195th:7:BinaryOp
+	computeIthOp, 577, cost time: 5.527000 ms
+current Op is 196th:9:Cast
+	computeIthOp, 577, cost time: 4.453000 ms
+current Op is 197th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.662000 ms
+current Op is 198th:128:Raster
+	computeIthOp, 577, cost time: 5.251000 ms
+current Op is 199th:7:BinaryOp
+	computeIthOp, 577, cost time: 5.954000 ms
+current Op is 200th:9:Cast
+	computeIthOp, 577, cost time: 4.507000 ms
+current Op is 201th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.764000 ms
+current Op is 202th:128:Raster
+	computeIthOp, 577, cost time: 5.295000 ms
+current Op is 203th:7:BinaryOp
+	computeIthOp, 577, cost time: 5.515000 ms
+current Op is 204th:9:Cast
+	computeIthOp, 577, cost time: 4.725000 ms
+current Op is 205th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.663000 ms
+current Op is 206th:128:Raster
+	computeIthOp, 577, cost time: 6.026000 ms
+current Op is 207th:128:Raster
+	computeIthOp, 577, cost time: 6.021000 ms
+current Op is 208th:128:Raster
+	computeIthOp, 577, cost time: 10.654000 ms
+current Op is 209th:128:Raster
+	computeIthOp, 577, cost time: 11.303000 ms
+current Op is 210th:128:Raster
+	computeIthOp, 577, cost time: 11.480000 ms
+current Op is 211th:128:Raster
+	computeIthOp, 577, cost time: 11.623000 ms
+current Op is 212th:128:Raster
+	computeIthOp, 577, cost time: 10.070001 ms
+current Op is 213th:128:Raster
+	computeIthOp, 577, cost time: 10.997001 ms
+current Op is 214th:128:Raster
+	computeIthOp, 577, cost time: 11.779000 ms
+current Op is 215th:22:Eltwise
+	computeIthOp, 577, cost time: 18.848001 ms
+current Op is 216th:128:Raster
+	computeIthOp, 577, cost time: 3.064000 ms
+current Op is 217th:68:Reduction
+	computeIthOp, 577, cost time: 0.926000 ms
+current Op is 218th:128:Raster
+	computeIthOp, 577, cost time: 0.176000 ms
+current Op is 219th:68:Reduction
+	computeIthOp, 577, cost time: 0.531000 ms
+current Op is 220th:128:Raster
+	computeIthOp, 577, cost time: 3.576000 ms
+current Op is 221th:39:MatMul
+	computeIthOp, 577, cost time: 52.572002 ms
+current Op is 222th:128:Raster
+	computeIthOp, 577, cost time: 3.062000 ms
+current Op is 223th:68:Reduction
+	computeIthOp, 577, cost time: 0.794000 ms
+current Op is 224th:128:Raster
+	computeIthOp, 577, cost time: 0.177000 ms
+current Op is 225th:68:Reduction
+	computeIthOp, 577, cost time: 0.512000 ms
+current Op is 226th:128:Raster
+	computeIthOp, 577, cost time: 3.610000 ms
+current Op is 227th:39:MatMul
+	computeIthOp, 577, cost time: 8.503000 ms
+current Op is 228th:128:Raster
+	computeIthOp, 577, cost time: 0.645000 ms
+current Op is 229th:128:Raster
+	computeIthOp, 577, cost time: 3.690000 ms
+current Op is 230th:39:MatMul
+	computeIthOp, 577, cost time: 51.583004 ms
+current Op is 231th:128:Raster
+	computeIthOp, 577, cost time: 4.704000 ms
+current Op is 232th:68:Reduction
+	computeIthOp, 577, cost time: 1.302000 ms
+current Op is 233th:128:Raster
+	computeIthOp, 577, cost time: 0.166000 ms
+current Op is 234th:128:Raster
+	computeIthOp, 577, cost time: 3.577000 ms
+current Op is 235th:39:MatMul
+	computeIthOp, 577, cost time: 10.009001 ms
+current Op is 236th:128:Raster
+	computeIthOp, 577, cost time: 0.440000 ms
+current Op is 237th:68:Reduction
+	computeIthOp, 577, cost time: 0.212000 ms
+current Op is 238th:128:Raster
+	computeIthOp, 577, cost time: 0.526000 ms
+current Op is 239th:128:Raster
+	computeIthOp, 577, cost time: 0.555000 ms
+current Op is 240th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.308000 ms
+current Op is 241th:128:Raster
+	computeIthOp, 577, cost time: 0.491000 ms
+current Op is 242th:68:Reduction
+	computeIthOp, 577, cost time: 0.275000 ms
+current Op is 243th:128:Raster
+	computeIthOp, 577, cost time: 0.127000 ms
+current Op is 244th:68:Reduction
+	computeIthOp, 577, cost time: 0.201000 ms
+current Op is 245th:128:Raster
+	computeIthOp, 577, cost time: 0.654000 ms
+current Op is 246th:39:MatMul
+	computeIthOp, 577, cost time: 18.741001 ms
+current Op is 247th:128:Raster
+	computeIthOp, 577, cost time: 0.216000 ms
+current Op is 248th:128:Raster
+	computeIthOp, 577, cost time: 0.695000 ms
+current Op is 249th:39:MatMul
+	computeIthOp, 577, cost time: 14.697001 ms
+current Op is 250th:128:Raster
+	computeIthOp, 577, cost time: 2.217000 ms
+current Op is 251th:68:Reduction
+	computeIthOp, 577, cost time: 1.017000 ms
+current Op is 252th:128:Raster
+	computeIthOp, 577, cost time: 0.660000 ms
+current Op is 253th:68:Reduction
+	computeIthOp, 577, cost time: 0.749000 ms
+current Op is 254th:128:Raster
+	computeIthOp, 577, cost time: 0.171000 ms
+current Op is 255th:68:Reduction
+	computeIthOp, 577, cost time: 0.453000 ms
+current Op is 256th:128:Raster
+	computeIthOp, 577, cost time: 1.140000 ms
+current Op is 257th:39:MatMul
+	computeIthOp, 577, cost time: 37.260002 ms
+current Op is 258th:128:Raster
+	computeIthOp, 577, cost time: 0.725000 ms
+current Op is 259th:68:Reduction
+	computeIthOp, 577, cost time: 0.620000 ms
+current Op is 260th:128:Raster
+	computeIthOp, 577, cost time: 0.183000 ms
+current Op is 261th:68:Reduction
+	computeIthOp, 577, cost time: 0.413000 ms
+current Op is 262th:128:Raster
+	computeIthOp, 577, cost time: 1.107000 ms
+current Op is 263th:39:MatMul
+	computeIthOp, 577, cost time: 5.092000 ms
+current Op is 264th:128:Raster
+	computeIthOp, 577, cost time: 0.190000 ms
+current Op is 265th:128:Raster
+	computeIthOp, 577, cost time: 1.215000 ms
+current Op is 266th:39:MatMul
+	computeIthOp, 577, cost time: 32.920002 ms
+current Op is 267th:128:Raster
+	computeIthOp, 577, cost time: 3.527000 ms
+current Op is 268th:68:Reduction
+	computeIthOp, 577, cost time: 0.934000 ms
+current Op is 269th:128:Raster
+	computeIthOp, 577, cost time: 0.140000 ms
+current Op is 270th:128:Raster
+	computeIthOp, 577, cost time: 1.230000 ms
+current Op is 271th:39:MatMul
+	computeIthOp, 577, cost time: 6.511000 ms
+current Op is 272th:128:Raster
+	computeIthOp, 577, cost time: 0.371000 ms
+current Op is 273th:68:Reduction
+	computeIthOp, 577, cost time: 0.174000 ms
+current Op is 274th:128:Raster
+	computeIthOp, 577, cost time: 0.482000 ms
+current Op is 275th:128:Raster
+	computeIthOp, 577, cost time: 0.428000 ms
+current Op is 276th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.311000 ms
+current Op is 277th:128:Raster
+	computeIthOp, 577, cost time: 0.407000 ms
+current Op is 278th:68:Reduction
+	computeIthOp, 577, cost time: 0.217000 ms
+current Op is 279th:128:Raster
+	computeIthOp, 577, cost time: 0.123000 ms
+current Op is 280th:68:Reduction
+	computeIthOp, 577, cost time: 0.169000 ms
+current Op is 281th:128:Raster
+	computeIthOp, 577, cost time: 0.527000 ms
+current Op is 282th:39:MatMul
+	computeIthOp, 577, cost time: 15.096001 ms
+current Op is 283th:128:Raster
+	computeIthOp, 577, cost time: 0.213000 ms
+current Op is 284th:128:Raster
+	computeIthOp, 577, cost time: 0.576000 ms
+current Op is 285th:39:MatMul
+	computeIthOp, 577, cost time: 13.382001 ms
+current Op is 286th:128:Raster
+	computeIthOp, 577, cost time: 2.130000 ms
+current Op is 287th:68:Reduction
+	computeIthOp, 577, cost time: 1.035000 ms
+current Op is 288th:128:Raster
+	computeIthOp, 577, cost time: 0.697000 ms
+current Op is 289th:68:Reduction
+	computeIthOp, 577, cost time: 0.737000 ms
+current Op is 290th:128:Raster
+	computeIthOp, 577, cost time: 0.202000 ms
+current Op is 291th:68:Reduction
+	computeIthOp, 577, cost time: 0.427000 ms
+current Op is 292th:128:Raster
+	computeIthOp, 577, cost time: 1.160000 ms
+current Op is 293th:39:MatMul
+	computeIthOp, 577, cost time: 37.223003 ms
+current Op is 294th:128:Raster
+	computeIthOp, 577, cost time: 0.732000 ms
+current Op is 295th:68:Reduction
+	computeIthOp, 577, cost time: 0.828000 ms
+current Op is 296th:128:Raster
+	computeIthOp, 577, cost time: 0.154000 ms
+current Op is 297th:68:Reduction
+	computeIthOp, 577, cost time: 0.417000 ms
+current Op is 298th:128:Raster
+	computeIthOp, 577, cost time: 1.160000 ms
+current Op is 299th:39:MatMul
+	computeIthOp, 577, cost time: 5.695000 ms
+current Op is 300th:128:Raster
+	computeIthOp, 577, cost time: 0.188000 ms
+current Op is 301th:128:Raster
+	computeIthOp, 577, cost time: 1.294000 ms
+current Op is 302th:39:MatMul
+	computeIthOp, 577, cost time: 32.451000 ms
+current Op is 303th:128:Raster
+	computeIthOp, 577, cost time: 3.449000 ms
+current Op is 304th:68:Reduction
+	computeIthOp, 577, cost time: 0.913000 ms
+current Op is 305th:128:Raster
+	computeIthOp, 577, cost time: 0.155000 ms
+current Op is 306th:128:Raster
+	computeIthOp, 577, cost time: 1.123000 ms
+current Op is 307th:39:MatMul
+	computeIthOp, 577, cost time: 6.515000 ms
+current Op is 308th:128:Raster
+	computeIthOp, 577, cost time: 0.367000 ms
+current Op is 309th:68:Reduction
+	computeIthOp, 577, cost time: 0.177000 ms
+current Op is 310th:128:Raster
+	computeIthOp, 577, cost time: 0.409000 ms
+current Op is 311th:128:Raster
+	computeIthOp, 577, cost time: 0.370000 ms
+current Op is 312th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.241000 ms
+current Op is 313th:128:Raster
+	computeIthOp, 577, cost time: 0.372000 ms
+current Op is 314th:68:Reduction
+	computeIthOp, 577, cost time: 0.207000 ms
+current Op is 315th:128:Raster
+	computeIthOp, 577, cost time: 0.118000 ms
+current Op is 316th:68:Reduction
+	computeIthOp, 577, cost time: 0.169000 ms
+current Op is 317th:128:Raster
+	computeIthOp, 577, cost time: 0.498000 ms
+current Op is 318th:39:MatMul
+	computeIthOp, 577, cost time: 11.041000 ms
+current Op is 319th:128:Raster
+	computeIthOp, 577, cost time: 0.194000 ms
+current Op is 320th:128:Raster
+	computeIthOp, 577, cost time: 0.575000 ms
+current Op is 321th:39:MatMul
+	computeIthOp, 577, cost time: 9.490001 ms
+current Op is 322th:128:Raster
+	computeIthOp, 577, cost time: 1.843000 ms
+current Op is 323th:68:Reduction
+	computeIthOp, 577, cost time: 0.802000 ms
+current Op is 324th:128:Raster
+	computeIthOp, 577, cost time: 0.502000 ms
+current Op is 325th:68:Reduction
+	computeIthOp, 577, cost time: 0.500000 ms
+current Op is 326th:128:Raster
+	computeIthOp, 577, cost time: 0.142000 ms
+current Op is 327th:68:Reduction
+	computeIthOp, 577, cost time: 0.320000 ms
+current Op is 328th:128:Raster
+	computeIthOp, 577, cost time: 0.962000 ms
+current Op is 329th:39:MatMul
+	computeIthOp, 577, cost time: 17.359001 ms
+current Op is 330th:128:Raster
+	computeIthOp, 577, cost time: 0.958000 ms
+current Op is 331th:68:Reduction
+	computeIthOp, 577, cost time: 0.462000 ms
+current Op is 332th:128:Raster
+	computeIthOp, 577, cost time: 0.133000 ms
+current Op is 333th:68:Reduction
+	computeIthOp, 577, cost time: 0.310000 ms
+current Op is 334th:128:Raster
+	computeIthOp, 577, cost time: 0.858000 ms
+current Op is 335th:39:MatMul
+	computeIthOp, 577, cost time: 2.992000 ms
+current Op is 336th:128:Raster
+	computeIthOp, 577, cost time: 0.172000 ms
+current Op is 337th:128:Raster
+	computeIthOp, 577, cost time: 0.740000 ms
+current Op is 338th:39:MatMul
+	computeIthOp, 577, cost time: 15.853001 ms
+current Op is 339th:128:Raster
+	computeIthOp, 577, cost time: 2.469000 ms
+current Op is 340th:68:Reduction
+	computeIthOp, 577, cost time: 0.682000 ms
+current Op is 341th:128:Raster
+	computeIthOp, 577, cost time: 0.126000 ms
+current Op is 342th:128:Raster
+	computeIthOp, 577, cost time: 0.760000 ms
+current Op is 343th:39:MatMul
+	computeIthOp, 577, cost time: 4.342000 ms
+current Op is 344th:128:Raster
+	computeIthOp, 577, cost time: 0.240000 ms
+current Op is 345th:68:Reduction
+	computeIthOp, 577, cost time: 0.140000 ms
+current Op is 346th:128:Raster
+	computeIthOp, 577, cost time: 0.322000 ms
+current Op is 347th:128:Raster
+	computeIthOp, 577, cost time: 0.283000 ms
+current Op is 348th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.180000 ms
+current Op is 349th:128:Raster
+	computeIthOp, 577, cost time: 0.261000 ms
+current Op is 350th:68:Reduction
+	computeIthOp, 577, cost time: 0.163000 ms
+current Op is 351th:128:Raster
+	computeIthOp, 577, cost time: 0.141000 ms
+current Op is 352th:68:Reduction
+	computeIthOp, 577, cost time: 0.144000 ms
+current Op is 353th:128:Raster
+	computeIthOp, 577, cost time: 0.395000 ms
+current Op is 354th:39:MatMul
+	computeIthOp, 577, cost time: 10.144000 ms
+current Op is 355th:128:Raster
+	computeIthOp, 577, cost time: 0.587000 ms
+current Op is 356th:128:Raster
+	computeIthOp, 577, cost time: 0.402000 ms
+current Op is 357th:39:MatMul
+	computeIthOp, 577, cost time: 7.765000 ms
+current Op is 358th:128:Raster
+	computeIthOp, 577, cost time: 1.534000 ms
+current Op is 359th:68:Reduction
+	computeIthOp, 577, cost time: 0.737000 ms
+current Op is 360th:128:Raster
+	computeIthOp, 577, cost time: 13.316001 ms
+current Op is 361th:7:BinaryOp
+	computeIthOp, 577, cost time: 11.620001 ms
+current Op is 362th:9:Cast
+	computeIthOp, 577, cost time: 9.325001 ms
+current Op is 363th:128:Raster
+	computeIthOp, 577, cost time: 1.696000 ms
+current Op is 364th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.162000 ms
+current Op is 365th:128:Raster
+	computeIthOp, 577, cost time: 13.427001 ms
+current Op is 366th:7:BinaryOp
+	computeIthOp, 577, cost time: 11.641001 ms
+current Op is 367th:9:Cast
+	computeIthOp, 577, cost time: 9.109000 ms
+current Op is 368th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.322000 ms
+current Op is 369th:128:Raster
+	computeIthOp, 577, cost time: 13.635000 ms
+current Op is 370th:7:BinaryOp
+	computeIthOp, 577, cost time: 11.501000 ms
+current Op is 371th:9:Cast
+	computeIthOp, 577, cost time: 9.631001 ms
+current Op is 372th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.217000 ms
+current Op is 373th:128:Raster
+	computeIthOp, 577, cost time: 12.657001 ms
+current Op is 374th:7:BinaryOp
+	computeIthOp, 577, cost time: 11.459001 ms
+current Op is 375th:9:Cast
+	computeIthOp, 577, cost time: 9.118000 ms
+current Op is 376th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.194000 ms
+current Op is 377th:128:Raster
+	computeIthOp, 577, cost time: 12.489000 ms
+current Op is 378th:7:BinaryOp
+	computeIthOp, 577, cost time: 11.373000 ms
+current Op is 379th:9:Cast
+	computeIthOp, 577, cost time: 9.433001 ms
+current Op is 380th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.154000 ms
+current Op is 381th:128:Raster
+	computeIthOp, 577, cost time: 12.680000 ms
+current Op is 382th:7:BinaryOp
+	computeIthOp, 577, cost time: 10.860001 ms
+current Op is 383th:9:Cast
+	computeIthOp, 577, cost time: 9.040000 ms
+current Op is 384th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.221000 ms
+current Op is 385th:128:Raster
+	computeIthOp, 577, cost time: 12.933001 ms
+current Op is 386th:7:BinaryOp
+	computeIthOp, 577, cost time: 11.105000 ms
+current Op is 387th:9:Cast
+	computeIthOp, 577, cost time: 9.178000 ms
+current Op is 388th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.801000 ms
+current Op is 389th:128:Raster
+	computeIthOp, 577, cost time: 13.202001 ms
+current Op is 390th:7:BinaryOp
+	computeIthOp, 577, cost time: 11.724001 ms
+current Op is 391th:9:Cast
+	computeIthOp, 577, cost time: 8.982000 ms
+current Op is 392th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.587000 ms
+current Op is 393th:128:Raster
+	computeIthOp, 577, cost time: 12.851001 ms
+current Op is 394th:7:BinaryOp
+	computeIthOp, 577, cost time: 11.102000 ms
+current Op is 395th:9:Cast
+	computeIthOp, 577, cost time: 9.201000 ms
+current Op is 396th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.307000 ms
+current Op is 397th:128:Raster
+	computeIthOp, 577, cost time: 11.537001 ms
+current Op is 398th:128:Raster
+	computeIthOp, 577, cost time: 11.441001 ms
+current Op is 399th:128:Raster
+	computeIthOp, 577, cost time: 21.331001 ms
+current Op is 400th:128:Raster
+	computeIthOp, 577, cost time: 20.742001 ms
+current Op is 401th:128:Raster
+	computeIthOp, 577, cost time: 20.368000 ms
+current Op is 402th:128:Raster
+	computeIthOp, 577, cost time: 20.207001 ms
+current Op is 403th:128:Raster
+	computeIthOp, 577, cost time: 22.452002 ms
+current Op is 404th:128:Raster
+	computeIthOp, 577, cost time: 20.426001 ms
+current Op is 405th:128:Raster
+	computeIthOp, 577, cost time: 22.220001 ms
+current Op is 406th:22:Eltwise
+	computeIthOp, 577, cost time: 36.355003 ms
+current Op is 407th:128:Raster
+	computeIthOp, 577, cost time: 5.802000 ms
+current Op is 408th:68:Reduction
+	computeIthOp, 577, cost time: 2.124000 ms
+current Op is 409th:128:Raster
+	computeIthOp, 577, cost time: 0.259000 ms
+current Op is 410th:68:Reduction
+	computeIthOp, 577, cost time: 0.941000 ms
+current Op is 411th:128:Raster
+	computeIthOp, 577, cost time: 6.108000 ms
+current Op is 412th:39:MatMul
+	computeIthOp, 577, cost time: 83.997002 ms
+current Op is 413th:128:Raster
+	computeIthOp, 577, cost time: 5.619000 ms
+current Op is 414th:68:Reduction
+	computeIthOp, 577, cost time: 2.091000 ms
+current Op is 415th:128:Raster
+	computeIthOp, 577, cost time: 0.272000 ms
+current Op is 416th:68:Reduction
+	computeIthOp, 577, cost time: 0.957000 ms
+current Op is 417th:128:Raster
+	computeIthOp, 577, cost time: 5.946000 ms
+current Op is 418th:39:MatMul
+	computeIthOp, 577, cost time: 13.171000 ms
+current Op is 419th:128:Raster
+	computeIthOp, 577, cost time: 0.187000 ms
+current Op is 420th:128:Raster
+	computeIthOp, 577, cost time: 6.015000 ms
+current Op is 421th:39:MatMul
+	computeIthOp, 577, cost time: 62.467003 ms
+current Op is 422th:128:Raster
+	computeIthOp, 577, cost time: 6.242000 ms
+current Op is 423th:68:Reduction
+	computeIthOp, 577, cost time: 3.065000 ms
+current Op is 424th:128:Raster
+	computeIthOp, 577, cost time: 0.128000 ms
+current Op is 425th:128:Raster
+	computeIthOp, 577, cost time: 6.059000 ms
+current Op is 426th:39:MatMul
+	computeIthOp, 577, cost time: 16.691000 ms
+current Op is 427th:128:Raster
+	computeIthOp, 577, cost time: 0.628000 ms
+current Op is 428th:68:Reduction
+	computeIthOp, 577, cost time: 0.435000 ms
+current Op is 429th:128:Raster
+	computeIthOp, 577, cost time: 0.914000 ms
+current Op is 430th:128:Raster
+	computeIthOp, 577, cost time: 0.887000 ms
+current Op is 431th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.641000 ms
+current Op is 432th:128:Raster
+	computeIthOp, 577, cost time: 1.023000 ms
+current Op is 433th:68:Reduction
+	computeIthOp, 577, cost time: 0.521000 ms
+current Op is 434th:128:Raster
+	computeIthOp, 577, cost time: 0.155000 ms
+current Op is 435th:68:Reduction
+	computeIthOp, 577, cost time: 0.300000 ms
+current Op is 436th:128:Raster
+	computeIthOp, 577, cost time: 1.074000 ms
+current Op is 437th:39:MatMul
+	computeIthOp, 577, cost time: 25.149002 ms
+current Op is 438th:128:Raster
+	computeIthOp, 577, cost time: 0.173000 ms
+current Op is 439th:128:Raster
+	computeIthOp, 577, cost time: 1.193000 ms
+current Op is 440th:39:MatMul
+	computeIthOp, 577, cost time: 16.219000 ms
+current Op is 441th:128:Raster
+	computeIthOp, 577, cost time: 1.999000 ms
+current Op is 442th:68:Reduction
+	computeIthOp, 577, cost time: 1.461000 ms
+current Op is 443th:128:Raster
+	computeIthOp, 577, cost time: 0.833000 ms
+current Op is 444th:68:Reduction
+	computeIthOp, 577, cost time: 0.838000 ms
+current Op is 445th:128:Raster
+	computeIthOp, 577, cost time: 0.182000 ms
+current Op is 446th:68:Reduction
+	computeIthOp, 577, cost time: 0.520000 ms
+current Op is 447th:128:Raster
+	computeIthOp, 577, cost time: 1.055000 ms
+current Op is 448th:39:MatMul
+	computeIthOp, 577, cost time: 31.140001 ms
+current Op is 449th:128:Raster
+	computeIthOp, 577, cost time: 0.894000 ms
+current Op is 450th:68:Reduction
+	computeIthOp, 577, cost time: 1.037000 ms
+current Op is 451th:128:Raster
+	computeIthOp, 577, cost time: 0.186000 ms
+current Op is 452th:68:Reduction
+	computeIthOp, 577, cost time: 0.516000 ms
+current Op is 453th:128:Raster
+	computeIthOp, 577, cost time: 1.136000 ms
+current Op is 454th:39:MatMul
+	computeIthOp, 577, cost time: 4.528000 ms
+current Op is 455th:128:Raster
+	computeIthOp, 577, cost time: 0.157000 ms
+current Op is 456th:128:Raster
+	computeIthOp, 577, cost time: 1.193000 ms
+current Op is 457th:39:MatMul
+	computeIthOp, 577, cost time: 24.469002 ms
+current Op is 458th:128:Raster
+	computeIthOp, 577, cost time: 2.884000 ms
+current Op is 459th:68:Reduction
+	computeIthOp, 577, cost time: 1.315000 ms
+current Op is 460th:128:Raster
+	computeIthOp, 577, cost time: 0.119000 ms
+current Op is 461th:128:Raster
+	computeIthOp, 577, cost time: 1.094000 ms
+current Op is 462th:39:MatMul
+	computeIthOp, 577, cost time: 7.138000 ms
+current Op is 463th:128:Raster
+	computeIthOp, 577, cost time: 0.790000 ms
+current Op is 464th:68:Reduction
+	computeIthOp, 577, cost time: 0.199000 ms
+current Op is 465th:128:Raster
+	computeIthOp, 577, cost time: 0.537000 ms
+current Op is 466th:128:Raster
+	computeIthOp, 577, cost time: 0.518000 ms
+current Op is 467th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.297000 ms
+current Op is 468th:128:Raster
+	computeIthOp, 577, cost time: 0.451000 ms
+current Op is 469th:68:Reduction
+	computeIthOp, 577, cost time: 0.269000 ms
+current Op is 470th:128:Raster
+	computeIthOp, 577, cost time: 0.116000 ms
+current Op is 471th:68:Reduction
+	computeIthOp, 577, cost time: 0.209000 ms
+current Op is 472th:128:Raster
+	computeIthOp, 577, cost time: 0.646000 ms
+current Op is 473th:39:MatMul
+	computeIthOp, 577, cost time: 21.984001 ms
+current Op is 474th:128:Raster
+	computeIthOp, 577, cost time: 0.169000 ms
+current Op is 475th:128:Raster
+	computeIthOp, 577, cost time: 0.608000 ms
+current Op is 476th:39:MatMul
+	computeIthOp, 577, cost time: 14.261001 ms
+current Op is 477th:128:Raster
+	computeIthOp, 577, cost time: 1.931000 ms
+current Op is 478th:68:Reduction
+	computeIthOp, 577, cost time: 1.505000 ms
+current Op is 479th:128:Raster
+	computeIthOp, 577, cost time: 0.827000 ms
+current Op is 480th:68:Reduction
+	computeIthOp, 577, cost time: 0.903000 ms
+current Op is 481th:128:Raster
+	computeIthOp, 577, cost time: 0.184000 ms
+current Op is 482th:68:Reduction
+	computeIthOp, 577, cost time: 0.537000 ms
+current Op is 483th:128:Raster
+	computeIthOp, 577, cost time: 1.073000 ms
+current Op is 484th:39:MatMul
+	computeIthOp, 577, cost time: 31.272001 ms
+current Op is 485th:128:Raster
+	computeIthOp, 577, cost time: 0.897000 ms
+current Op is 486th:68:Reduction
+	computeIthOp, 577, cost time: 1.085000 ms
+current Op is 487th:128:Raster
+	computeIthOp, 577, cost time: 0.180000 ms
+current Op is 488th:68:Reduction
+	computeIthOp, 577, cost time: 0.516000 ms
+current Op is 489th:128:Raster
+	computeIthOp, 577, cost time: 1.077000 ms
+current Op is 490th:39:MatMul
+	computeIthOp, 577, cost time: 4.535000 ms
+current Op is 491th:128:Raster
+	computeIthOp, 577, cost time: 0.164000 ms
+current Op is 492th:128:Raster
+	computeIthOp, 577, cost time: 1.062000 ms
+current Op is 493th:39:MatMul
+	computeIthOp, 577, cost time: 24.222002 ms
+current Op is 494th:128:Raster
+	computeIthOp, 577, cost time: 3.193000 ms
+current Op is 495th:68:Reduction
+	computeIthOp, 577, cost time: 1.348000 ms
+current Op is 496th:128:Raster
+	computeIthOp, 577, cost time: 0.120000 ms
+current Op is 497th:128:Raster
+	computeIthOp, 577, cost time: 1.059000 ms
+current Op is 498th:39:MatMul
+	computeIthOp, 577, cost time: 7.481000 ms
+current Op is 499th:128:Raster
+	computeIthOp, 577, cost time: 0.367000 ms
+current Op is 500th:68:Reduction
+	computeIthOp, 577, cost time: 0.243000 ms
+current Op is 501th:128:Raster
+	computeIthOp, 577, cost time: 0.481000 ms
+current Op is 502th:128:Raster
+	computeIthOp, 577, cost time: 0.536000 ms
+current Op is 503th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.351000 ms
+current Op is 504th:128:Raster
+	computeIthOp, 577, cost time: 0.505000 ms
+current Op is 505th:68:Reduction
+	computeIthOp, 577, cost time: 0.335000 ms
+current Op is 506th:128:Raster
+	computeIthOp, 577, cost time: 0.131000 ms
+current Op is 507th:68:Reduction
+	computeIthOp, 577, cost time: 0.219000 ms
+current Op is 508th:128:Raster
+	computeIthOp, 577, cost time: 0.698000 ms
+current Op is 509th:39:MatMul
+	computeIthOp, 577, cost time: 15.841001 ms
+current Op is 510th:128:Raster
+	computeIthOp, 577, cost time: 0.126000 ms
+current Op is 511th:128:Raster
+	computeIthOp, 577, cost time: 0.594000 ms
+current Op is 512th:39:MatMul
+	computeIthOp, 577, cost time: 10.361000 ms
+current Op is 513th:128:Raster
+	computeIthOp, 577, cost time: 1.503000 ms
+current Op is 514th:68:Reduction
+	computeIthOp, 577, cost time: 1.218000 ms
+current Op is 515th:128:Raster
+	computeIthOp, 577, cost time: 15.282001 ms
+current Op is 516th:7:BinaryOp
+	computeIthOp, 577, cost time: 16.854000 ms
+current Op is 517th:9:Cast
+	computeIthOp, 577, cost time: 13.670001 ms
+current Op is 518th:128:Raster
+	computeIthOp, 577, cost time: 2.347000 ms
+current Op is 519th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.635000 ms
+current Op is 520th:128:Raster
+	computeIthOp, 577, cost time: 15.469001 ms
+current Op is 521th:7:BinaryOp
+	computeIthOp, 577, cost time: 17.059000 ms
+current Op is 522th:9:Cast
+	computeIthOp, 577, cost time: 13.393001 ms
+current Op is 523th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.737000 ms
+current Op is 524th:128:Raster
+	computeIthOp, 577, cost time: 15.553000 ms
+current Op is 525th:7:BinaryOp
+	computeIthOp, 577, cost time: 17.522001 ms
+current Op is 526th:9:Cast
+	computeIthOp, 577, cost time: 13.766001 ms
+current Op is 527th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.858000 ms
+current Op is 528th:128:Raster
+	computeIthOp, 577, cost time: 15.982000 ms
+current Op is 529th:7:BinaryOp
+	computeIthOp, 577, cost time: 17.198000 ms
+current Op is 530th:9:Cast
+	computeIthOp, 577, cost time: 13.625001 ms
+current Op is 531th:7:BinaryOp
+	computeIthOp, 577, cost time: 2.514000 ms
+current Op is 532th:128:Raster
+	computeIthOp, 577, cost time: 16.056002 ms
+current Op is 533th:7:BinaryOp
+	computeIthOp, 577, cost time: 16.905001 ms
+current Op is 534th:9:Cast
+	computeIthOp, 577, cost time: 13.813001 ms
+current Op is 535th:7:BinaryOp
+	computeIthOp, 577, cost time: 8.910001 ms
+current Op is 536th:128:Raster
+	computeIthOp, 577, cost time: 15.815001 ms
+current Op is 537th:7:BinaryOp
+	computeIthOp, 577, cost time: 16.479000 ms
+current Op is 538th:9:Cast
+	computeIthOp, 577, cost time: 13.920001 ms
+current Op is 539th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.806000 ms
+current Op is 540th:128:Raster
+	computeIthOp, 577, cost time: 15.565001 ms
+current Op is 541th:7:BinaryOp
+	computeIthOp, 577, cost time: 16.970001 ms
+current Op is 542th:9:Cast
+	computeIthOp, 577, cost time: 13.730000 ms
+current Op is 543th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.808000 ms
+current Op is 544th:128:Raster
+	computeIthOp, 577, cost time: 15.668001 ms
+current Op is 545th:7:BinaryOp
+	computeIthOp, 577, cost time: 17.670000 ms
+current Op is 546th:9:Cast
+	computeIthOp, 577, cost time: 13.845000 ms
+current Op is 547th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.780000 ms
+current Op is 548th:128:Raster
+	computeIthOp, 577, cost time: 15.380001 ms
+current Op is 549th:7:BinaryOp
+	computeIthOp, 577, cost time: 16.924002 ms
+current Op is 550th:9:Cast
+	computeIthOp, 577, cost time: 13.420001 ms
+current Op is 551th:7:BinaryOp
+	computeIthOp, 577, cost time: 1.855000 ms
+current Op is 552th:128:Raster
+	computeIthOp, 577, cost time: 16.821001 ms
+current Op is 553th:128:Raster
+	computeIthOp, 577, cost time: 17.103001 ms
+current Op is 554th:128:Raster
+	computeIthOp, 577, cost time: 17.222000 ms
+current Op is 555th:128:Raster
+	computeIthOp, 577, cost time: 32.115002 ms
+current Op is 556th:128:Raster
+	computeIthOp, 577, cost time: 30.688002 ms
+current Op is 557th:128:Raster
+	computeIthOp, 577, cost time: 30.213001 ms
+current Op is 558th:128:Raster
+	computeIthOp, 577, cost time: 30.283001 ms
+current Op is 559th:128:Raster
+	computeIthOp, 577, cost time: 30.669001 ms
+current Op is 560th:128:Raster
+	computeIthOp, 577, cost time: 31.210001 ms
+current Op is 561th:22:Eltwise
+	computeIthOp, 577, cost time: 54.188004 ms
+current Op is 562th:128:Raster
+	computeIthOp, 577, cost time: 9.794001 ms
+current Op is 563th:68:Reduction
+	computeIthOp, 577, cost time: 7.274000 ms
+current Op is 564th:128:Raster
+	computeIthOp, 577, cost time: 0.605000 ms
+current Op is 565th:68:Reduction
+	computeIthOp, 577, cost time: 2.603000 ms
+current Op is 566th:128:Raster
+	computeIthOp, 577, cost time: 10.744000 ms
+current Op is 567th:39:MatMul
+	computeIthOp, 577, cost time: 199.842010 ms
+current Op is 568th:128:Raster
+	computeIthOp, 577, cost time: 0.143000 ms
+current Op is 569th:128:Raster
+	computeIthOp, 577, cost time: 0.115000 ms
+current Op is 570th:128:Raster
+	computeIthOp, 577, cost time: 0.097000 ms
+current Op is 571th:128:Raster
+	computeIthOp, 577, cost time: 0.441000 ms
+current Op is 572th:128:Raster
+	computeIthOp, 577, cost time: 0.102000 ms
+current Op is 573th:128:Raster
+	computeIthOp, 577, cost time: 0.113000 ms
+current Op is 574th:128:Raster
+	computeIthOp, 577, cost time: 0.104000 ms
+current Op is 575th:128:Raster
+	computeIthOp, 577, cost time: 0.139000 ms
+current Op is 576th:128:Raster
+	computeIthOp, 577, cost time: 0.092000 ms
+current Op is 577th:128:Raster
+	computeIthOp, 577, cost time: 0.411000 ms
+current Op is 578th:128:Raster
+	computeIthOp, 577, cost time: 0.093000 ms
+current Op is 579th:128:Raster
+	computeIthOp, 577, cost time: 0.108000 ms
+current Op is 580th:128:Raster
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 581th:128:Raster
+	computeIthOp, 577, cost time: 0.118000 ms
+current Op is 582th:128:Raster
+	computeIthOp, 577, cost time: 0.087000 ms
+current Op is 583th:128:Raster
+	computeIthOp, 577, cost time: 0.200000 ms
+current Op is 584th:128:Raster
+	computeIthOp, 577, cost time: 0.089000 ms
+current Op is 585th:128:Raster
+	computeIthOp, 577, cost time: 0.099000 ms
+current Op is 586th:128:Raster
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 587th:128:Raster
+	computeIthOp, 577, cost time: 0.111000 ms
+current Op is 588th:128:Raster
+	computeIthOp, 577, cost time: 0.087000 ms
+current Op is 589th:128:Raster
+	computeIthOp, 577, cost time: 0.175000 ms
+current Op is 590th:128:Raster
+	computeIthOp, 577, cost time: 0.087000 ms
+current Op is 591th:128:Raster
+	computeIthOp, 577, cost time: 0.113000 ms
+current Op is 592th:128:Raster
+	computeIthOp, 577, cost time: 0.091000 ms
+current Op is 593th:128:Raster
+	computeIthOp, 577, cost time: 0.100000 ms
+current Op is 594th:128:Raster
+	computeIthOp, 577, cost time: 0.089000 ms
+current Op is 595th:128:Raster
+	computeIthOp, 577, cost time: 0.128000 ms
+current Op is 596th:128:Raster
+	computeIthOp, 577, cost time: 0.086000 ms
+current Op is 597th:128:Raster
+	computeIthOp, 577, cost time: 0.098000 ms
+current Op is 598th:128:Raster
+	computeIthOp, 577, cost time: 0.086000 ms
+current Op is 599th:128:Raster
+	computeIthOp, 577, cost time: 0.096000 ms
+current Op is 600th:128:Raster
+	computeIthOp, 577, cost time: 0.102000 ms
+current Op is 601th:128:Raster
+	computeIthOp, 577, cost time: 0.136000 ms
+current Op is 602th:128:Raster
+	computeIthOp, 577, cost time: 0.087000 ms
+current Op is 603th:128:Raster
+	computeIthOp, 577, cost time: 0.094000 ms
+current Op is 604th:128:Raster
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 605th:128:Raster
+	computeIthOp, 577, cost time: 0.089000 ms
+current Op is 606th:128:Raster
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 607th:128:Raster
+	computeIthOp, 577, cost time: 0.106000 ms
+current Op is 608th:128:Raster
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 609th:128:Raster
+	computeIthOp, 577, cost time: 0.089000 ms
+current Op is 610th:128:Raster
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 611th:128:Raster
+	computeIthOp, 577, cost time: 0.091000 ms
+current Op is 612th:128:Raster
+	computeIthOp, 577, cost time: 0.087000 ms
+current Op is 613th:128:Raster
+	computeIthOp, 577, cost time: 0.097000 ms
+current Op is 614th:128:Raster
+	computeIthOp, 577, cost time: 0.116000 ms
+current Op is 615th:128:Raster
+	computeIthOp, 577, cost time: 0.099000 ms
+current Op is 616th:128:Raster
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 617th:128:Raster
+	computeIthOp, 577, cost time: 0.090000 ms
+current Op is 618th:128:Raster
+	computeIthOp, 577, cost time: 0.085000 ms
+current Op is 619th:128:Raster
+	computeIthOp, 577, cost time: 0.108000 ms
+SGD.cpp:onGetNextParameter: finish read-map & start replace
+SGD.cpp:onGetNextParameter: finish replace & start compute update value
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.240000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.077000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.306000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.068000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.072000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.292000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.298000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.068000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.068000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.068000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.067000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.091000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.068000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.065000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.282000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.061000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.157000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.273000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.110000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.322000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.090000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.106000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.074000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.074000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.061000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.065000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.347000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.086000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.070000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.068000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.075000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.344000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.252000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.262000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.062000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.070000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.070000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.071000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.121000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.104000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.090000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.061000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.065000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.109000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.142000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.437000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.103000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.130000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.325000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.065000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.331000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.066000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.066000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.073000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.081000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.071000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.071000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.078000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.066000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.077000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.335000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.061000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.347000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.081000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.274000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.077000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.073000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.067000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.166000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.263000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.062000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.065000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.111000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.139000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.114000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.103000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.129000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.351000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.324000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.072000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.066000 ms
+current Op is 1th:128:Raster
+	computeIthOp, 577, cost time: 0.091000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.072000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.333000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 2th:128:Raster
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 3th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.071000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.065000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.061000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.324000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.071000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.319000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.066000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.065000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.294000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.061000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.065000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.195000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.123000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.049000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.056000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.710000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.101000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.731000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.190000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.105000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.107000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.101000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.235000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.085000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.173000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.105000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.112000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.253000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.088000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.247000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.090000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.097000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.257000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.081000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.082000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.104000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.081000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.082000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.085000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.569000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.078000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.069000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.077000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.066000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.068000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.060000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.314000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.849000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.127000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.875000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.112000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.142000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.491000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.319000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.102000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.230000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.131000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.088000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.255000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.098000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.256000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.094000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.081000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.078000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.082000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.108000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.097000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.086000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.088000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.097000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.219000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.088000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.090000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.078000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.082000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.082000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.085000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.081000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.085000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.107000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.077000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.082000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.086000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.081000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.078000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.078000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.097000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.090000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.100000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.119000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.089000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.098000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.354000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.078000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.078000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.082000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.081000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.086000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.082000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.082000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.088000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.078000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.093000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.080000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.086000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.081000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.104000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.089000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.078000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.079000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.083000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.101000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.120000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.357000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.137000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.124000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.286000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.093000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.256000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.062000 ms
+current Op is 2th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.119000 ms
+SGD.cpp: finish func onGetNextParameter
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.095000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.068000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.072000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.319000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.373000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.312000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.084000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.066000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.074000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.387000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.445000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.387000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.091000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.069000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.074000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.373000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.674000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.366000 ms
+current Op is 0th:128:Raster
+	computeIthOp, 577, cost time: 0.137000 ms
+current Op is 1th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.071000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.067000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.351000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.369000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.364000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.068000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.348000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.360000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.354000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.065000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.062000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.069000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.352000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.366000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.357000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.067000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.099000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.066000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.071000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.064000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.066000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.118000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.066000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.073000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.074000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.086000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.063000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.131000 ms
+current Op is 0th:7:BinaryOp
+	computeIthOp, 577, cost time: 0.067000 ms
+train, 137, cost time: 4361.447266 ms
+train, 125, cost time: 4640.539062 ms

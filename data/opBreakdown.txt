@@ -1,0 +1,68 @@
+data/Googlenet.txt
+op=128:Raster	count=867	min=0.003ms	mean=0.21726413148788934ms	max=24.643002ms	total=188.36800200000005ms
+op=39:MatMul	count=170	min=0.031ms	mean=1.8467882705882352ms	max=60.261002ms	total=313.954006ms
+op=47:Pooling	count=14	min=0.037ms	mean=0.5706428571428571ms	max=3.062ms	total=7.988999999999999ms
+op=101:UnaryOp	count=1	min=0.005ms	mean=0.005ms	max=0.005ms	total=0.005ms
+op=7:BinaryOp	count=270	min=0.004ms	mean=0.21558148148148146ms	max=2.163ms	total=58.206999999999994ms
+op=9:Cast	count=118	min=0.002ms	mean=0.16703389830508475ms	max=0.887ms	total=19.71ms
+op=119:OneHot	count=1	min=0.014ms	mean=0.014ms	max=0.014ms	total=0.014ms
+op=68:Reduction	count=172	min=0.004ms	mean=0.07524418604651156ms	max=2.822ms	total=12.941999999999988ms
+op=85:Softmax	count=1	min=0.014ms	mean=0.014ms	max=0.014ms	total=0.014ms
+op=22:Eltwise	count=13	min=0.097ms	mean=1.8001538461538462ms	max=16.795ms	total=23.402ms
+total 1627 op, cost 624.6050080000001 ms
+
+data/Squeezenet.txt
+op=128:Raster	count=362	min=0.005ms	mean=0.9294199116022102ms	max=25.910002ms	total=336.4500080000001ms
+op=39:MatMul	count=77	min=0.152ms	mean=6.648026220779219ms	max=70.228004ms	total=511.8980189999998ms
+op=47:Pooling	count=4	min=0.012ms	mean=2.3440000000000003ms	max=4.761ms	total=9.376000000000001ms
+op=101:UnaryOp	count=1	min=0.006ms	mean=0.006ms	max=0.006ms	total=0.006ms
+op=7:BinaryOp	count=68	min=0.004ms	mean=1.0008088235294117ms	max=3.218ms	total=68.05499999999999ms
+op=9:Cast	count=28	min=0.004ms	mean=0.8350714285714284ms	max=1.879ms	total=23.381999999999994ms
+op=119:OneHot	count=1	min=0.016ms	mean=0.016ms	max=0.016ms	total=0.016ms
+op=68:Reduction	count=79	min=0.006ms	mean=0.23205063291139233ms	max=2.824ms	total=18.331999999999994ms
+op=22:Eltwise	count=3	min=7.940001ms	mean=17.437667333333334ms	max=26.651001ms	total=52.313002ms
+total 623 op, cost 1019.8280289999997 ms
+
+data/Alexnet.txt
+op=128:Raster	count=130	min=0.004ms	mean=0.7583000153846151ms	max=21.272001ms	total=98.57900199999996ms
+op=39:MatMul	count=20	min=0.061ms	mean=34.06215114999999ms	max=102.836006ms	total=681.2430229999999ms
+op=101:UnaryOp	count=7	min=0.004ms	mean=0.36ms	max=1.225ms	total=2.52ms
+op=7:BinaryOp	count=87	min=0.002ms	mean=0.14308045977011494ms	max=0.618ms	total=12.447999999999999ms
+op=69:ReLU	count=6	min=0.008ms	mean=0.1055ms	max=0.356ms	total=0.633ms
+op=47:Pooling	count=3	min=0.119ms	mean=0.5566666666666666ms	max=0.969ms	total=1.67ms
+op=9:Cast	count=28	min=0.004ms	mean=0.12664285714285714ms	max=0.237ms	total=3.546ms
+op=119:OneHot	count=1	min=0.004ms	mean=0.004ms	max=0.004ms	total=0.004ms
+op=85:Softmax	count=1	min=0.012ms	mean=0.012ms	max=0.012ms	total=0.012ms
+op=68:Reduction	count=17	min=0.004ms	mean=0.2577647058823529ms	max=1.578ms	total=4.381999999999999ms
+op=22:Eltwise	count=3	min=0.38ms	mean=2.795666666666667ms	max=5.128ms	total=8.387ms
+total 303 op, cost 813.4240249999998 ms
+
+data/MobilenetV2.txt
+op=7:BinaryOp	count=1279	min=0.003ms	mean=0.21153635652853783ms	max=5.492ms	total=270.5549999999999ms
+op=128:Raster	count=2015	min=0.004ms	mean=0.2537677439205949ms	max=19.890001ms	total=511.3420039999987ms
+op=39:MatMul	count=107	min=0.459ms	mean=2.3858878971962616ms	max=22.493002ms	total=255.29000499999998ms
+op=68:Reduction	count=863	min=0.005ms	mean=0.17996292004634976ms	max=5.521ms	total=155.30799999999985ms
+op=101:UnaryOp	count=279	min=0.003ms	mean=0.24980645161290316ms	max=5.058ms	total=69.69599999999998ms
+op=70:ReLU6	count=35	min=0.024ms	mean=0.22765714285714286ms	max=1.605ms	total=7.968ms
+op=13:ConvolutionDepthwise	count=17	min=0.328ms	mean=0.8005882352941178ms	max=2.195ms	total=13.610000000000003ms
+op=47:Pooling	count=1	min=0.104ms	mean=0.104ms	max=0.104ms	total=0.104ms
+op=9:Cast	count=1	min=0.002ms	mean=0.002ms	max=0.002ms	total=0.002ms
+op=119:OneHot	count=1	min=0.015ms	mean=0.015ms	max=0.015ms	total=0.015ms
+op=85:Softmax	count=1	min=0.022ms	mean=0.022ms	max=0.022ms	total=0.022ms
+op=18:DeconvolutionDepthwise	count=17	min=0.501ms	mean=1.4541764705882354ms	max=4.093ms	total=24.721000000000004ms
+total 4616 op, cost 1308.6330089999983 ms
+
+data/Lenet.txt
+op=128:Raster	count=54	min=0.005ms	mean=0.6308148333333333ms	max=10.545ms	total=34.064001ms
+op=9:Cast	count=10	min=0.004ms	mean=0.09620000000000001ms	max=0.169ms	total=0.9620000000000001ms
+op=7:BinaryOp	count=32	min=0.002ms	mean=0.09090625000000002ms	max=0.438ms	total=2.9090000000000007ms
+op=39:MatMul	count=11	min=0.104ms	mean=5.6717274545454535ms	max=18.809ms	total=62.38900199999999ms
+op=47:Pooling	count=2	min=0.47ms	mean=1.5375ms	max=2.605ms	total=3.075ms
+op=101:UnaryOp	count=2	min=0.003ms	mean=0.054ms	max=0.105ms	total=0.108ms
+op=119:OneHot	count=1	min=0.005ms	mean=0.005ms	max=0.005ms	total=0.005ms
+op=69:ReLU	count=1	min=0.016ms	mean=0.016ms	max=0.016ms	total=0.016ms
+op=85:Softmax	count=1	min=0.024ms	mean=0.024ms	max=0.024ms	total=0.024ms
+op=68:Reduction	count=8	min=0.006ms	mean=0.283ms	max=1.896ms	total=2.264ms
+op=22:Eltwise	count=2	min=0.526ms	mean=0.993ms	max=1.46ms	total=1.986ms
+total 124 op, cost 107.802003 ms
+

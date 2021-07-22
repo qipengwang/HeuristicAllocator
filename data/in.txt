@@ -1,0 +1,12 @@
+free list is not empty with max_size = 3211264, but fail to match size = 6422528
+fail to get from free list, allocate otherwise
+free list.size = 0, tot_size = 0
+fail to get from free list, allocate otherwise
+fail to reuse memory, require from OS with 6422528 byte
+
+free list is not empty with max_size = 3211264, but fail to match size = 6422528
+fail to get from free list, allocate otherwise
+free list.size = 0, tot_size = 0
+fail to get from free list, allocate otherwise
+fail to reuse memory, require from OS with 6422528 byte
+

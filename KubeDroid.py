@@ -13,13 +13,23 @@ class Profiler:
         self.model = model
         self.batch = batch
         self.tensor_size = {}
-        self.tensor_info = []
+        self.io_info = []
         self.resize_info = []
         self.redundent_parent = {}  # 存在不断alloc free alloc free的情况，这种应该是同一个tensor，去重
         self.cost_info = {}
         self.tensor_from_opid = {}
-        self.profile()
-        self.resize()
+
+        self.fp_thres = -1
+        if self.model == 'Googlenet':
+            self.fp_thres = 218
+        elif self.model == 'MobilenetV2':
+            self.fp_thres = 1438
+        elif self.model == 'MobilenetV1':
+            self.fp_thres = None
+        elif self.model == 'Squeezenet':
+            self.fp_thres = 119
+        # self.profile()
+        # self.resize()
 
     def profile(self):
         def add_info(ln, tag):
@@ -32,7 +42,7 @@ class Profiler:
                     tid, tsize = int(item[0]), int(item[1])
                     self.tensor_size[tid] = tsize
                     tmp.add(tid)
-            self.tensor_info[-1][tag] = list(tmp)
+            self.io_info[-1][tag] = list(tmp)
 
         profile_flag = False
         with open(os.path.join(root, 'profile', f'{self.model}.{self.batch}.profile.out')) as f:
@@ -46,20 +56,20 @@ class Profiler:
 
                 if line.strip().startswith('current Op'):
                     op = line.strip().split()[-1]
-                    opid = len(self.tensor_info)
-                    self.tensor_info.append({'op': op, 'id': opid})
+                    opid = len(self.io_info)
+                    self.io_info.append({'op': op, 'id': opid})
                 elif line.startswith('\t') and line.strip().startswith('outputs'):
                     add_info(line, 'outputs')
-                    for t in self.tensor_info[-1]['outputs']:
-                        self.tensor_from_opid[t] = len(self.tensor_info) - 1
+                    for t in self.io_info[-1]['outputs']:
+                        self.tensor_from_opid[t] = len(self.io_info) - 1
                 elif line.startswith('\t') and line.strip().startswith('release'):
                     add_info(line, 'release')
                 elif line.startswith('\t') and line.strip().startswith('inputs'):
                     add_info(line, 'inputs')
                 elif line.startswith('\t') and line.strip().startswith('temporary'):
                     add_info(line, 'temporary')
-                    for t in self.tensor_info[-1]['temporary']:
-                        assert t in self.tensor_info[-1]['outputs']
+                    for t in self.io_info[-1]['temporary']:
+                        assert t in self.io_info[-1]['outputs']
 
     def resize(self):
         resize_flag = False
@@ -122,7 +132,7 @@ class Profiler:
         cost_flag = False
         with open(os.path.join(root, 'cost', f'{self.model}.{self.batch}.cost.out')) as f:
             for line in f:
-                if line.strip.endswith('start read-map'):
+                if line.strip().endswith('start read-map'):
                     cost_flag = True
                 elif line.strip().endswith('finish read-map & start replace'):
                     cost_flag = False
@@ -134,6 +144,26 @@ class Profiler:
                     opid = int(op.split('th')[0])
                 elif 'cost time' in line:
                     self.cost_info[opid] = float(line.strip().split()[-2])
+
+    def load_infos(self):
+        with open(os.path.join('data/profiler', self.model, f'{self.model}.io_info.json'), 'r') as f:
+            self.io_info = json.load(f)
+        for i in range(len(self.io_info)):
+            for t in self.io_info[i]['outputs']:
+                self.tensor_from_opid[t] = i
+        with open(os.path.join('data/profiler', self.model, f'{self.model}.{self.batch}.resize_info.json'), 'r') as f:
+            self.resize_info = json.load(f)
+        with open(os.path.join('data/profiler', self.model, f'{self.model}.{self.batch}.tensor_size.json'), 'r') as f:
+            self.tensor_size = json.load(f)
+        for t in list(self.tensor_size.keys()):
+            if ':' not in t:
+                self.tensor_size[int(t)] = self.tensor_size.pop(t)
+        with open(os.path.join('data/profiler', self.model, f'{self.model}.{self.batch}.redundent_parent.json'), 'r') as f:
+            self.redundent_parent = json.load(f)
+        with open(f'data/profiler/{self.model}/{self.model}.{self.batch}.cost_info.json') as f:
+            self.cost_info=json.load(f)
+        for op in list(self.cost_info.keys()):
+            self.cost_info[int(t)] = self.cost_info[t]
 
 
 class HeuristicAllocator:
@@ -420,7 +450,9 @@ def oracle(profiler):
 
 def baseline(profiler):
     buffer_allocator = BufferAllocator()
+    # 下面这个for是执行的流程
     for i in range(len(profiler.tensor_info)):
+        # 对于每次计算，一定是先分配output，然后resize里面的alloc，然后resize里面的free，最后release
         for t in profiler.tensor_info[i]['outputs']:
             buffer_allocator.alloc(t, profiler.tensor_size[t])
         for a, t in profiler.resize_info[i]:
@@ -434,15 +466,35 @@ def baseline(profiler):
     return buffer_allocator.tot_size
 
 
+def get_featuremap(profiler: Profiler):
+    feature_map = set()
+
+    for i in range(profiler.fp_thres):
+        for t in profiler.io_info[i]['outputs']:
+            feature_map.add(t)
+        for t in profiler.io_info[i]['release']:
+            feature_map.remove(t)
+    # print(sorted(feature_map))
+    return feature_map
+
+
 if __name__ == '__main__':
-    for model in ['Squeezenet', 'Googlenet', 'MobilenetV1', 'MobilenetV2']:
-        for batch in range(2, 17):
-            print(model, batch)
-            profiler = Profiler(model, batch)
-            b = baseline(profiler)
-            o = oracle(profiler)
-            print(b, o)
-            # heuristic_allocator = HeuristicAllocator(profiler)
-            # heuristic_allocator.dump_heuristic_info()
-            # heuristic_allocator.heuristic_alloc()
-            input()
+    # for model in ['Squeezenet', 'Googlenet', 'MobilenetV1', 'MobilenetV2']:
+    #     for batch in range(2, 17):
+    #         print(model, batch)
+    #         profiler = Profiler(model, batch)
+    #         b = baseline(profiler)
+    #         o = oracle(profiler)
+    #         print(b, o)
+    #         # heuristic_allocator = HeuristicAllocator(profiler)
+    #         # heuristic_allocator.dump_heuristic_info()
+    #         # heuristic_allocator.heuristic_alloc()
+    #         input()
+    # assert 0
+    model = 'MobilenetV2'
+    profiler = Profiler(model, 4)
+    profiler.load_infos()  # 我把数据都dump下来了，这句话直接读进来即可
+    feature_map = get_featuremap(profiler)
+    # todo: simulate swapping
+    #       via OS  --> oracle
+    #       via buffer_allocator
