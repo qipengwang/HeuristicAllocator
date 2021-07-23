@@ -162,7 +162,7 @@ class Profiler:
             self.redundent_parent = json.load(f)
         with open(f'data/profiler/{self.model}/{self.model}.{self.batch}.cost_info.json') as f:
             self.cost_info=json.load(f)
-        for op in list(self.cost_info.keys()):
+        for t in list(self.cost_info.keys()):
             self.cost_info[int(t)] = self.cost_info[t]
 
 
@@ -181,7 +181,7 @@ class HeuristicAllocator:
                     self.heuristic_info[t]['alloc'] = i
                 else:
                     self.heuristic_info[t]['free'] = i + 1
-        for i, info in enumerate(profiler.tensor_info):
+        for i, info in enumerate(profiler.io_info):
             for t in info['outputs']:
                 self.heuristic_info[t]['alloc'] = i
             for t in info['release']:
@@ -189,7 +189,7 @@ class HeuristicAllocator:
         for t in self.heuristic_info:
             self.heuristic_info[t]['size'] = BufferAllocator.aligned_size(self.profiler.tensor_size[t])
             if 'free' not in self.heuristic_info[t]:
-                self.heuristic_info[t]['free'] = len(profiler.tensor_info)
+                self.heuristic_info[t]['free'] = len(profiler.io_info)
             assert all([i in self.heuristic_info[t] for i in ('alloc', 'free', 'size')])
         # print(*self.heuristic_info.items(), sep='\n')
 
@@ -268,7 +268,7 @@ def selectCheckpoint(profiler: Profiler):
     table_in = defaultdict(set)
     table_out = defaultdict(set)
     indegree = defaultdict(int)
-    for idx, info in enumerate(profiler.tensor_info):
+    for idx, info in enumerate(profiler.io_info):
         for t in info['inputs']:
             opid = profiler.tensor_from_opid[t]
             indegree[idx] += 1
@@ -320,7 +320,7 @@ def selectCheckpoint(profiler: Profiler):
             peak = max(cur, peak)
 
             for i in range(cut_point[index], cut_point[end_index]):
-                for t in profiler.tensor_info[i]['outputs']:
+                for t in profiler.io_info[i]['outputs']:
                     dynamic_allocator.alloc(t, profiler.tensor_size[t])
                     cur += profiler.tensor_size[t]
                 peak = max(cur, peak)
@@ -334,7 +334,7 @@ def selectCheckpoint(profiler: Profiler):
                         cur -= profiler.tensor_size[t]
                 peak = max(cur, peak)
 
-                for t in profiler.tensor_info[i]['release']:
+                for t in profiler.io_info[i]['release']:
                     if cut_point[index] <= t < cut_point[end_index]:
                         dynamic_allocator.free(t)
                         cur -= profiler.tensor_size[t]
@@ -359,7 +359,7 @@ def selectCheckpoint(profiler: Profiler):
 def comp_ith(ith, allocator: BufferAllocator, skip=None):
     if skip:
         print(skip)
-    for t in profiler.tensor_info[ith]['outputs']:
+    for t in profiler.io_info[ith]['outputs']:
         allocator.alloc(t, profiler.tensor_size[t])
         allocated_tensors.add(t)
     for a, t in profiler.resize_info[ith]:
@@ -367,7 +367,7 @@ def comp_ith(ith, allocator: BufferAllocator, skip=None):
             allocator.alloc(t, profiler.tensor_size[t])
         else:
             allocator.free(t)
-    for t in profiler.tensor_info[ith]['release']:
+    for t in profiler.io_info[ith]['release']:
         if t != skip:
             allocator.free(t)
             allocated_tensors.remove(t)
@@ -386,12 +386,12 @@ def simulate_recompute():
     allocated_tensors = set()
 
     table_in = defaultdict(set)
-    for idx, info in enumerate(profiler.tensor_info):
+    for idx, info in enumerate(profiler.io_info):
         for t in info['inputs']:
             table_in[idx].add(profiler.tensor_from_opid[t])
     cut_point = sorted(Tarjan([(op, i) for i in range(217 + 1) for op in table_in[i] if table_in[op]]))
 
-    for op in range(len(profiler.tensor_info)):
+    for op in range(len(profiler.io_info)):
         # if op > 217:
         #     break
         comp_ith(op, allocator)
@@ -400,9 +400,9 @@ def simulate_recompute():
     print(sorted(list(allocated_tensors & set(cut_point))))
 
     allocator = BufferAllocator()
-    for op in range(len(profiler.tensor_info)):
+    for op in range(len(profiler.io_info)):
         need_recomp = -1
-        for t in profiler.tensor_info[op]['inputs']:
+        for t in profiler.io_info[op]['inputs']:
             if t not in allocated_tensors:
                 need_recomp = t
         if need_recomp != -1:
@@ -418,7 +418,7 @@ def simulate_recompute():
             for i in range(checkpoints[currentCheckpointIdx] + 1, checkpoints[currentCheckpointIdx + 1]):
                 if i <= 16:
                     continue
-                for t in profiler.tensor_info[i]['outputs']:
+                for t in profiler.io_info[i]['outputs']:
                     # print(f'release {i} outputs')
                     if t in allocated_tensors:
                         allocator.free(t)
@@ -430,19 +430,19 @@ def simulate_recompute():
 
 def oracle(profiler):
     cur, peak = 0, 0
-    for i in range(len(profiler.tensor_info)):
-        # if i > 217:
-        #     break
-        for t in profiler.tensor_info[i]['outputs']:
+    for i in range(len(profiler.io_info)):
+        for t in profiler.io_info[i]['outputs']:
             cur += profiler.tensor_size[t]
             peak = max(cur, peak)
         for a, t in profiler.resize_info[i]:
             if a == 'alloc':
                 cur += profiler.tensor_size[t]
                 peak = max(cur, peak)
-            else:
+        # compute
+        for a, t in profiler.resize_info[i]:
+            if a == 'free':
                 cur -= profiler.tensor_size[t]
-        for t in profiler.tensor_info[i]['release']:
+        for t in profiler.io_info[i]['release']:
             cur -= profiler.tensor_size[t]
     print(cur, peak)
     return peak
@@ -451,16 +451,18 @@ def oracle(profiler):
 def baseline(profiler):
     buffer_allocator = BufferAllocator()
     # 下面这个for是执行的流程
-    for i in range(len(profiler.tensor_info)):
+    for i in range(len(profiler.io_info)):
         # 对于每次计算，一定是先分配output，然后resize里面的alloc，然后resize里面的free，最后release
-        for t in profiler.tensor_info[i]['outputs']:
+        for t in profiler.io_info[i]['outputs']:
             buffer_allocator.alloc(t, profiler.tensor_size[t])
-        for a, t in profiler.resize_info[i]:
+        for a, t in profiler.resize_info[i]:  # tmp
             if a == 'alloc':
                 buffer_allocator.alloc(t, profiler.tensor_size[t])
-            else:
+        # compute
+        for a, t in profiler.resize_info[i]:
+            if a == 'free':
                 buffer_allocator.free(t)
-        for t in profiler.tensor_info[i]['release']:
+        for t in profiler.io_info[i]['release']:  # rel input
             buffer_allocator.free(t)
     print(buffer_allocator.tot_size)
     return buffer_allocator.tot_size
@@ -468,7 +470,6 @@ def baseline(profiler):
 
 def get_featuremap(profiler: Profiler):
     feature_map = set()
-
     for i in range(profiler.fp_thres):
         for t in profiler.io_info[i]['outputs']:
             feature_map.add(t)
