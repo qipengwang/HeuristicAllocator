@@ -464,6 +464,7 @@ def baseline(profiler):
                 buffer_allocator.free(t)
         for t in profiler.io_info[i]['release']:  # rel input
             buffer_allocator.free(t)
+        # 触发swap操作
     print(buffer_allocator.tot_size)
     return buffer_allocator.tot_size
 

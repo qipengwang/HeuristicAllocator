@@ -186,6 +186,7 @@ profiler.load_infos()  # 我把数据都dump下来了，这句话直接读进来
                 buffer_allocator.free(t)
         for t in profiler.io_info[i]['release']:  # rel input
             buffer_allocator.free(t)
+        # 触发swap操作的位置在每个op执行完成的最后
 ```
 
 
@@ -223,6 +224,9 @@ profiler.load_infos()  # 我把数据都dump下来了，这句话直接读进来
 - 也就是说如果需要用某个tensor作为输入的op都是比fp_thres大的话，那么就可以执行release/free 这个tensor了！！
   - 对于在io_info里面的release里面的tensor可以直接处理
   - 对于feature-map就需要判断一下每个op计算完成之后，如果输入包含了featuremap，那么这个feature-map在前向阶段是否还会被使用，如果不用了就release，节约内存开销
+- 然后注意一下在触发swap-in的时候需要先分配空间！就是`buffer_allocator.alloc`或者直接`cur+=***`
+- 磁盘IO的速度是：104094472 bytes in 4.452s
+- 
 
 
 
