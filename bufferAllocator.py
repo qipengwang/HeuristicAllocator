@@ -29,7 +29,21 @@ def init():
     inf = 1e10
 
 
-class BufferAllocator:
+class Allocator:
+    def __init__(self):
+        pass
+
+    def alloc(self, tid, tsz=None):
+        pass
+
+    def free(self, tid):
+        pass
+
+    def total_size(self):
+        pass
+
+
+class BufferAllocator(Allocator):
     alignment = 64
 
     @classmethod
@@ -43,11 +57,13 @@ class BufferAllocator:
             self.size = 0
 
     def __init__(self):
+        super(BufferAllocator, self).__init__()
         self.freelist = defaultdict(list)  # size: [Node]
         self.usedlist = dict()  # tid: node
         self.tot_size = 0
 
     def alloc(self, tid, tsz=None):
+        # print(f'alloc for {tid}')
         node = self.getFromFreelist(tid, tsz)
         if not node:
             node = BufferAllocator.Node()
@@ -59,6 +75,7 @@ class BufferAllocator:
             # print(f'alloc from os for {node.size} bytes for tensor[{tid}]')
 
     def free(self, tid):
+        # print(f'free {tid}')
         if tid not in self.usedlist:
             print(tid)
             assert 0
@@ -128,6 +145,36 @@ class BufferAllocator:
             self.usedlist[tid] = first
             self.freelist[second.size].append(second)
             return first
+
+    def free_sizes(self):
+        return sorted([sz for sz in self.freelist for _ in range(len(self.freelist[sz]))])
+
+    def used_tids(self):
+        return list(self.usedlist.keys())
+
+    def total_size(self):
+        return self.tot_size
+
+
+class OSAllocator(Allocator):
+    def __init__(self):
+        super(OSAllocator, self).__init__()
+        self.cur = 0
+        self.peak = 0
+        self.tsz = defaultdict(int)
+
+    def alloc(self, tid, size=None):
+        if not size:
+            return
+        self.cur += size
+        self.tsz[tid] = size
+        self.peak = max(self.cur, self.peak)
+
+    def free(self, tid):
+        self.cur -= self.tsz[tid]
+
+    def total_size(self):
+        return self.peak
 
 
 def get_heuristic_info():
