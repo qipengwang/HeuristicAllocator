@@ -283,6 +283,8 @@ class HeuristicAllocator:
                 if not heuristic[op]:
                     possible.append((0, self.inf))
                     continue
+                if heuristic[op][0][0] >= info['size']:      # 最前面有一段可用内存空间
+                    possible.append((0, heuristic[op][0][0]))
                 for i in range(len(heuristic[op]) - 1):
                     if heuristic[op][i + 1][0] - heuristic[op][i][1] >= info['size']:
                         possible.append((heuristic[op][i][1], heuristic[op][i + 1][0] - heuristic[op][i][1]))  # 在第op下可能的位置
