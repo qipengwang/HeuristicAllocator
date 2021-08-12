@@ -512,6 +512,7 @@ def ondemand_recompute_via_msps(profiler: Profiler, mem_budget: int = 512 * 1024
         for t in info['inputs']:
             table_out[t].add(idx)
             table_in[idx].add(t)
+    compute_target = [op for op in range(len(profiler.io_info)) if not table_out[op]]
 
     def update_msps(ith: int):
         comp_src = set()
@@ -1025,4 +1026,4 @@ def search_capuchin(model):
 
 
 if __name__ == '__main__':
-    search_capuchin('MobilenetV2')
+    search_heu_res('MobilenetV2')
