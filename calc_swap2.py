@@ -5,8 +5,9 @@ from collections import defaultdict
 from collections import deque
 import json
 
-root = '/Users/wangqipeng/Desktop/MNN/build/'
-IOrate=104094472/4452 #单位 bytes/ms
+root = '/Users/wangqipeng/Desktop/MNN/build_64/'
+# IOrate=104094472/4452 #单位 bytes/ms
+IOrate=107374182400 / 275106.187500
 Swap_time=defaultdict(int)
 Swap=defaultdict(list)
 
@@ -444,23 +445,28 @@ if __name__ == '__main__':
     #         # heuristic_allocator.heuristic_alloc()
     #         input()
     # assert 0
-    model = 'Googlenet'
-    profiler = Profiler(model, 4)
-    profiler.load_infos()  # 我把数据都dump下来了，这句话直接读进来即可
-    feature_map = get_featuremap(profiler)
-    
-    
-    b=Allocator()
-    b.Synchronous(profiler)
-    print("     Synchronous memory:", b.memory_peak,"time:",b.time)
-    
-    a=Allocator()
-    a.Semi_Synchronous(profiler)
-    print("Semi_Synchronous memory:", a.memory_peak,"time:",a.time)
-    
-    c=Allocator()
-    c.Asynchronous(profiler)
-    print("    Asynchronous memory:", c.memory_peak,"time:",c.time)
+    for batch in range(48, 192, 16):
+        if batch > 128 and batch % 32 != 0:
+            continue
+        model = 'MobilenetV2'
+        profiler = Profiler(model, 4)
+        profiler.load_infos()  # 我把数据都dump下来了，这句话直接读进来即可
+        # profiler.
+        feature_map = get_featuremap(profiler)
+
+
+        b=Allocator()
+        b.Synchronous(profiler)
+        print("     Synchronous memory:", b.memory_peak,"time:",b.time)
+
+        a=Allocator()
+        a.Semi_Synchronous(profiler)
+        print("Semi_Synchronous memory:", a.memory_peak,"time:",a.time)
+
+        c=Allocator()
+        c.Asynchronous(profiler)
+        print("    Asynchronous memory:", c.memory_peak,"time:",c.time)
+        break
     
     # print(profiler.io_info[1]['release'][0])
     # print(profiler.resize_info[7])

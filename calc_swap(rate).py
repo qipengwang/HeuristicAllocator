@@ -5,9 +5,24 @@ from collections import defaultdict
 from collections import deque
 import json
 
-root = '/Users/wangqipeng/Desktop/MNN/build/'
-Orate=104094472/4452 # swapout 单位 bytes/ms
-Irate=104094472/4452*2 # swapin 的速度是swapout速度的两倍 单位 bytes/ms
+root = '/Users/wangqipeng/Desktop/PythonTest'
+# Orate=104094472/4452 # swapout 单位 bytes/ms
+# Irate=104094472/4452*2 # swapin 的速度是swapout速度的两倍 单位 bytes/ms
+device = 'Redmi'
+Orate = None
+Irate = None
+if device == 'Samsung':
+    Orate = 315.22 * 1024 ** 2 / 1000
+    Irate = 797.91 * 1024 ** 2 / 1000
+elif device == 'Meizu':
+    Orate = 160.42 * 1024 ** 2 / 1000
+    Irate = 1.12 * 1024 ** 3 / 1000
+elif device == 'Redmi':
+    Orate = 121.54 * 1024 ** 2 / 1000
+    Irate = 263.05 * 1024 ** 2 / 1000
+elif device == 'Vivo':
+    Orate = 342.14 * 1024 ** 2 / 1000
+    Irate = 452.29 * 1024 ** 2 / 1000
 Swap_time=defaultdict(int)
 Swap=defaultdict(list)
 
@@ -22,15 +37,32 @@ class Profiler:
         self.cost_info = {}
         self.tensor_from_opid = {}
 
-        self.fp_thres = -1
         if self.model == 'Googlenet':
-            self.fp_thres = 218
+            self.fp_thres = 1849
         elif self.model == 'MobilenetV2':
-            self.fp_thres = 1438
+            self.fp_thres = 1750
+            self.num_layers = 30
         elif self.model == 'MobilenetV1':
-            self.fp_thres = None
+            self.num_layers = 31
+            self.fp_thres = 917
         elif self.model == 'Squeezenet':
-            self.fp_thres = 119
+            self.fp_thres = 866
+            self.num_layers = 30
+        elif self.model == 'Resnet50':
+            self.fp_thres = 1835
+            self.num_layers = 50
+        elif self.model == 'MobilenetV1NoBN':
+            self.fp_thres = 121
+            self.num_layers = 31
+        elif self.model == 'MobilenetV2NoBN':
+            self.fp_thres = 227
+            self.num_layers = 30
+        elif self.model == 'SqueezenetNoBN':
+            self.fp_thres = 120
+            self.num_layers = 30
+        elif self.model == 'Resnet50NoBN':
+            self.fp_thres = 298
+            self.num_layers = 50
         # self.profile()
         # self.resize()
 
@@ -149,21 +181,21 @@ class Profiler:
                     self.cost_info[opid] = float(line.strip().split()[-2])
 
     def load_infos(self):
-        with open(os.path.join('data/profiler', self.model, f'{self.model}.io_info.json'), 'r') as f:
+        with open(os.path.join(root, 'data/profiler', self.model, f'{self.model}.io_info.json'), 'r') as f:
             self.io_info = json.load(f)
         for i in range(len(self.io_info)):
             for t in self.io_info[i]['outputs']:
                 self.tensor_from_opid[t] = i
-        with open(os.path.join('data/profiler', self.model, f'{self.model}.{self.batch}.resize_info.json'), 'r') as f:
+        with open(os.path.join(root, 'data/profiler', self.model, f'{self.model}.{self.batch}.resize_info.json'), 'r') as f:
             self.resize_info = json.load(f)
-        with open(os.path.join('data/profiler', self.model, f'{self.model}.{self.batch}.tensor_size.json'), 'r') as f:
+        with open(os.path.join(root, 'data/profiler', self.model, f'{self.model}.{self.batch}.tensor_size.json'), 'r') as f:
             self.tensor_size = json.load(f)
         for t in list(self.tensor_size.keys()):
             if ':' not in t:
                 self.tensor_size[int(t)] = self.tensor_size.pop(t)
-        with open(os.path.join('data/profiler', self.model, f'{self.model}.{self.batch}.redundent_parent.json'), 'r') as f:
+        with open(os.path.join(root, 'data/profiler', self.model, f'{self.model}.{self.batch}.redundent_parent.json'), 'r') as f:
             self.redundent_parent = json.load(f)
-        with open(f'data/profiler/{self.model}/{self.model}.{self.batch}.cost_info.json') as f:
+        with open(os.path.join(root, f'data/profiler/{self.model}/{self.model}.{self.batch}.cost_info.json')) as f:
             self.cost_info=json.load(f)
         for t in list(self.cost_info.keys()):
             self.cost_info[int(t)] = self.cost_info[t]
@@ -171,9 +203,9 @@ class Profiler:
 
 class Allocator:
     def __init__(self):
-        self.memory_peak=0      
+        self.memory_peak=0
         self.time=0
-    
+
     def Semi_Synchronous(self,profiler: Profiler):#半同步
         buffer_allocator=BufferAllocator()
 
@@ -183,7 +215,7 @@ class Allocator:
             # 最后swap out tensor
             for t in profiler.io_info[i]['outputs']:
                 buffer_allocator.alloc(t, profiler.tensor_size[t])
- 
+
             for a, t in profiler.resize_info[i]:  # tmp
                 if a == 'alloc':
                     buffer_allocator.alloc(t, profiler.tensor_size[t])
@@ -196,33 +228,33 @@ class Allocator:
             # if i==0:
             #     self.time+=profiler.cost_info[i]
             # else:
-            self.time+=max(profiler.cost_info[i],Swap_time[i-1])#一次op的耗时 
+            self.time+=max(profiler.cost_info[i],Swap_time[i-1])#一次op的耗时
             for t in Swap[i-1]:#swapout之后将内存释放
                 buffer_allocator.free(t)
-                
-          #################################################################### 
-                 
+
+          ####################################################################
+
         self.time+=Swap_time[profiler.fp_thres-1] #FP中最后一个tensor的swapout
         for t in Swap[profiler.fp_thres-1]:#swapout之后将内存释放
             buffer_allocator.free(t)
-              
+
         self.time+=Swap_time[profiler.fp_thres] #BP中第一个tensor的swapin
         for t in Swap[profiler.fp_thres]:#swapin载入内存
-            buffer_allocator.alloc(t, profiler.tensor_size[t])       
-                
-          #################################################################### 
-                  
+            buffer_allocator.alloc(t, profiler.tensor_size[t])
+
+          ####################################################################
+
         for i in range(profiler.fp_thres,len(profiler.io_info)):
             # 对于每次计算，先分配swapin tensor, 分配io_info的output，resize的alloc；
             # 然后释放resize的free，io_info的release
             self.time+=max(profiler.cost_info[i],Swap_time[i+1]) #半同步
             for t in Swap[i+1]:
                 buffer_allocator.alloc(t, profiler.tensor_size[t])    #将下一步需要的tensor换入内存
-           
+
             for t in profiler.io_info[i]['outputs']:
                 buffer_allocator.alloc(t, profiler.tensor_size[t])
-            
-            
+
+
             for a, t in profiler.resize_info[i]:  # tmp
                 if a == 'alloc':
                     buffer_allocator.alloc(t, profiler.tensor_size[t])
@@ -233,11 +265,11 @@ class Allocator:
             for t in profiler.io_info[i]['release']:  # rel input
                 buffer_allocator.free(t)
 
-                
+
         self.memory_peak =buffer_allocator.tot_size
         return buffer_allocator.tot_size
-    
-    
+
+
     ####################################################################    
     def Synchronous(self,profiler: Profiler):#全同步
         buffer_allocator=BufferAllocator()
@@ -248,7 +280,7 @@ class Allocator:
             # 最后swap out tensor
             for t in profiler.io_info[i]['outputs']:
                 buffer_allocator.alloc(t, profiler.tensor_size[t])
- 
+
             for a, t in profiler.resize_info[i]:  # tmp
                 if a == 'alloc':
                     buffer_allocator.alloc(t, profiler.tensor_size[t])
@@ -258,25 +290,25 @@ class Allocator:
                     buffer_allocator.free(t)
             for t in profiler.io_info[i]['release']:  # rel input
                 buffer_allocator.free(t)
-                
+
             self.time+=profiler.cost_info[i]+Swap_time[i]
             for t in Swap[i]:#swapout之后将内存释放
                 buffer_allocator.free(t)
 
-                
-          #################################################################### 
-                  
+
+          ####################################################################
+
         for i in range(profiler.fp_thres,len(profiler.io_info)):
             # 对于每次计算，一定是先swapin tensor, 分配io_info的output，resize的alloc；
             # 然后释放resize的free，io_info的release
             self.time+=Swap_time[i]+profiler.cost_info[i]
             for t in Swap[i]:
                 buffer_allocator.alloc(t, profiler.tensor_size[t])    #将下一步需要的tensor换入内存
-           
+
             for t in profiler.io_info[i]['outputs']:
                 buffer_allocator.alloc(t, profiler.tensor_size[t])
-            
-            
+
+
             for a, t in profiler.resize_info[i]:  # tmp
                 if a == 'alloc':
                     buffer_allocator.alloc(t, profiler.tensor_size[t])
@@ -287,20 +319,20 @@ class Allocator:
             for t in profiler.io_info[i]['release']:  # rel input
                 buffer_allocator.free(t)
 
-                
+
         self.memory_peak =buffer_allocator.tot_size
         return buffer_allocator.tot_size
-    
+
     ####################################################################
     def Asynchronous(self,profiler: Profiler):#异步
         buffer_allocator=BufferAllocator()
         time_swap=0
         FIFO=deque()
         for i in range(profiler.fp_thres):#FP阶段，计算第i个op
-           
+
             for t in profiler.io_info[i]['outputs']:
                 buffer_allocator.alloc(t, profiler.tensor_size[t])
- 
+
             for a, t in profiler.resize_info[i]:  # tmp
                 if a == 'alloc':
                     buffer_allocator.alloc(t, profiler.tensor_size[t])
@@ -310,36 +342,36 @@ class Allocator:
                     buffer_allocator.free(t)
             for t in profiler.io_info[i]['release']:  # rel input
                 buffer_allocator.free(t)
-                
-       
+
+
             self.time+=profiler.cost_info[i]    #self.time：第i个op后时间花费
             while len(FIFO) and FIFO[0][0]<=self.time:
-                buffer_allocator.free(FIFO[0][1])#swapout之后将内存释放       
+                buffer_allocator.free(FIFO[0][1])#swapout之后将内存释放
                 FIFO.popleft()
-                
+
             time_swap=max(time_swap,self.time)#time_swap：第i个op后swapout总时间花费
-            
-            for t in Swap[i]:         
+
+            for t in Swap[i]:
                 time_swap+=profiler.tensor_size[t]/Orate
                 FIFO.append((time_swap,t))#在time_swap时刻完成tensor t 的换出
-                
-       ####################################################################           
+
+       ####################################################################
         while len(FIFO):
-            buffer_allocator.free(FIFO[0][1])#swapout之后将内存释放     
-            FIFO.popleft()        
-       
+            buffer_allocator.free(FIFO[0][1])#swapout之后将内存释放
+            FIFO.popleft()
+
         j=  profiler.fp_thres#接下来换入第j个op的tensor
         time_swap+=Swap_time[j]
         for t in Swap[j]:
-            buffer_allocator.alloc(t, profiler.tensor_size[t])   
+            buffer_allocator.alloc(t, profiler.tensor_size[t])
         j+=1
-                
+
         #################################################################### 
-        
+
         for i in range(profiler.fp_thres,len(profiler.io_info)):#BP阶段，计算第i个op
             # 对于每次op计算，先分配swapin的tensor, io_info的output，resize的alloc；
             # 然后释放resize的free，io_info的release
-            
+
             if i==j-1:                      #前j-1个op的tensor已换入
                 self.time=max(self.time,time_swap)#第i个op需等待swapin[i]完成后在进行
 
@@ -348,21 +380,21 @@ class Allocator:
                 #若time_swap<=self.time，则第j个换入的开始时刻是self.time
                 time_swap+=Swap_time[j]
                 for t in Swap[j]:
-                    buffer_allocator.alloc(t, profiler.tensor_size[t])   
+                    buffer_allocator.alloc(t, profiler.tensor_size[t])
                 j+=1
-          
+
             self.time+=profiler.cost_info[i] #self.time：前i个op总用时
 
             while time_swap+Swap_time[j]<=self.time and j<len(profiler.io_info):
                 #在第i个op申请多个swapin
                 time_swap+=Swap_time[j]
                 for t in Swap[j]:
-                    buffer_allocator.alloc(t, profiler.tensor_size[t])   
+                    buffer_allocator.alloc(t, profiler.tensor_size[t])
                 j+=1
             ####################################################################
             for t in profiler.io_info[i]['outputs']:
                 buffer_allocator.alloc(t, profiler.tensor_size[t])
-           
+
             for a, t in profiler.resize_info[i]:  # tmp
                 if a == 'alloc':
                     buffer_allocator.alloc(t, profiler.tensor_size[t])
@@ -373,10 +405,10 @@ class Allocator:
             for t in profiler.io_info[i]['release']:  # rel input
                 buffer_allocator.free(t)
 
-                
+
         self.memory_peak =buffer_allocator.tot_size
         return buffer_allocator.tot_size
-    
+
 ########################################################################################################################################    
 def oracle(profiler):
     cur, peak = 0, 0
@@ -414,13 +446,13 @@ def get_featuremap(profiler: Profiler):
                     bo.add(t)
                     Swap_time[i]+=profiler.tensor_size[t]/Orate
                     Swap[i].append(t)
-                    
+
     for i in range(profiler.fp_thres,len(profiler.io_info)):   #第i次op
         for t in profiler.io_info[i]['inputs']:
             if t in feature_map and t in bo:#将tensor t换入
                 bo.remove(t)
                 Swap_time[i]+=profiler.tensor_size[t]/Irate
-                Swap[i].append(t)      
+                Swap[i].append(t)
     # for i in range(len(profiler.io_info)):
     #     if i == profiler.fp_thres:
     #         print('-'*50)
@@ -445,8 +477,9 @@ if __name__ == '__main__':
     #         # heuristic_allocator.heuristic_alloc()
     #         input()
     # assert 0
-    model = 'Googlenet'
-    profiler = Profiler(model, 4)
+    import sys
+    model = 'SqueezenetNoBN'
+    profiler = Profiler(model, int(sys.argv[1]))
     profiler.load_infos()  # 我把数据都dump下来了，这句话直接读进来即可
     feature_map = get_featuremap(profiler)
     

@@ -5,6 +5,7 @@ from collections import defaultdict
 from collections import deque
 import json
 import heapq
+
 root = '/Users/wangqipeng/Desktop/MNN/build/'
 
 
@@ -161,132 +162,137 @@ class Profiler:
         with open(os.path.join('data/profiler', self.model, f'{self.model}.{self.batch}.redundent_parent.json'), 'r') as f:
             self.redundent_parent = json.load(f)
         with open(f'data/profiler/{self.model}/{self.model}.{self.batch}.cost_info.json') as f:
-            self.cost_info=json.load(f)
+            self.cost_info = json.load(f)
         for t in list(self.cost_info.keys()):
             self.cost_info[int(t)] = self.cost_info[t]
 
-########################################################################################################################################    
+
+########################################################################################################################################
 
 class DXR:
-    bo=defaultdict(int)
+    bo = defaultdict(int)
     # bo[t] 0:not in buffer / 1:useless_tensor / 2:buffer_tensor / 3:not allow swapout
-    Swap=defaultdict(list)
-    SwapOut=defaultdict(list)
-    SwapIn=defaultdict(list)
-    buffer_size=193675840#1.92e8
-    useless_tensor=[]
-    buffer_tensor=[]
-    IOrate=104094472/4452 #单位 bytes/ms
+    Swap = defaultdict(list)
+    SwapOut = defaultdict(list)
+    SwapIn = defaultdict(list)
+    buffer_size = 4 * 1024**3  # 1.92e8
+    useless_tensor = []
+    buffer_tensor = []
+    IOrate = 107374182400 / 270759.343750  # 单位 bytes/ms
 
 
 class Fix_Buffer:
-    def Replace(cur , tensor_size,i ):
-        while (cur + tensor_size> DXR.buffer_size):
+    @classmethod
+    def Replace(cls, cur, tensor_size, i):
+        while (cur + tensor_size > DXR.buffer_size):
 
-             #swap out from ueseless_tensor    
-            while len(DXR.useless_tensor) and DXR.bo[DXR.useless_tensor[0][1]]!=1:
-                heapq.heappop(DXR.useless_tensor)           
-            if len(DXR.useless_tensor):           
-                t=DXR.useless_tensor[0][1]                
-                # print(f"Swapout {t} size:{profiler.tensor_size[t]}  ")
-                cur+=DXR.useless_tensor[0][0]      #swao out
-                DXR.bo[DXR.useless_tensor[0][1]]=0
-                DXR.SwapOut[i].append(DXR.useless_tensor[0][1])
-                
+            # swap out from ueseless_tensor
+            while len(DXR.useless_tensor) and DXR.bo[DXR.useless_tensor[0][1]] != 1:
                 heapq.heappop(DXR.useless_tensor)
-                
-            else:  #swap out from FP_tensor
-                while len(DXR.buffer_tensor) and DXR.bo[DXR.buffer_tensor[0][1]]!=2:
+            if len(DXR.useless_tensor):
+                t = DXR.useless_tensor[0][1]
+                # print(f"Swapout {t} size:{profiler.tensor_size[t]}  ")
+                cur += DXR.useless_tensor[0][0]  # swao out
+                DXR.bo[DXR.useless_tensor[0][1]] = 0
+                DXR.SwapOut[i].append(DXR.useless_tensor[0][1])
+
+                heapq.heappop(DXR.useless_tensor)
+
+            else:  # swap out from FP_tensor
+                while len(DXR.buffer_tensor) and DXR.bo[DXR.buffer_tensor[0][1]] != 2:
                     # print(i, tensor_size, len(DXR.buffer_tensor)," tensor: ",DXR.buffer_tensor[0][1],DXR.bo[DXR.buffer_tensor[0][1]])
                     heapq.heappop(DXR.buffer_tensor)
                 if len(DXR.buffer_tensor):
 
-                    cur+=DXR.buffer_tensor[0][0]      #swao out
-                    DXR.bo[DXR.buffer_tensor[0][1]]=0
+                    cur += DXR.buffer_tensor[0][0]  # swao out
+                    DXR.bo[DXR.buffer_tensor[0][1]] = 0
                     DXR.SwapOut[i].append(DXR.buffer_tensor[0][1])
                     heapq.heappop(DXR.buffer_tensor)
                 else:
-                    print("推荐将buffer_size 设置为",cur + tensor_size)
-                    assert 0,"buffer_size is too small"
+                    print("推荐将buffer_size 设置为", cur + tensor_size)
+                    assert 0, "buffer_size is too small"
                     # cur是局部变量，要修改oracle的cur
-        return cur  
-            
-    def oracle(profiler):
+        return cur
+
+    @classmethod
+    def oracle(cls, profiler):
         cur = 0
-        Swap_Mark=0 #是否存在IO     
-        t1=0
-        t2=0
-        t3=0
+        Swap_Mark = 0  # 是否存在IO
+        t1 = 0
+        t2 = 0
+        t3 = 0
         for i in range(len(profiler.io_info)):
-            #cancel useless_tensor, merge useless_tensor and buffer_tensor
-            if i==profiler.fp_thres:
+            # cancel useless_tensor, merge useless_tensor and buffer_tensor
+            if i == profiler.fp_thres:
                 while len(DXR.useless_tensor):
                     t = DXR.useless_tensor[0][1]
-                    if DXR.bo[t]==1:
-                        heapq.heappush(DXR.buffer_tensor,(-profiler.tensor_size[t],t))
-                        DXR.bo[t]=2
+                    if DXR.bo[t] == 1:
+                        heapq.heappush(DXR.buffer_tensor, (-profiler.tensor_size[t], t))
+                        DXR.bo[t] = 2
                     heapq.heappop(DXR.useless_tensor)
 
             # alloc
-            Alloc=[]
-            for c in ("inputs","outputs"):
+            Alloc = []
+            for c in ("inputs", "outputs"):
                 for t in profiler.io_info[i][c]:
-                    if DXR.bo[t]==0:
+                    if DXR.bo[t] == 0:
                         Alloc.append(t)
-                        if c=="inputs":
+                        if c == "inputs":
                             DXR.SwapIn[i].append(t)
-                    DXR.bo[t]=3
-            
+                    DXR.bo[t] = 3
+
             for t in Alloc:
-                cur=Fix_Buffer.Replace(cur,profiler.tensor_size[t],i)
-                cur+=profiler.tensor_size[t]        
+                cur = Fix_Buffer.Replace(cur, profiler.tensor_size[t], i)
+                cur += profiler.tensor_size[t]
 
             temporary = 0
             for a, t in profiler.resize_info[i]:
                 if a == 'alloc':
                     temporary += profiler.tensor_size[t]
-            cur=Fix_Buffer.Replace(cur,temporary,i)
+            cur = Fix_Buffer.Replace(cur, temporary, i)
 
             # compute
 
-            for c in ("inputs","outputs"):
+            for c in ("inputs", "outputs"):
                 for t in profiler.io_info[i][c]:
                     if t in profiler.io_info[i]['release']:
-                        DXR.bo[t]=0
+                        DXR.bo[t] = 0
                         cur -= profiler.tensor_size[t]
                     else:
-                        if t in DXR.Swap[i]:   # t is useless in FP
-                            heapq.heappush(DXR.useless_tensor,(-profiler.tensor_size[t],t))
-                            DXR.bo[t]=1
+                        if t in DXR.Swap[i]:  # t is useless in FP
+                            heapq.heappush(DXR.useless_tensor, (-profiler.tensor_size[t], t))
+                            DXR.bo[t] = 1
                         else:
-                            heapq.heappush(DXR.buffer_tensor,(-profiler.tensor_size[t],t))
-                            DXR.bo[t]=2
-         ########################################################################################################################################    
-        # 输出swapIO tensor,计算operation和swap并行时的用时                   
-                            
-            if len(DXR.SwapIn[i])+len(DXR.SwapOut[i]):      #存在IO            
-                Swap_Mark=1
+                            heapq.heappush(DXR.buffer_tensor, (-profiler.tensor_size[t], t))
+                            DXR.bo[t] = 2
+            ########################################################################################################################################
+            # 输出swapIO tensor,计算operation和swap并行时的用时
 
-                print("\n",'-'*20,"\noperation ",i)         
+            if len(DXR.SwapIn[i]) + len(DXR.SwapOut[i]):  # 存在IO
+                Swap_Mark = 1
+
+                print("\n", '-' * 20, "\noperation ", i)
             if len(DXR.SwapIn[i]):
                 print("SwapIn")
                 for t in DXR.SwapIn[i]:
-                    print(f"{t} size:{profiler.tensor_size[t]}  ",end="")
-                    t3+=profiler.tensor_size[t]
+                    print(f"{t} size:{profiler.tensor_size[t]}  ", end="")
+                    t3 += profiler.tensor_size[t]
             if len(DXR.SwapOut[i]):
                 print("SwapOut")
                 for t in DXR.SwapOut[i]:
-                    print(f"{t} size:{profiler.tensor_size[t]}  ",end="")
-                    t3+=profiler.tensor_size[t]
-            if Swap_Mark==0:
-                t1+=profiler.cost_info[i]    
+                    print(f"{t} size:{profiler.tensor_size[t]}  ", end="")
+                    t3 += profiler.tensor_size[t]
+            if Swap_Mark == 0:
+                t1 += profiler.cost_info[i]
             else:
-                t2+=   profiler.cost_info[i]    
-        print("\nTotal Time :",t1+max(t2,1.0*t3/DXR.IOrate))      
-        print(f"t1:{t1}  t2:{t2}  t3:{1.0*t3/DXR.IOrate}")
-########################################################################################################################################    
+                t2 += profiler.cost_info[i]
+        print("\nTotal Time :", t1 + max(t2, 1.0 * t3 / DXR.IOrate))
+        print(f"t1:{t1}  t2:{t2}  t3:{1.0 * t3 / DXR.IOrate}")
 
-    def Featuremap(profiler: Profiler):
+    ########################################################################################################################################
+
+    @classmethod
+    def Featuremap(cls, profiler: Profiler):
         feature_map = set()
         for i in range(profiler.fp_thres):
             for t in profiler.io_info[i]['outputs']:
@@ -294,15 +300,15 @@ class Fix_Buffer:
             for t in profiler.io_info[i]['release']:
                 feature_map.remove(t)
         # print(sorted(feature_map))
-        for i in range(profiler.fp_thres-1,-1,-1):#第i次op
-            for c in ("inputs","outputs"):
+        for i in range(profiler.fp_thres - 1, -1, -1):  # 第i次op
+            for c in ("inputs", "outputs"):
                 for t in profiler.io_info[i][c]:
-                    if t in feature_map and t not in DXR.bo:#将tensor t换出
-                        DXR.bo[t]=0
+                    if t in feature_map and t not in DXR.bo:  # 将tensor t换出
+                        DXR.bo[t] = 0
                         DXR.Swap[i].append(t)
-         
+
         return feature_map
-    
+
     # def Print(profiler:Profiler):
     #     for i in range(len(profiler.io_info)):
     #         print("operation ",i,"-"*20)
@@ -314,13 +320,13 @@ class Fix_Buffer:
     #             print("SwapOut")
     #             for t in SwapOut[i]:
     #                 print(f"{t} size:{profiler.tensor_size[t]}  ",end="")
-        
-if __name__ == '__main__':
 
-    model = 'Squeezenet'
-    profiler = Profiler(model, 4)
+
+if __name__ == '__main__':
+    model = 'MobilenetV1'
+    profiler = Profiler(model, 64)
     profiler.load_infos()  # 我把数据都dump下来了，这句话直接读进来即可
     feature_map = Fix_Buffer.Featuremap(profiler)
-    
+
     Fix_Buffer.oracle(profiler)
     # Print(profiler)
